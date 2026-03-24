@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soyeon Ahn — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Soyeon Ahn</a>
+      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#whatido">What I Do</a></li>
+        <li><a href="#projects">Side Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="https://github.com/SoyeonAhn3" target="_blank" rel="noopener" class="nav-github" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <p class="hero-greeting fade-in">안녕하세요</p>
+      <h1 class="hero-name fade-in">Soyeon Ahn</h1>
+      <p class="hero-tags fade-in">IT Operations · AI Automation · Data Visualization</p>
+      <blockquote class="hero-quote fade-in">
+        "28시간 걸리던 일을 3시간으로 — 제조업 IT 현장에서 자동화를 실행하는 사람"
+      </blockquote>
+      <p class="hero-desc fade-in">
+        SAP 운영부터 Power BI, AI 자동화까지 — 제조업 IT의 비효율을 찾아 해결합니다.
+      </p>
+      <div class="hero-actions fade-in">
+        <a href="#experience" class="btn btn-primary">View My Experience →</a>
+        <a href="https://github.com/SoyeonAhn3" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-text fade-in">
+        <p>
+          코로나 시기, 취미로 시작한 개발이 예상 외로 잘 맞았습니다.
+          코드 몇 줄로 무언가를 만들어 나가는 과정이 좋았고,
+          그러다 보니 자연스럽게 법학에서 IT로 방향을 바꾸게 되었습니다.
+        </p>
+        <p>
+          현재 Bosch 자회사 KBWS IT팀에서 SAP·MES·HR 등 핵심 시스템 운영,
+          Power BI 대시보드 설계·구축, 그리고 Power Automate·AI를 활용한
+          업무 자동화를 담당하고 있습니다.
+        </p>
+        <p>
+          SAP S/4HANA 업그레이드, e-HR 신규 개발, IFRS 원장 도입까지
+          3건의 프로젝트에서 현업 사용자와 인도 개발팀 사이의
+          영어 커뮤니케이션을 직접 수행하며 프로젝트를 완수했습니다.
+        </p>
+      </div>
+      <div class="about-cards">
+        <div class="about-card fade-in">
+          <div class="about-card-icon">🌐</div>
+          <h3>Trilingual</h3>
+          <p>언어 역량을 기반으로 글로벌 협업의 다리를 놓습니다.</p>
+          <div class="about-card-tags">
+            <span class="tag">OPIc AL</span>
+            <span class="tag">JLPT N2</span>
+          </div>
+        </div>
+        <div class="about-card fade-in">
+          <div class="about-card-icon">📊</div>
+          <h3>Data-Driven</h3>
+          <p>데이터를 통해 현황을 파악하고 전략적 인사이트를 제공합니다.</p>
+          <div class="about-card-tags">
+            <span class="tag">Power BI 대시보드 2건 실무 운영</span>
+          </div>
+        </div>
+        <div class="about-card fade-in">
+          <div class="about-card-icon">🤖</div>
+          <h3>AI 실무 적용</h3>
+          <p>전사 AI 교육 기획 · AI 챗봇 개발 · 4건의 개인 프로젝트</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item timeline-left fade-in">
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <h3>KBWS (Bosch 자회사)</h3>
+              <span class="badge badge-current">현재 재직 중</span>
+            </div>
+            <div class="timeline-date">2024.08 — 현재</div>
+            <p>IT팀 · IT 애플리케이션 운영 · AI 자동화 · 데이터 시각화</p>
+            <ul class="timeline-bullets">
+              <li><strong>업무 자동화</strong><br>MS 프로그램 기반 반복 업무 자동화 추진</li>
+              <li><strong>데이터 시각화</strong><br>Power BI 대시보드 설계·구축 및 실무 운영</li>
+              <li><strong>AI 도입 · 교육</strong><br>전사 AI 교육 기획·진행 및 AI 챗봇 개발</li>
+              <li><strong>IT 프로젝트 수행</strong><br>SAP 업그레이드, e-HR 개발, IFRS 도입 등 3건 참여</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">SAP S/4HANA</span>
+              <span class="tag">Power BI</span>
+              <span class="tag">AI Automation</span>
+              <span class="tag">Power Automate</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item timeline-right fade-in">
+          <div class="timeline-card">
+            <h3>MPS</h3>
+            <div class="timeline-date">2022.11 — 2023.05</div>
+            <p>제어개발부 · 렌즈 부품 조립 설비 SW 유지보수</p>
+            <ul class="timeline-bullets">
+              <li>LG 이노텍 납품 장비 대상 SW 유지보수 수행</li>
+              <li>설비 IO/MOTOR 테스트 및 오류 처리</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">C#</span>
+              <span class="tag">WinForm</span>
+              <span class="tag">MS-SQL</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item timeline-left fade-in">
+          <div class="timeline-card">
+            <h3>홍익대학교</h3>
+            <div class="timeline-date">2016.03 — 2021.02</div>
+            <p>법학과 졸업</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What I Do -->
+  <section class="section" id="whatido">
+    <div class="container">
+      <h2 class="section-title">What I Do</h2>
+      <div class="whatido-grid">
+        <div class="whatido-card fade-in">
+          <div class="whatido-icon">⚡</div>
+          <h3>업무 자동화</h3>
+          <p>
+            연간 권한 점검 업무를 <strong>28시간에서 3시간으로 단축</strong>했습니다 (89% 감소).
+            Power Automate · Office Script · Power Query 등을 활용하여
+            반복 문서작업을 줄이는 자동화를 추진하고 있습니다.
+          </p>
+          <p class="whatido-sub">현재 경영지원팀 반복 문서 자동화를 지원하고 있습니다.</p>
+        </div>
+        <div class="whatido-card fade-in">
+          <div class="whatido-icon">📈</div>
+          <h3>데이터 시각화</h3>
+          <p>
+            부서별 예상 지출 비교 대시보드와 전사 사용자 권한 현황 대시보드를
+            직접 설계하고 구축하였습니다.
+            Power Query 기반 데이터 전처리, DAX 수식 기반 동적 계산,
+            드릴다운 및 시나리오 비교 기능을 구현했습니다.
+          </p>
+          <p class="whatido-sub">권한 현황 대시보드는 월간·연간 권한 점검 실무에 실제 활용되고 있습니다.</p>
+          <p class="whatido-sub">현재 팀 매니저 대상 초과 근무 시간 분석 대시보드를 추가 구축 중입니다.</p>
+          <a href="PowerBI_Portfolio_안소연.pdf" target="_blank" rel="noopener" class="btn btn-powerbi">📄 Power BI 포트폴리오 보기</a>
+        </div>
+        <div class="whatido-card fade-in">
+          <div class="whatido-icon">🧠</div>
+          <h3>AI 도입 · 교육</h3>
+          <p>
+            NotebookLM 기반 인사 규정 AI 챗봇을 기획·개발했으며,
+            전사 부서 대상 Gemini 활용 교육을 진행했습니다.
+            교육 과정에서 현업 부서의 구체적인 AI 활용 수요를 직접 발굴한 경험이 있습니다.
+          </p>
+          <p class="whatido-sub">부서별 맞춤 실습 세션과 사후 follow-up을 통해 교육이 실제 업무 적용으로 이어지도록 설계했습니다.</p>
+        </div>
+        <div class="whatido-card fade-in">
+          <div class="whatido-icon">🔧</div>
+          <h3>IT 프로젝트 수행</h3>
+          <p>
+            SAP S/4HANA 업그레이드, e-HR 신규 기능 개발, SAP IFRS 원장 도입 등
+            3건의 프로젝트에 참여했습니다.
+            프로젝트에서 현업 사용자의 요구사항을 정리하여 개발팀에 전달하고,
+            테스트 결과를 공유하는 커뮤니케이션 브릿지 역할을 수행했습니다.
+          </p>
+          <p class="whatido-sub">인도 개발팀과의 협업은 영어로 직접 진행하였으며, 사용자 권한 설계 및 프로젝트 문서화도 함께 담당했습니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Side Projects -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <h2 class="section-title">Side Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <h3>Workflow Generator</h3>
+            <span class="badge badge-live">● LIVE</span>
+          </div>
+          <p class="project-motive">
+            업무 프로세스를 문서화하는 과정에서 반복적으로 소요되는 시간을 줄이고자
+            제작하게 되었습니다. 프로세스를 입력하면 다이어그램과 Word 매뉴얼이
+            자동으로 생성됩니다.
+          </p>
+          <div class="project-tags">
+            <span class="tag">React 18</span>
+            <span class="tag">Claude API</span>
+            <span class="tag">Netlify</span>
+          </div>
+          <div class="project-links">
+            <a href="https://processflow-generator.netlify.app/" target="_blank" rel="noopener" class="btn btn-small btn-primary">Live Demo</a>
+            <a href="https://github.com/SoyeonAhn3/Workflow_Generator" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+          </div>
+        </div>
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <h3>AI Consulting Agent</h3>
+          </div>
+          <p class="project-motive">
+            업무 자동화 방안을 검토할 때 여러 AI에 개별적으로 문의하는 것이
+            비효율적이라고 느꼈고, 3종 AI를 동시에 활용할 수 있는 도구를
+            개발하게 되었습니다.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Multi-AI</span>
+            <span class="tag">RAG</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/SoyeonAhn3/AI_Consulting" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+          </div>
+        </div>
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <h3>Excel Generator</h3>
+          </div>
+          <p class="project-motive">
+            Excel 파일의 수식이나 VBA를 수동으로 작성하는 반복 작업을
+            AI를 통해 자동화하고자 제작하였습니다.
+          </p>
+          <div class="project-tags">
+            <span class="tag">FastAPI</span>
+            <span class="tag">OpenAI</span>
+            <span class="tag">Gemini</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/SoyeonAhn3/Excel_generator" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+          </div>
+        </div>
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <h3>Notion Notes</h3>
+          </div>
+          <p class="project-motive">
+            학습한 내용을 AI와의 대화를 통해 정리하고, 유용한 답변을
+            Notion에 바로 저장하는 흐름을 구현하고 싶어 개발하게 되었습니다.
+          </p>
+          <div class="project-tags">
+            <span class="tag">FastAPI</span>
+            <span class="tag">Gemini</span>
+            <span class="tag">Notion API</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/SoyeonAhn3/Notion_Notes" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">연락처</h2>
+      <div class="contact-grid fade-in">
+        <a href="mailto:thqltm222@naver.com" class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <span>thqltm222@naver.com</span>
+        </a>
+        <a href="tel:010-4480-2924" class="contact-item">
+          <div class="contact-icon">📱</div>
+          <span>010-4480-2924</span>
+        </a>
+        <a href="https://github.com/SoyeonAhn3" target="_blank" rel="noopener" class="contact-item">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </div>
+          <span>github.com/SoyeonAhn3</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Soyeon Ahn</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
