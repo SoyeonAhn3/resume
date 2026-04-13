@@ -388,11 +388,26 @@ a {
   font-weight: 700;
 }
 
+.timeline-subtitle {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin-bottom: 2px;
+}
+
 .timeline-date {
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--primary);
-  margin-bottom: 8px;
+  margin-bottom: 4px;
+}
+
+.timeline-role {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
 }
 
 .timeline-card p {
@@ -438,6 +453,63 @@ a {
   gap: 8px;
 }
 
+/* ===== Experience Responsibility Grid ===== */
+.exp-resp-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 12px 0 14px;
+}
+
+.exp-resp-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.exp-resp-icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #eef2ff;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+.exp-resp-icon-emoji {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #eef2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  margin-top: 1px;
+}
+
+.exp-resp-content {
+  flex: 1;
+}
+
+.exp-resp-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 1px;
+}
+
+.exp-resp-desc {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
 /* ===== What I Do ===== */
 .whatido-grid {
   display: grid;
@@ -481,13 +553,24 @@ a {
   color: var(--text-secondary);
 }
 
+.whatido-title-with-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.whatido-title-with-btn .btn-powerbi {
+  margin-top: 0;
+}
+
 .btn-powerbi {
   display: inline-flex;
   align-items: center;
   gap: 6px;
   margin-top: 16px;
-  padding: 10px 20px;
-  font-size: 0.9rem;
+  padding: 8px 16px;
+  font-size: 0.82rem;
   font-weight: 700;
   color: #fff;
   background: linear-gradient(135deg, var(--primary), var(--primary-light));
@@ -500,6 +583,103 @@ a {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(79, 70, 229, 0.4);
   color: #fff;
+}
+
+/* ===== Dashboard List (What I Do - Data Viz) ===== */
+.whatido-dashboard-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.whatido-dashboard-item {
+  padding: 14px 16px;
+  background: var(--bg-alt);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--primary);
+}
+
+.whatido-dashboard-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.whatido-dashboard-item p {
+  font-size: 0.83rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 4px;
+}
+
+.whatido-dashboard-result {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* ===== AI Steps (What I Do - AI) ===== */
+.ai-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ai-step {
+  padding: 14px 16px;
+  background: var(--bg-alt);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--primary);
+}
+
+.ai-step-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.ai-step-desc {
+  font-size: 0.83rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* ===== Project Timeline List (What I Do - IT Projects) ===== */
+.project-timeline-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-timeline-item {
+  padding: 14px 16px;
+  background: var(--bg-alt);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--primary);
+}
+
+.project-timeline-item .project-period {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 2px;
+}
+
+.project-timeline-item .project-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.project-timeline-item .project-desc {
+  font-size: 0.83rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
 }
 
 /* ===== Projects ===== */
