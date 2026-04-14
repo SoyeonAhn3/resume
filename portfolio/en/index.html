@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Soyeon Ahn — Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
   <nav class="nav" id="nav">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">Soyeon Ahn</a>
-      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
@@ -25,7 +25,7 @@
         <li><a href="#projects">Side Projects</a></li>
         <li><a href="#contact">Contact</a></li>
         <li>
-          <a href="en/index.html" class="nav-lang" title="View in English">EN</a>
+          <a href="../index.html" class="nav-lang" title="한국어로 보기">KO</a>
         </li>
         <li>
           <a href="https://github.com/SoyeonAhn3" target="_blank" rel="noopener" class="nav-github" aria-label="GitHub">
@@ -39,14 +39,14 @@
   <!-- Hero -->
   <section class="hero" id="hero">
     <div class="container">
-      <p class="hero-greeting fade-in">안녕하세요</p>
+      <p class="hero-greeting fade-in">Hello</p>
       <h1 class="hero-name fade-in">Soyeon Ahn</h1>
       <p class="hero-tags fade-in">IT Operations · AI Automation · Data Visualization</p>
       <blockquote class="hero-quote fade-in">
-        "28시간 → 3시간 — 데이터와 자동화로 일하는 방식을 바꿉니다"
+        "28 hours → 3 hours — Transforming the way we work through data and automation"
       </blockquote>
       <p class="hero-desc fade-in">
-        시스템 운영부터 데이터 시각화, AI 자동화까지 — 업무 프로세스를 개선합니다.
+        From system operations to data visualization and AI automation — I improve business processes.
       </p>
       <div class="hero-actions fade-in">
         <a href="#experience" class="btn btn-primary">View My Experience</a>
@@ -61,25 +61,26 @@
       <h2 class="section-title">About Me</h2>
       <div class="about-text fade-in">
         <p>
-          Bosch 자회사 KBWS에서 사내 IT 운영을 담당하며
-          반복 업무 자동화, 데이터 시각화, AI 실무 적용 업무를 맡고 있습니다.
-          사용자 권한 점검 프로세스를 28시간 → 3시간으로 단축하였으며,
-          경영지원팀 월별 매출 보고서 작성 자동화를 진행하고 있습니다.
-          AI 도입까지 범위를 넓혀 인사 규정 AI 챗봇 개발과
-          전사 120명 AI 교육을 진행했습니다.
+          I work in internal IT operations at KBWS, a Bosch subsidiary,
+          handling task automation, data visualization, and practical AI adoption.
+          I reduced the user access review process from 28 hours to 3 hours
+          and am currently automating monthly revenue report generation for the management support team.
+          I expanded my scope to AI adoption, developing an HR policy AI chatbot
+          and conducting AI training for all 120 employees company-wide.
         </p>
         <p>
-          SAP S/4HANA 업그레이드, e-HR 개발, SAP IFRS 원장 도입 프로젝트에서
-          현업과 개발팀 사이 브릿지 역할을 수행하였고,
-          이 중 인도 개발팀과 협업한 SAP 프로젝트는 영어로 진행했습니다.
-          법학을 공부하며 사실관계를 규정에 맞춰 판단하던 경험을 바탕으로, 지금은 현업의 업무를 시스템에 맞는 구조로 바꾸는 일을 하고 있습니다.
+          I served as a bridge between business users and development teams
+          in SAP S/4HANA upgrade, e-HR development, and SAP IFRS ledger implementation projects,
+          with the SAP project involving collaboration with an Indian development team conducted in English.
+          Drawing on my legal studies, where I learned to apply regulations to factual circumstances,
+          I now transform business operations into system-compatible structures.
         </p>
       </div>
       <div class="about-cards">
         <div class="about-card fade-in">
           <div class="about-card-icon">🌐</div>
           <h3>Trilingual</h3>
-          <p>외국인 팀장 및 Bosch 본사 감사팀과 영어 실무 소통 경험이 있으며, 일본어로 일상 회화가 가능합니다.</p>
+          <p>Experienced in English business communication with a foreign team lead and Bosch HQ audit teams. Conversational proficiency in Japanese.</p>
           <div class="about-card-tags">
             <span class="tag">OPIc IH</span>
             <span class="tag">JLPT N2</span>
@@ -88,15 +89,15 @@
         <div class="about-card fade-in">
           <div class="about-card-icon">📊</div>
           <h3>Data-Driven</h3>
-          <p>데이터를 통해 현황을 파악하고 전략적 인사이트를 제공합니다.</p>
+          <p>I analyze current situations through data and deliver strategic insights.</p>
           <div class="about-card-tags">
-            <span class="tag">Power BI 대시보드 3건 실무 운영</span>
+            <span class="tag">3 Power BI Dashboards in Production</span>
           </div>
         </div>
         <div class="about-card fade-in">
           <div class="about-card-icon">🤖</div>
-          <h3>AI 실무 적용</h3>
-          <p>사내 AI 챗봇 기획·개발·배포, 전사 120명 AI 교육 기획·진행, Claude·Gemini·OpenAI API 기반 개인 프로젝트 4건.</p>
+          <h3>AI in Practice</h3>
+          <p>Planned, developed, and deployed an internal AI chatbot. Organized and conducted AI training for 120 employees. Built 4 personal projects using Claude, Gemini, and OpenAI APIs.</p>
         </div>
       </div>
     </div>
@@ -111,10 +112,10 @@
           <div class="timeline-card">
             <div class="timeline-card-header">
               <h3>KBWS</h3>
-              <span class="badge badge-current">현재 재직 중</span>
+              <span class="badge badge-current">Current</span>
             </div>
-            <div class="timeline-subtitle">Bosch 자회사 · 자동차 와이퍼 시스템 제조</div>
-            <div class="timeline-date">2024.08 — 현재</div>
+            <div class="timeline-subtitle">Bosch Subsidiary · Automotive Wiper System Manufacturing</div>
+            <div class="timeline-date">Aug 2024 — Present</div>
             <div class="timeline-role">IT Operations · Data & AI</div>
             <div class="exp-resp-grid">
               <div class="exp-resp-item">
@@ -122,8 +123,8 @@
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
                 </div>
                 <div class="exp-resp-content">
-                  <div class="exp-resp-label">IT 애플리케이션 운영</div>
-                  <div class="exp-resp-desc">SAP · MES · HR 등 8개 <strong>전사 시스템 권한 관리</strong><br>Helpdesk 월 평균 <strong>30건</strong> 처리</div>
+                  <div class="exp-resp-label">IT Application Management</div>
+                  <div class="exp-resp-desc"><strong>Access management</strong> for 8 enterprise systems including SAP, MES, HR<br>Handling avg. <strong>30 helpdesk tickets/month</strong></div>
                 </div>
               </div>
               <div class="exp-resp-item">
@@ -131,8 +132,8 @@
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
                 </div>
                 <div class="exp-resp-content">
-                  <div class="exp-resp-label">데이터 시각화</div>
-                  <div class="exp-resp-desc"><strong>Power BI 대시보드 3건</strong> 설계, 구축 및 실무 운영</div>
+                  <div class="exp-resp-label">Data Visualization</div>
+                  <div class="exp-resp-desc">Designed, built, and operate <strong>3 Power BI dashboards</strong> in production</div>
                 </div>
               </div>
               <div class="exp-resp-item">
@@ -140,8 +141,8 @@
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.57-3.25 3.92L12 22l-.75-12.08A4.001 4.001 0 0 1 12 2z"/><circle cx="12" cy="6" r="1"/></svg>
                 </div>
                 <div class="exp-resp-content">
-                  <div class="exp-resp-label">AI 도입 · 교육</div>
-                  <div class="exp-resp-desc">사내 <strong>AI 챗봇</strong> 기획 및 배포, 전사 <strong>120명 AI 교육</strong> 진행</div>
+                  <div class="exp-resp-label">AI Adoption & Training</div>
+                  <div class="exp-resp-desc">Planned and deployed an internal <strong>AI chatbot</strong>; conducted <strong>AI training for 120 employees</strong></div>
                 </div>
               </div>
               <div class="exp-resp-item">
@@ -149,8 +150,8 @@
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
                 </div>
                 <div class="exp-resp-content">
-                  <div class="exp-resp-label">전사 프로젝트 수행</div>
-                  <div class="exp-resp-desc">SAP S/4HANA Upgrade · e-HR 개선 · IFRS · PMI 등 4건</div>
+                  <div class="exp-resp-label">Enterprise Projects</div>
+                  <div class="exp-resp-desc">4 projects: SAP S/4HANA Upgrade · e-HR Enhancement · IFRS · PMI</div>
                 </div>
               </div>
               <div class="exp-resp-item">
@@ -158,8 +159,8 @@
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
                 </div>
                 <div class="exp-resp-content">
-                  <div class="exp-resp-label">글로벌 협업</div>
-                  <div class="exp-resp-desc">Bosch 본사 감사팀 · 인도 개발팀과 영어 실무 소통 경험</div>
+                  <div class="exp-resp-label">Global Collaboration</div>
+                  <div class="exp-resp-desc">English business communication with Bosch audit team and Indian development team</div>
                 </div>
               </div>
             </div>
@@ -174,29 +175,29 @@
         <div class="timeline-item timeline-right fade-in">
           <div class="timeline-card">
             <h3>MPS</h3>
-            <div class="timeline-subtitle">렌즈 부품 조립 설비 SW 개발사 · LG이노텍 납품</div>
-            <div class="timeline-date">2022.11 — 2023.05</div>
-            <div class="timeline-role">C# Developer · 제어개발부</div>
+            <div class="timeline-subtitle">Lens Assembly Equipment SW Developer · Supplying to LG Innotek</div>
+            <div class="timeline-date">Nov 2022 — May 2023</div>
+            <div class="timeline-role">C# Developer · Control Development Dept.</div>
             <div class="exp-resp-grid">
               <div class="exp-resp-item">
                 <div class="exp-resp-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
                 <div class="exp-resp-content">
-                  <div class="exp-resp-label">설비 SW 유지보수</div>
-                  <div class="exp-resp-desc">C# WinForm 기반 카메라 부품 조립 설비 프로그램 <br>유지보수 및 오류 수정</div>
+                  <div class="exp-resp-label">Equipment SW Maintenance</div>
+                  <div class="exp-resp-desc">Maintained and debugged C# WinForm-based <br>camera lens assembly equipment software</div>
                 </div>
               </div>
               <div class="exp-resp-item">
                 <div class="exp-resp-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
                 <div class="exp-resp-content">
-                  <div class="exp-resp-label">데이터 처리</div>
-                  <div class="exp-resp-desc">MS-SQL 기반 쿼리 작성 및 데이터 관리</div>
+                  <div class="exp-resp-label">Data Processing</div>
+                  <div class="exp-resp-desc">Wrote MS-SQL queries and managed data</div>
                 </div>
               </div>
               <div class="exp-resp-item">
                 <div class="exp-resp-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
                 <div class="exp-resp-content">
-                  <div class="exp-resp-label">장비 테스트</div>
-                  <div class="exp-resp-desc">- 설비 IO · MOTOR 테스트 및 유지보수 <br> - 설비용 PC 조립 및 설치</div>
+                  <div class="exp-resp-label">Equipment Testing</div>
+                  <div class="exp-resp-desc">- Equipment IO/MOTOR testing and maintenance<br>- Assembled and installed equipment PCs</div>
                 </div>
               </div>
             </div>
@@ -209,9 +210,9 @@
         </div>
         <div class="timeline-item timeline-left fade-in">
           <div class="timeline-card">
-            <h3>홍익대학교</h3>
-            <div class="timeline-date">2016.03 — 2021.02</div>
-            <p>법학과 졸업</p>
+            <h3>Hongik University</h3>
+            <div class="timeline-date">Mar 2016 — Feb 2021</div>
+            <p>Bachelor of Law</p>
           </div>
         </div>
       </div>
@@ -225,91 +226,93 @@
       <div class="whatido-grid">
         <div class="whatido-card fade-in">
           <div class="whatido-icon">⚡</div>
-          <h3>업무 자동화</h3>
+          <h3>Process Automation</h3>
           <div class="ai-steps">
             <div class="ai-step">
-              <div class="ai-step-title">연간 사용자 권한 점검 자동화 <span class="whatido-dashboard-result">28h → 3h 감소</span></div>
+              <div class="ai-step-title">Annual User Access Review Automation <span class="whatido-dashboard-result">28h → 3h reduction</span></div>
               <div class="ai-step-desc">
-                8개 전사 애플리케이션의 사용자 권한 데이터를 수작업으로
-                내려받고 정리하던 업무를, 애플리케이션별 데이터 구조를
-                표준화한 뒤 Power Query로 병합을 자동화하고 VBA 매크로로
-                점검 템플릿이 버튼 한 번에 생성되도록 재설계했습니다.
+                Previously, user access data from 8 enterprise applications was manually
+                exported and organized. I standardized the data structure for each application,
+                automated the merge process with Power Query, and redesigned the workflow
+                so that review templates are generated with a single button click using VBA macros.
               </div>
             </div>
             <div class="ai-step">
-              <div class="ai-step-title">경영지원팀 반복 문서 자동화</div>
+              <div class="ai-step-title">Management Support Team Document Automation</div>
               <div class="ai-step-desc">
-                Power Automate · Office Script · Power Query 등을 활용하여
-                반복 문서작업을 줄이는 업무를 진행하고 있습니다.
+                Leveraging Power Automate, Office Script, and Power Query
+                to reduce repetitive document work for the management support team.
               </div>
             </div>
           </div>
         </div>
         <div class="whatido-card fade-in">
           <div class="whatido-icon">📈</div>
-          <h3 class="whatido-title-with-btn">데이터 시각화 <a href="PowerBI_Portfolio_Ahn_Soyeon.pdf" target="_blank" rel="noopener" class="btn btn-small btn-powerbi">Power BI 포트폴리오 보기</a></h3>
+          <h3 class="whatido-title-with-btn">Data Visualization <a href="../PowerBI_Portfolio_Ahn_Soyeon.pdf" target="_blank" rel="noopener" class="btn btn-small btn-powerbi">View Power BI Portfolio</a></h3>
           <div class="whatido-dashboard-list">
             <div class="whatido-dashboard-item">
-              <div class="whatido-dashboard-name">부서별 예상 지출 분석 (Summary)</div>
-              <p>CF(분기별) · FC(월별) 시나리오 자유 비교, Top 5 차이 부서 자동 시각화</p>
-              <span class="whatido-dashboard-result">부서별 예상 지출 보고서 작성시간 10h → 1h 감소</span>
+              <div class="whatido-dashboard-name">Departmental Spending Analysis (Summary)</div>
+              <p>Free comparison of CF (quarterly) and FC (monthly) scenarios, automatic visualization of Top 5 variance departments</p>
+              <span class="whatido-dashboard-result">Spending report preparation: 10h → 1h reduction</span>
             </div>
             <div class="whatido-dashboard-item">
-              <div class="whatido-dashboard-name">부서별 예상 지출 분석 (Detail)</div>
-              <p>부서 > 항목 > 세부항목 3단계 드릴다운, 조건부 서식으로 비용 증감 구분</p>
+              <div class="whatido-dashboard-name">Departmental Spending Analysis (Detail)</div>
+              <p>3-level drill-down (Department > Category > Sub-category), conditional formatting to distinguish cost increases/decreases</p>
             </div>
             <div class="whatido-dashboard-item">
-              <div class="whatido-dashboard-name">사용자 권한 모니터링</div>
-              <p>전사 8개 앱 권한 통합 시각화, 5개 슬라이서 기반 인터랙티브 필터</p>
-              <span class="whatido-dashboard-result">월간/연간 점검 및 사용자 권한 안내 시 사용</span>
+              <div class="whatido-dashboard-name">User Access Monitoring</div>
+              <p>Unified visualization of access rights across 8 enterprise apps, interactive filtering with 5 slicers</p>
+              <span class="whatido-dashboard-result">Used for monthly/annual reviews and user access guidance</span>
             </div>
             <div class="whatido-dashboard-item">
-              <div class="whatido-dashboard-name">부서별 초과근무 분석</div>
-              <p>4개 KPI · 월별 추이 차트 · 5개 슬라이서로 부서별 근무 시간과 초과근무를 통합 모니터링</p>
+              <div class="whatido-dashboard-name">Departmental Overtime Analysis</div>
+              <p>4 KPIs, monthly trend charts, 5 slicers for integrated monitoring of departmental working hours and overtime</p>
             </div>
           </div>
         </div>
         <div class="whatido-card fade-in">
           <div class="whatido-icon">🧠</div>
-          <h3>AI 도입 · 교육</h3>
+          <h3>AI Adoption & Training</h3>
           <div class="ai-steps">
             <div class="ai-step">
-              <div class="ai-step-title">사내 AI 챗봇 기획·개발·배포</div>
+              <div class="ai-step-title">Internal AI Chatbot — Planning, Development & Deployment</div>
               <div class="ai-step-desc">
-                NotebookLM 기반 인사 규정 챗봇. LLM이 해석하지 못하는
-                표·기호(예: "1년↑")를 자연어로 풀어 쓰고,
-                규정집 범위 안에서만 답변하도록 응답 범위를 제한해 환각(hallucination)을 방지했습니다.
+                NotebookLM-based HR policy chatbot. Converted tables and symbols
+                that LLMs couldn't interpret (e.g., "1yr↑") into natural language,
+                and restricted response scope to within the policy manual
+                to prevent hallucination.
               </div>
             </div>
             <div class="ai-step">
-              <div class="ai-step-title">전사 120명 AI 활용 교육</div>
+              <div class="ai-step-title">Company-wide AI Training for 120 Employees</div>
               <div class="ai-step-desc">
-                AI 활용 담당자로 지정되어 120명의 사용자들을 대상으로
-                Gemini 기초 교육을 기획·진행했습니다.
-               AI 활용 담당자로 지정되어 120명 대상 Gemini 기초 교육을 기획·진행했습니다. 경영지원팀에는 Bridge 그래프 생성 프롬프트를, 연구소 부서에는 보고서 작성 프롬프트를 시연하며 
-                <strong>부서별 맞춤 실습</strong>을 설계했습니다.
+                Appointed as the AI adoption lead, I planned and conducted
+                Gemini basic training for 120 employees.
+                I designed <strong>department-specific hands-on exercises</strong> —
+                demonstrating Bridge graph generation prompts for the management support team
+                and report writing prompts for the R&D department.
               </div>
             </div>
           </div>
         </div>
         <div class="whatido-card fade-in">
           <div class="whatido-icon">🔧</div>
-          <h3>IT 프로젝트 수행</h3>
+          <h3>IT Projects</h3>
           <div class="project-timeline-list">
             <div class="project-timeline-item">
-              <div class="project-period">2024.09 — 2025.06</div>
-              <div class="project-title">e-HR 신규 기능 개발</div>
-              <div class="project-desc">근무 유형별(선근제·연봉제·시간제) 급여 계산 로직, 재택근무 도입, 감사 대응용 급여 변경 이력 로그 기능 신규 개발. 10개월 간 현업 인사팀과 개발팀 사이에서 요구사항을 조율 및 개발 일정을 조정했습니다.</div>
+              <div class="project-period">Sep 2024 — Jun 2025</div>
+              <div class="project-title">e-HR New Feature Development</div>
+              <div class="project-desc">Developed payroll calculation logic by work type (flexible/salary/hourly), remote work implementation, and salary change history logging for audits. Coordinated requirements and development schedules between the HR team and development team over 10 months.</div>
             </div>
             <div class="project-timeline-item">
-              <div class="project-period">2025.03 — 2025.10</div>
-              <div class="project-title">SAP S/4HANA 업그레이드</div>
-              <div class="project-desc"><strong>업체 선정 평가 템플릿 신규 설계</strong>(이후 다른 프로젝트 표준으로 재사용). 현업-인도 개발팀 브릿지 역할로 요구사항 및 오류내용을 영어로 20건 이상 왕복 조율. 신규 권한 설계 및 권한 수정 담당.</div>
+              <div class="project-period">Mar 2025 — Oct 2025</div>
+              <div class="project-title">SAP S/4HANA Upgrade</div>
+              <div class="project-desc"><strong>Designed vendor evaluation template from scratch</strong> (later reused as a standard for other projects). Served as a bridge between business users and the Indian development team, coordinating 20+ requirements and bug reports in English. Designed new authorization roles and managed access modifications.</div>
             </div>
             <div class="project-timeline-item">
-              <div class="project-period">2025.12 — 진행 중</div>
-              <div class="project-title">IFRS 원장 도입</div>
-              <div class="project-desc">인도 개발팀과 영어 기반 주간 회의 진행, TR 이관(개발 → 운영) 처리 및 신규 권한 설계 담당.</div>
+              <div class="project-period">Dec 2025 — Ongoing</div>
+              <div class="project-title">IFRS Ledger Implementation</div>
+              <div class="project-desc">Conducting weekly meetings with the Indian development team in English. Handling TR transport (Dev → Prod) and designing new authorization roles.</div>
             </div>
           </div>
         </div>
@@ -328,9 +331,9 @@
             <span class="badge badge-live">● LIVE</span>
           </div>
           <p class="project-motive">
-            업무 프로세스를 문서화하는 과정에서 반복적으로 소요되는 시간을 줄이고자
-            제작하게 되었습니다. 프로세스를 입력하면 다이어그램과 Word 매뉴얼이
-            자동으로 생성됩니다.
+            I built this to reduce the repetitive time spent documenting business processes.
+            Enter a process description and it automatically generates
+            diagrams and Word manuals.
           </p>
           <div class="project-tags">
             <span class="tag">React 18</span>
@@ -347,9 +350,9 @@
             <h3>Code Review Pipeline</h3>
           </div>
           <p class="project-motive">
-            AI 자동화 개발 중 코드 품질에서 놓치는 부분이 반복 발생하여,
-            보안·성능·품질을 4개 AI 에이전트가 자동 리뷰하는 시스템을
-            개발하게 되었습니다.
+            Recurring quality gaps during AI automation development led me
+            to build a system where 4 AI agents automatically review
+            security, performance, and code quality.
           </p>
           <div class="project-tags">
             <span class="tag">Python</span>
@@ -366,9 +369,9 @@
             <h3>AI Consulting Agent</h3>
           </div>
           <p class="project-motive">
-            MS 자동화 방안 검토 시 여러 AI에 개별 문의하는 것이 비효율적이라 느꼈고,
-            3종 AI를 동시에 활용하여 비교 검증할 수 있는 컨설팅 도구를
-            개발하게 되었습니다.
+            When evaluating MS automation solutions, querying multiple AIs individually
+            felt inefficient. I built a consulting tool that leverages 3 AIs simultaneously
+            for comparative analysis.
           </p>
           <div class="project-tags">
             <span class="tag">Claude Code Skills</span>
@@ -385,8 +388,8 @@
             <h3>Notion Notes</h3>
           </div>
           <p class="project-motive">
-            학습한 내용을 AI와의 대화를 통해 정리하고, 유용한 답변만 골라
-            Notion에 바로 저장하는 흐름을 구현하고 싶어 개발하게 되었습니다.
+            I wanted to organize what I learned through AI conversations
+            and save only the useful responses directly to Notion.
           </p>
           <div class="project-tags">
             <span class="tag">FastAPI</span>
@@ -405,7 +408,7 @@
   <!-- Contact -->
   <section class="section" id="contact">
     <div class="container">
-      <h2 class="section-title">연락처</h2>
+      <h2 class="section-title">Contact</h2>
       <div class="contact-grid fade-in">
         <a href="mailto:thqltm222@naver.com" class="contact-item">
           <div class="contact-icon">✉️</div>
@@ -426,6 +429,6 @@
     <p>&copy; 2026 Soyeon Ahn</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="../script.js"></script>
 </body>
 </html>

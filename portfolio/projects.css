@@ -348,14 +348,15 @@
 .challenge-label {
   flex-shrink: 0;
   display: inline-block;
-  padding: 3px 10px;
+  padding: 3px 12px;
   border-radius: 6px;
   font-size: 0.75rem;
   font-weight: 700;
   background: #fee2e2;
   color: #dc2626;
-  min-width: 52px;
+  min-width: 62px;
   text-align: center;
+  white-space: nowrap;
 }
 
 .challenge-label-solve {
