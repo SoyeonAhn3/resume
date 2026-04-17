@@ -617,9 +617,10 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  margin-top: 16px;
-  padding: 8px 16px;
-  font-size: 0.82rem;
+  margin-top: 0;
+  margin-bottom: 12px;
+  padding: 10px 20px;
+  font-size: 0.88rem;
   font-weight: 700;
   color: #fff;
   background: linear-gradient(135deg, var(--primary), var(--primary-light));
@@ -635,10 +636,12 @@ a {
 }
 
 .btn-tiny.btn-powerbi {
-  padding: 2px 10px;
-  font-size: 0.7rem;
+  padding: 4px 12px;
+  font-size: 0.72rem;
   font-weight: 600;
   margin-top: 0;
+  margin-left: 8px;
+  display: inline-block;
   vertical-align: middle;
   background: rgba(79, 70, 229, 0.15);
   color: var(--primary);
@@ -772,20 +775,25 @@ a {
 .project-item-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  gap: 12px;
   margin-bottom: 16px;
+  flex-wrap: wrap;
 }
 
 .project-title-row {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-shrink: 1;
+  min-width: 0;
 }
 
 .project-timeline-item .project-title {
   font-size: 1.05rem;
   font-weight: 700;
   color: var(--text);
+  word-break: keep-all;
 }
 
 .project-badge {
@@ -795,6 +803,8 @@ a {
   padding: 2px 10px;
   border-radius: 12px;
   letter-spacing: 0.02em;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .project-badge.badge-done {
@@ -838,7 +848,9 @@ a {
 }
 
 details.project-role-section {
-  margin-top: 12px;
+  margin-top: 14px;
+  border-top: 1px solid rgba(79, 70, 229, 0.1);
+  padding-top: 12px;
 }
 
 details.project-role-section summary.project-detail-label {
@@ -849,7 +861,18 @@ details.project-role-section summary.project-detail-label {
   user-select: none;
   list-style: none;
   margin-bottom: 0;
-  transition: color 0.2s;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--primary);
+  background: rgba(79, 70, 229, 0.1);
+  padding: 3px 12px;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+  transition: background 0.2s;
+}
+
+details.project-role-section summary.project-detail-label:hover {
+  background: rgba(79, 70, 229, 0.18);
 }
 
 details.project-role-section summary.project-detail-label::-webkit-details-marker {
@@ -857,17 +880,17 @@ details.project-role-section summary.project-detail-label::-webkit-details-marke
 }
 
 details.project-role-section summary.project-detail-label::after {
-  content: "▸";
-  font-size: 0.7em;
+  content: "▼";
+  font-size: 0.6em;
   transition: transform 0.2s;
 }
 
 details[open].project-role-section summary.project-detail-label::after {
-  transform: rotate(90deg);
+  content: "▲";
 }
 
 details[open].project-role-section .project-role-list {
-  margin-top: 6px;
+  margin-top: 10px;
 }
 
 details[open].project-role-section .ai-step-desc {
