@@ -20,10 +20,10 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#workflow-generator">Workflow Generator</a></li>
-        <li><a href="#code-review-pipeline">Code Review</a></li>
-        <li><a href="#ai-consulting">AI Consulting</a></li>
-        <li><a href="#notion-notes">Notion Notes</a></li>
+        <li><a href="#stock-analyzer">Stock Analyzer</a></li>
+        <li><a href="#workflow-generator">Workflow</a></li>
+        <li><a href="#production-monitor">Production Monitor</a></li>
+        <li><a href="#other-projects">Others</a></li>
         <li><a href="index.html" class="nav-back">&larr; Portfolio</a></li>
         <li>
           <a href="../projects.html" class="nav-lang" title="한국어로 보기">KO</a>
@@ -39,33 +39,170 @@
       <p class="proj-hero-desc fade-in">
         Projects I designed and built to automate repetitive tasks.
       </p>
+      <div class="proj-quickjump fade-in">
+        <div class="proj-quickjump-group">
+          <span class="proj-quickjump-label">Featured</span>
+          <a href="#stock-analyzer" class="proj-quickjump-link">AI Stock Analyzer</a>
+          <a href="#workflow-generator" class="proj-quickjump-link">Workflow Generator</a>
+          <a href="#production-monitor" class="proj-quickjump-link">AI Production Monitor</a>
+        </div>
+        <div class="proj-quickjump-group">
+          <span class="proj-quickjump-label">Other</span>
+          <a href="#ai-consulting" class="proj-quickjump-link">AI Consulting Agent</a>
+          <a href="#code-review-pipeline" class="proj-quickjump-link">Code Review Pipeline</a>
+          <a href="#notion-notes" class="proj-quickjump-link">Notion Notes</a>
+        </div>
+      </div>
     </div>
   </header>
 
   <!-- ============================== -->
-  <!-- 1. Workflow Generator           -->
+  <!-- 1. AI Stock Analyzer (FEATURED) -->
   <!-- ============================== -->
-  <section class="proj-section" id="workflow-generator">
+  <section class="proj-section" id="stock-analyzer">
     <div class="container">
 
       <div class="proj-title-row fade-in">
-        <h2 class="proj-name">Workflow Generator</h2>
-        <a href="https://processflow-generator.netlify.app" target="_blank" rel="noopener" class="btn btn-small btn-primary">Live Demo</a>
-        <a href="https://github.com/SoyeonAhn3/Workflow_Generator" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+        <h2 class="proj-name">AI Stock Analyzer</h2>
+        <span class="badge badge-full">Full-Stack</span>
+        <a href="https://github.com/SoyeonAhn3/stock-analyzer" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
       </div>
       <p class="proj-summary fade-in">
-        A web app that automatically generates diagrams and Word manuals from business process descriptions
+        A multi-agent stock analysis system where 5 AI agents analyze news, financials, and macro indicators in parallel, cross-validate each other, and deliver investment recommendations.
       </p>
 
       <!-- Motivation -->
       <div class="proj-block fade-in">
         <h3 class="proj-block-title">Motivation</h3>
         <p class="proj-block-text">
-          I noticed that visualizing business processes and managing them as documents
-          was tedious and time-consuming at work.
-          <br>
-          I started development with the idea that a tool which automatically creates
-          diagrams and manuals from text input could significantly reduce the documentation burden.
+          When analyzing stocks, having to check prices, financials, news, and macro data across multiple platforms felt inefficient.
+          Rather than querying a single AI, I wanted to design and implement a multi-agent architecture where 5 specialized agents
+          analyze from different perspectives and cross-validate each other's findings.
+        </p>
+      </div>
+
+      <!-- Key Features -->
+      <div class="proj-block fade-in">
+        <h3 class="proj-block-title">Key Features</h3>
+        <div class="feat-grid">
+          <div class="feat-card">
+            <div class="feat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h4>Quick Look</h4>
+            <p>Instantly retrieve real-time prices, candle charts, financial metrics, and technical indicators (MACD, Bollinger Bands) within 1 second.</p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h4>5-Agent Deep Analysis</h4>
+            <p>News, Data, Macro, Cross-Validator, and Analyst agents run in parallel, cross-validate findings, and deliver BUY/HOLD/SELL recommendations.</p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            </div>
+            <h4>7 APIs + Fallback Chain</h4>
+            <p>Integrates yfinance, Finnhub, Twelve Data, Finviz, FMP, FRED, and Claude API. Automatically tries alternative sources when the primary API fails.</p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h4>Anti-Hallucination Design</h4>
+            <p>All numbers come from APIs only; AI handles interpretation only. Role separation ensures reliability in the financial domain.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Architecture -->
+      <div class="proj-block fade-in">
+        <h3 class="proj-block-title">Architecture</h3>
+        <div class="arch-flow">
+          <div class="arch-node">
+            <div class="arch-node-label">React + TS</div>
+            <div class="arch-node-desc">User Interface</div>
+          </div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node arch-node-ai">
+            <div class="arch-node-label">FastAPI</div>
+            <div class="arch-node-desc">API Router + Cache</div>
+          </div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node">
+            <div class="arch-node-label">5 AI Agents</div>
+            <div class="arch-node-desc">Parallel + Cross-Validation</div>
+          </div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node arch-node-output">
+            <div class="arch-node-label">Output</div>
+            <div class="arch-node-desc">BUY / HOLD / SELL</div>
+          </div>
+        </div>
+        <div class="arch-storage">
+          <span class="arch-storage-tag">yfinance</span>
+          <span class="arch-storage-tag">Finnhub</span>
+          <span class="arch-storage-tag">Twelve Data</span>
+          <span class="arch-storage-tag">FRED</span>
+          <span class="arch-storage-tag">SQLite</span>
+        </div>
+      </div>
+
+      <!-- Challenge -->
+      <div class="proj-block fade-in">
+        <h3 class="proj-block-title">Problem Solving</h3>
+        <div class="challenge-card">
+          <div class="challenge-row">
+            <span class="challenge-label">Problem</span>
+            <p>Frequent 403 errors from external data APIs' free plan limits causing analysis to break</p>
+          </div>
+          <div class="challenge-row">
+            <span class="challenge-label challenge-label-solve">Solution</span>
+            <p>Built a multi-fallback chain (yfinance → Finviz → FMP) and applied Graceful Degradation per agent, so the remaining analysis continues even when one source fails</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech Stack -->
+      <div class="proj-footer fade-in">
+        <div class="proj-tags">
+          <span class="tag">React</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">Claude API</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">yfinance</span>
+          <span class="tag">Lightweight Charts</span>
+          <span class="tag">asyncio</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================== -->
+  <!-- 2. Workflow Generator (FEATURED) -->
+  <!-- ============================== -->
+  <section class="proj-section proj-section-alt" id="workflow-generator">
+    <div class="container">
+
+      <div class="proj-title-row fade-in">
+        <h2 class="proj-name">Workflow Generator</h2>
+        <a href="https://processflow-generator.netlify.app" target="_blank" rel="noopener" class="btn-live-demo"><span class="btn-live-dot"></span>Live Demo</a>
+        <a href="https://github.com/SoyeonAhn3/Workflow_Generator" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+      </div>
+      <p class="proj-summary fade-in">
+        A web app that automatically generates diagrams and Word manuals from business process descriptions.
+      </p>
+
+      <!-- Motivation -->
+      <div class="proj-block fade-in">
+        <h3 class="proj-block-title">Motivation</h3>
+        <p class="proj-block-text">
+          Visualizing business processes and managing them as documents was time-consuming and tedious.
+          I thought if there was a tool that could automatically create diagrams and manuals from text input,
+          it would significantly reduce the documentation burden.
         </p>
       </div>
 
@@ -90,28 +227,28 @@
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
             </div>
             <h4>AI Auto-Structuring</h4>
-            <p>Claude API analyzes text-based process descriptions and automatically converts them into a structured format of departments, groups, processes, and steps.</p>
+            <p>Claude API analyzes text descriptions and automatically converts them into department, group, process, and step structures.</p>
           </div>
           <div class="feat-card">
             <div class="feat-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 3v18"/></svg>
             </div>
             <h4>SwimLane + LinearFlow</h4>
-            <p>Renders SwimLane diagrams showing departmental roles at a glance and LinearFlow diagrams showing step-by-step processes as SVG.</p>
+            <p>Renders SwimLane diagrams showing department roles at a glance and LinearFlow diagrams showing step-by-step flows in SVG.</p>
           </div>
           <div class="feat-card">
             <div class="feat-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
             </div>
-            <h4>Auto Word Manual Generation</h4>
-            <p>Generates .docx documents with cover page, summary table, step-by-step descriptions, and images directly in the browser.</p>
+            <h4>Auto Word Manual</h4>
+            <p>Generates .docx documents with cover page, summary table, step details, and images directly in the browser.</p>
           </div>
           <div class="feat-card">
             <div class="feat-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 9 2 12 5 15"/><polyline points="9 5 12 2 15 5"/><polyline points="15 19 12 22 9 19"/><polyline points="19 9 22 12 19 15"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/></svg>
             </div>
             <h4>Drag & Drop Editing</h4>
-            <p>Step reordering via @dnd-kit with parallel branching (colIndex) support for intuitive editing of complex processes.</p>
+            <p>Step reordering with @dnd-kit, parallel branching (colIndex) support for intuitive editing of complex processes.</p>
           </div>
         </div>
       </div>
@@ -122,7 +259,7 @@
         <div class="arch-flow">
           <div class="arch-node">
             <div class="arch-node-label">User Input</div>
-            <div class="arch-node-desc">Text / Manual Entry</div>
+            <div class="arch-node-desc">Text / Direct Input</div>
           </div>
           <div class="arch-arrow"></div>
           <div class="arch-node arch-node-ai">
@@ -152,16 +289,16 @@
         <div class="challenge-card">
           <div class="challenge-row">
             <span class="challenge-label">Problem</span>
-            <p>When users describe a process as text, AI structures it — but real workflows often involve parallel flows like "A and B run simultaneously," which a simple sequential list couldn't represent</p>
+            <p>AI structures text into sequential steps, but real workflows often have parallel flows like "A and B run simultaneously" that can't be represented as simple lists</p>
           </div>
           <div class="challenge-row">
             <span class="challenge-label challenge-label-solve">Solution</span>
-            <p>Assigned a colIndex (column number) to each step so that steps in the same column are automatically treated as parallel groups, and designed @dnd-kit drag-and-drop to intuitively edit order and branching</p>
+            <p>Assigned colIndex (column number) to each step to auto-group same-column steps as parallel branches, with @dnd-kit drag-and-drop for intuitive order and branch editing</p>
           </div>
         </div>
       </div>
 
-      <!-- Tech Stack + Links -->
+      <!-- Tech Stack -->
       <div class="proj-footer fade-in">
         <div class="proj-tags">
           <span class="tag">React 18</span>
@@ -179,41 +316,28 @@
   </section>
 
   <!-- ============================== -->
-  <!-- 2. Code Review Pipeline         -->
+  <!-- 3. AI Production Monitor (FEATURED) -->
   <!-- ============================== -->
-  <section class="proj-section proj-section-alt" id="code-review-pipeline">
+  <section class="proj-section" id="production-monitor">
     <div class="container">
 
       <div class="proj-title-row fade-in">
-        <h2 class="proj-name">Code Review Pipeline</h2>
-        <a href="https://github.com/SoyeonAhn3/code-review-pipeline" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+        <h2 class="proj-name">AI Production Monitor</h2>
+        <span class="badge badge-progress">🚧 In Progress</span>
+        <a href="https://github.com/SoyeonAhn3/ai_production_monitor" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
       </div>
       <p class="proj-summary fade-in">
-        A multi-agent system where 4 AI agents sequentially review and score code
+        A fully automated system that monitors production data hourly, detects anomalies, and uses AI to analyze root causes and send alerts.
       </p>
 
       <!-- Motivation -->
       <div class="proj-block fade-in">
         <h3 class="proj-block-title">Motivation</h3>
         <p class="proj-block-text">
-          While rapidly iterating on AI automation projects, I felt the need to systematically
-          manage security and performance checkpoints.
-          <br>
-          I developed this system with the idea that having specialized reviewers for security,
-          performance, and code quality could prevent these issues proactively.
+          Working in manufacturing IT operations, I realized the need for a system that quickly detects production anomalies
+          and enables immediate response. I designed an End-to-End automation system where AI interprets the root cause of anomalies
+          and detailed analysis can be reviewed through Power BI dashboards.
         </p>
-      </div>
-
-      <!-- Demo Video -->
-      <div class="proj-demo fade-in">
-        <video
-          src="https://github.com/user-attachments/assets/a813bcd0-cd42-4e08-9fa0-9d1b662703f4"
-          controls
-          muted
-          playsinline
-          preload="metadata"
-          class="proj-video"
-        ></video>
       </div>
 
       <!-- Key Features -->
@@ -224,302 +348,29 @@
             <div class="feat-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
-            <h4>4-Agent Sequential Analysis</h4>
-            <p>Security, Performance, Code Quality, and Summary agents run in sequence, with each receiving the analysis results of previous agents as context.</p>
+            <h4>Config-driven Detection</h4>
+            <p>Detection rules defined in rules.json, executed by engine.js. 8 rules x 3 severity levels. Only modify rules to apply to new data.</p>
           </div>
           <div class="feat-card">
             <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/><path d="M7 12h10"/><path d="M12 7v10"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.57-3.25 3.92L12 22l-.75-12.08A4.001 4.001 0 0 1 12 2z"/><circle cx="12" cy="6" r="1"/></svg>
             </div>
-            <h4>Cross-Review</h4>
-            <p>Subsequent agents provide agree/caution/disagree opinions on previous agents' suggestions, delivering multi-perspective reviews.</p>
+            <h4>AI Agent Daily Report (Tool Use)</h4>
+            <p>AI autonomously queries and analyzes data with 4 tools. Auto-adjusts report depth: brief summary on quiet days, detailed analysis + weekly comparison on critical days.</p>
           </div>
           <div class="feat-card">
             <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
             </div>
-            <h4>100-Point Scoring</h4>
-            <p>Calculates scores based on Critical (-15), Warning (-5), Info (-1) criteria, and automatically suggests Top 3 fix priorities.</p>
+            <h4>4-Level Security Strategy</h4>
+            <p>Provides basic/masking/template/local LLM options so organizations can adjust external data transmission levels to match their security policies.</p>
           </div>
           <div class="feat-card">
             <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
             </div>
-            <h4>GitHub PR Integration</h4>
-            <p>Enter a PR URL to automatically extract and review changed file diffs. Direct file upload is also supported.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Architecture -->
-      <div class="proj-block fade-in">
-        <h3 class="proj-block-title">Architecture</h3>
-        <div class="arch-pipeline">
-          <div class="arch-pipe-node">
-            <span class="arch-pipe-num">Input</span>
-            <span class="arch-pipe-label">Code / PR URL / File</span>
-          </div>
-          <div class="arch-pipe-arrow"></div>
-          <div class="arch-pipe-node arch-pipe-agent">
-            <span class="arch-pipe-num">Agent 1</span>
-            <span class="arch-pipe-label">Security</span>
-          </div>
-          <div class="arch-pipe-arrow"></div>
-          <div class="arch-pipe-node arch-pipe-agent">
-            <span class="arch-pipe-num">Agent 2</span>
-            <span class="arch-pipe-label">Performance</span>
-          </div>
-          <div class="arch-pipe-arrow"></div>
-          <div class="arch-pipe-node arch-pipe-agent">
-            <span class="arch-pipe-num">Agent 3</span>
-            <span class="arch-pipe-label">Quality</span>
-          </div>
-          <div class="arch-pipe-arrow"></div>
-          <div class="arch-pipe-node arch-pipe-summary">
-            <span class="arch-pipe-num">Agent 4</span>
-            <span class="arch-pipe-label">Summary + Score</span>
-          </div>
-          <div class="arch-pipe-arrow"></div>
-          <div class="arch-pipe-node">
-            <span class="arch-pipe-num">Output</span>
-            <span class="arch-pipe-label">Report + Markdown</span>
-          </div>
-        </div>
-        <p class="arch-note">Each agent receives accumulated results from previous agents for cross-verification. Tool Use enforces JSON structure to minimize parsing failures.</p>
-      </div>
-
-      <!-- Challenge -->
-      <div class="proj-block fade-in">
-        <h3 class="proj-block-title">Problem Solving</h3>
-        <div class="challenge-card">
-          <div class="challenge-row">
-            <span class="challenge-label">Problem</span>
-            <p>With 4 agents running sequentially, a single failure would halt the entire pipeline, causing all remaining analysis results to be lost</p>
-          </div>
-          <div class="challenge-row">
-            <span class="challenge-label challenge-label-solve">Solution</span>
-            <p>Isolated each agent with try-except, logging failures via state.add_error() and automatically proceeding to the next agent — a Partial Failure architecture</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tech Stack + Links -->
-      <div class="proj-footer fade-in">
-        <div class="proj-tags">
-          <span class="tag">Python</span>
-          <span class="tag">Claude API</span>
-          <span class="tag">Tool Use</span>
-          <span class="tag">GitHub API</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ============================== -->
-  <!-- 3. AI Consulting Agent          -->
-  <!-- ============================== -->
-  <section class="proj-section" id="ai-consulting">
-    <div class="container">
-
-      <div class="proj-title-row fade-in">
-        <h2 class="proj-name">AI Consulting Agent</h2>
-        <a href="https://github.com/SoyeonAhn3/AI_Consulting" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
-      </div>
-      <p class="proj-summary fade-in">
-        A CLI consulting tool where 3 AIs simultaneously analyze and cross-verify MS automation solutions
-      </p>
-
-      <!-- Motivation -->
-      <div class="proj-block fade-in">
-        <h3 class="proj-block-title">Motivation</h3>
-        <p class="proj-block-text">
-          There were frequent requests for automation using the Microsoft ecosystem,
-          but with so many options — Power Automate, Office Script, Power Query, etc. —
-          it was difficult to determine which approach was most suitable.
-          I also felt the need to systematically document user requests and solutions,
-          which led me to build a tool that handles everything from requirement analysis
-          to solution comparison and deliverable generation in one go.
-        </p>
-      </div>
-
-      <!-- Demo Video -->
-      <div class="proj-demo fade-in">
-        <video
-          src="https://github.com/user-attachments/assets/b8f235e6-1404-4a89-b99d-ec10328bdd4d"
-          controls
-          muted
-          playsinline
-          preload="metadata"
-          class="proj-video"
-        ></video>
-      </div>
-
-      <!-- Key Features -->
-      <div class="proj-block fade-in">
-        <h3 class="proj-block-title">Key Features</h3>
-        <div class="feat-grid">
-          <div class="feat-card">
-            <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-            </div>
-            <h4>Quick / Deep Mode</h4>
-            <p>Quick mode provides fast results via Claude-only analysis. Deep mode delivers cross-verified results through parallel analysis by Claude + Codex + Gemini.</p>
-          </div>
-          <div class="feat-card">
-            <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg>
-            </div>
-            <h4>Re-consulting System</h4>
-            <p>Supports 3 types of re-consulting: condition change (A), solution change (B), and explanation request (C). Session state is file-managed so history is preserved.</p>
-          </div>
-          <div class="feat-card">
-            <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-            </div>
-            <h4>ROI Prediction</h4>
-            <p>Calculates ROI across 3 scenarios (conservative/neutral/aggressive) based on time spent before and after automation.</p>
-          </div>
-          <div class="feat-card">
-            <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-            </div>
-            <h4>Multiple Deliverables</h4>
-            <p>Automatically generates consulting reports (.txt), Excel reports (.xlsx), and Power Automate Flow design documents.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Architecture -->
-      <div class="proj-block fade-in">
-        <h3 class="proj-block-title">Architecture</h3>
-        <div class="arch-pipeline">
-          <div class="arch-pipe-node">
-            <span class="arch-pipe-num">Step 1</span>
-            <span class="arch-pipe-label">Requirement Parsing</span>
-          </div>
-          <div class="arch-pipe-arrow"></div>
-          <div class="arch-pipe-node">
-            <span class="arch-pipe-num">Step 2</span>
-            <span class="arch-pipe-label">Scope Gate</span>
-          </div>
-          <div class="arch-pipe-arrow"></div>
-          <div class="arch-pipe-node arch-pipe-agent">
-            <span class="arch-pipe-num">Step 3</span>
-            <span class="arch-pipe-label">AI Analysis (3-AI)</span>
-          </div>
-          <div class="arch-pipe-arrow"></div>
-          <div class="arch-pipe-node">
-            <span class="arch-pipe-num">Step 4</span>
-            <span class="arch-pipe-label">Risk 2-Pass</span>
-          </div>
-          <div class="arch-pipe-arrow"></div>
-          <div class="arch-pipe-node arch-pipe-output">
-            <span class="arch-pipe-num">Step 5</span>
-            <span class="arch-pipe-label">Deliverable Generation</span>
-          </div>
-        </div>
-        <p class="arch-note">Validates solution support via MS Learn auto-search. Deprecated products are automatically excluded through a Blocklist.</p>
-      </div>
-
-      <!-- Challenge -->
-      <div class="proj-block fade-in">
-        <h3 class="proj-block-title">Problem Solving</h3>
-        <div class="challenge-card">
-          <div class="challenge-row">
-            <span class="challenge-label">Problem</span>
-            <p>Response structures from Claude, Codex, and Gemini were all different, making comparison and integration impossible</p>
-          </div>
-          <div class="challenge-row">
-            <span class="challenge-label challenge-label-solve">Solution</span>
-            <p>Defined a common output schema, with a normalization retry on parse failure + automatic fallback to another AI when CLI call exceeds 120-second timeout</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tech Stack + Links -->
-      <div class="proj-footer fade-in">
-        <div class="proj-tags">
-          <span class="tag">Claude Code Skills</span>
-          <span class="tag">Codex CLI</span>
-          <span class="tag">Gemini CLI</span>
-          <span class="tag">Python</span>
-          <span class="tag">JSONL</span>
-          <span class="tag">Excel</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ============================== -->
-  <!-- 4. Notion Notes                 -->
-  <!-- ============================== -->
-  <section class="proj-section proj-section-alt" id="notion-notes">
-    <div class="container">
-
-      <div class="proj-title-row fade-in">
-        <h2 class="proj-name">Notion Notes</h2>
-        <a href="https://github.com/SoyeonAhn3/Notion_Notes" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
-      </div>
-      <p class="proj-summary fade-in">
-        A web app that analyzes study materials with AI and selectively saves useful responses to Notion
-      </p>
-
-      <!-- Motivation -->
-      <div class="proj-block fade-in">
-        <h3 class="proj-block-title">Motivation</h3>
-        <p class="proj-block-text">
-          I wanted to organize what I learned through AI conversations
-          and save only the useful responses directly to Notion.
-          Manually copying AI responses and pasting them into Notion felt inefficient,
-          so I built a tool that handles everything from file upload to analysis and saving in one place.
-        </p>
-      </div>
-
-      <!-- Demo Video -->
-      <div class="proj-demo fade-in">
-        <video
-          src="https://github.com/user-attachments/assets/d3dca60c-eb31-4cc4-b62e-549023e4d8b8"
-          controls
-          muted
-          playsinline
-          preload="metadata"
-          class="proj-video"
-        ></video>
-      </div>
-
-      <!-- Key Features -->
-      <div class="proj-block fade-in">
-        <h3 class="proj-block-title">Key Features</h3>
-        <div class="feat-grid">
-          <div class="feat-card">
-            <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-            </div>
-            <h4>Multi-File Upload</h4>
-            <p>Drag and drop PDF, image, Word, and text files. Processes them via Gemini File API to save tokens.</p>
-          </div>
-          <div class="feat-card">
-            <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-            </div>
-            <h4>Multi-AI Chat</h4>
-            <p>Freely switch between Gemini and OpenAI models for multi-turn conversations. UI adapts automatically based on API key availability.</p>
-          </div>
-          <div class="feat-card">
-            <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-            </div>
-            <h4>Selective Saving</h4>
-            <p>Select only useful AI responses via checkboxes to save to Notion. Save just what you need, not everything.</p>
-          </div>
-          <div class="feat-card">
-            <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-            </div>
-            <h4>Notion Hierarchy Integration</h4>
-            <p>Supports Page &rarr; Database &rarr; Item hierarchy. Create new items or append content to existing ones.</p>
+            <h4>Power BI Dashboard</h4>
+            <p>3-page layout: real-time status, AI insights, long-term trends. Utilizes Key Influencers, Smart Narrative, and other AI visuals.</p>
           </div>
         </div>
       </div>
@@ -529,40 +380,109 @@
         <h3 class="proj-block-title">Architecture</h3>
         <div class="arch-flow">
           <div class="arch-node">
-            <div class="arch-node-label">File Upload</div>
-            <div class="arch-node-desc">PDF / Image / Word</div>
+            <div class="arch-node-label">Google Sheets</div>
+            <div class="arch-node-desc">Production Data</div>
           </div>
           <div class="arch-arrow"></div>
           <div class="arch-node arch-node-ai">
-            <div class="arch-node-label">AI Analysis</div>
-            <div class="arch-node-desc">Gemini / OpenAI</div>
+            <div class="arch-node-label">n8n</div>
+            <div class="arch-node-desc">Workflow Orchestration</div>
           </div>
           <div class="arch-arrow"></div>
           <div class="arch-node">
-            <div class="arch-node-label">Chat + Select</div>
-            <div class="arch-node-desc">Multi-turn + Checkbox</div>
+            <div class="arch-node-label">JS + Claude API</div>
+            <div class="arch-node-desc">Detection + AI Analysis</div>
           </div>
           <div class="arch-arrow"></div>
           <div class="arch-node arch-node-output">
-            <div class="arch-node-label">Notion Save</div>
-            <div class="arch-node-desc">Page / DB / Item</div>
+            <div class="arch-node-label">Output</div>
+            <div class="arch-node-desc">Gmail Alert + Power BI</div>
           </div>
         </div>
         <div class="arch-storage">
-          <span class="arch-storage-tag">FastAPI Backend</span>
-          <span class="arch-storage-tag">Gemini File API</span>
-          <span class="arch-storage-tag">Notion API</span>
+          <span class="arch-storage-tag">n8n Self-hosted</span>
+          <span class="arch-storage-tag">Claude API</span>
+          <span class="arch-storage-tag">Gmail</span>
+          <span class="arch-storage-tag">Power BI</span>
         </div>
       </div>
 
-      <!-- Tech Stack + Links -->
+      <!-- Tech Stack -->
       <div class="proj-footer fade-in">
         <div class="proj-tags">
-          <span class="tag">FastAPI</span>
-          <span class="tag">OpenAI</span>
-          <span class="tag">Notion API</span>
-          <span class="tag">Vanilla JS</span>
-          <span class="tag">pdfplumber</span>
+          <span class="tag">n8n</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Claude API</span>
+          <span class="tag">Google Sheets</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">Gmail</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================== -->
+  <!-- OTHER PROJECTS                  -->
+  <!-- ============================== -->
+  <section class="proj-section proj-section-alt" id="other-projects">
+    <div class="container">
+      <h2 class="proj-name fade-in" style="margin-bottom: 24px;">Other Projects</h2>
+
+      <div class="other-projects-grid">
+        <!-- AI Consulting Agent -->
+        <div class="other-project-card fade-in" id="ai-consulting">
+          <h3 class="other-project-title">AI Consulting Agent</h3>
+          <p class="other-project-desc">
+            A CLI consulting tool where Claude, Codex, and Gemini simultaneously analyze and cross-validate MS automation solutions.
+            Normalizes different LLM responses with a common output schema, calculates ROI across 3 scenarios,
+            and auto-generates consulting reports, Excel reports, and Power Automate Flow designs.
+          </p>
+          <div class="other-project-footer">
+            <div class="proj-tags">
+              <span class="tag">Claude Code Skills</span>
+              <span class="tag">Multi-AI</span>
+              <span class="tag">CLI</span>
+            </div>
+            <a href="https://github.com/SoyeonAhn3/AI_Consulting" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Code Review Pipeline -->
+        <div class="other-project-card fade-in" id="code-review-pipeline">
+          <h3 class="other-project-title">Code Review Pipeline</h3>
+          <p class="other-project-desc">
+            A multi-agent system where 4 AI agents sequentially review code and assign scores.
+            Runs in Security → Performance → Quality → Summary order,
+            with subsequent agents performing cross-review (agree/caution/disagree) on prior analysis.
+            100-point scoring with Critical(-15), Warning(-5), Info(-1) and auto-suggested Top 3 fix priorities.
+          </p>
+          <div class="other-project-footer">
+            <div class="proj-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Claude API</span>
+              <span class="tag">Multi-Agent</span>
+            </div>
+            <a href="https://github.com/SoyeonAhn3/code-review-pipeline" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Notion Notes -->
+        <div class="other-project-card fade-in" id="notion-notes">
+          <h3 class="other-project-title">Notion Notes</h3>
+          <p class="other-project-desc">
+            A web app that analyzes study materials with AI and auto-saves only the useful responses to Notion.
+            Upload PDF, images, or Word files and Gemini/OpenAI analyzes them.
+            Select useful responses via checkboxes during conversation and save to Notion's Page → Database → Item hierarchy.
+          </p>
+          <div class="other-project-footer">
+            <div class="proj-tags">
+              <span class="tag">FastAPI</span>
+              <span class="tag">Gemini</span>
+              <span class="tag">Notion API</span>
+            </div>
+            <a href="https://github.com/SoyeonAhn3/Notion_Notes" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+          </div>
         </div>
       </div>
 
