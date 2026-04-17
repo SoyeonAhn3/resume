@@ -166,7 +166,7 @@ a {
 
 .hero-greeting {
   font-size: 1.1rem;
-  color: var(--primary);
+  color: #8b7fc7;
   font-weight: 600;
   margin-bottom: 12px;
 }
@@ -563,6 +563,7 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  align-items: start;
 }
 
 .whatido-card {
@@ -633,33 +634,57 @@ a {
   color: #fff;
 }
 
+.btn-tiny.btn-powerbi {
+  padding: 2px 10px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-top: 0;
+  vertical-align: middle;
+  background: rgba(79, 70, 229, 0.15);
+  color: var(--primary);
+  box-shadow: none;
+}
+
+.btn-tiny.btn-powerbi:hover {
+  background: rgba(79, 70, 229, 0.25);
+  color: var(--primary);
+  box-shadow: none;
+  transform: none;
+}
+
 /* ===== Dashboard List (What I Do - Data Viz) ===== */
 .whatido-dashboard-list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
   margin-bottom: 20px;
 }
 
 .whatido-dashboard-item {
-  padding: 14px 16px;
-  background: var(--bg-alt);
-  border-radius: var(--radius-sm);
-  border-left: 3px solid var(--primary);
+  padding: 24px 28px;
+  background: var(--bg);
+  border-radius: var(--radius);
+  border-left: 4px solid var(--primary);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s;
+}
+
+.whatido-dashboard-item:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .whatido-dashboard-name {
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: var(--text);
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .whatido-dashboard-item p {
-  font-size: 0.83rem;
-  color: var(--text-secondary);
+  font-size: 0.88rem;
+  color: var(--text);
   line-height: 1.6;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .whatido-dashboard-result {
@@ -669,7 +694,29 @@ a {
   color: var(--primary);
 }
 
-/* ===== AI Steps (What I Do - AI) ===== */
+.dashboard-sub-section {
+  margin-top: 12px;
+}
+
+.dashboard-sub-label {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--primary);
+  background: rgba(79, 70, 229, 0.1);
+  padding: 1px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.dashboard-sub-section p {
+  margin-bottom: 0;
+  padding-left: 2px;
+}
+
+/* ===== AI Steps (What I Do - AI & Automation) ===== */
 .ai-steps {
   display: flex;
   flex-direction: column;
@@ -677,23 +724,29 @@ a {
 }
 
 .ai-step {
-  padding: 14px 16px;
-  background: var(--bg-alt);
-  border-radius: var(--radius-sm);
-  border-left: 3px solid var(--primary);
+  padding: 24px 28px;
+  background: var(--bg);
+  border-radius: var(--radius);
+  border-left: 4px solid var(--primary);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s;
+}
+
+.ai-step:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .ai-step-title {
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: var(--text);
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 
 .ai-step-desc {
-  font-size: 0.83rem;
-  color: var(--text-secondary);
-  line-height: 1.7;
+  font-size: 0.88rem;
+  color: var(--text);
+  line-height: 1.8;
 }
 
 /* ===== Project Timeline List (What I Do - IT Projects) ===== */
@@ -704,24 +757,145 @@ a {
 }
 
 .project-timeline-item {
-  padding: 14px 16px;
-  background: var(--bg-alt);
-  border-radius: var(--radius-sm);
-  border-left: 3px solid var(--primary);
+  padding: 24px 28px;
+  background: var(--bg);
+  border-radius: var(--radius);
+  border-left: 4px solid var(--primary);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s;
 }
 
-.project-timeline-item .project-period {
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--primary);
-  margin-bottom: 2px;
+.project-timeline-item:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.project-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .project-timeline-item .project-title {
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: var(--text);
-  margin-bottom: 6px;
+}
+
+.project-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: 12px;
+  letter-spacing: 0.02em;
+}
+
+.project-badge.badge-done {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.project-badge.badge-ongoing {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.project-timeline-item .project-period {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.project-detail {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+  align-items: baseline;
+}
+
+.project-detail-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  min-width: 72px;
+  flex-shrink: 0;
+}
+
+.project-detail-value {
+  font-size: 0.88rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+details.project-role-section {
+  margin-top: 12px;
+}
+
+details.project-role-section summary.project-detail-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  margin-bottom: 0;
+  transition: color 0.2s;
+}
+
+details.project-role-section summary.project-detail-label::-webkit-details-marker {
+  display: none;
+}
+
+details.project-role-section summary.project-detail-label::after {
+  content: "▸";
+  font-size: 0.7em;
+  transition: transform 0.2s;
+}
+
+details[open].project-role-section summary.project-detail-label::after {
+  transform: rotate(90deg);
+}
+
+details[open].project-role-section .project-role-list {
+  margin-top: 6px;
+}
+
+details[open].project-role-section .ai-step-desc {
+  margin-top: 6px;
+}
+
+.project-role-list {
+  list-style: none;
+  padding-left: 20px;
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--text);
+  line-height: 1.8;
+}
+
+.project-role-list li {
+  margin-bottom: 2px;
+  position: relative;
+  padding-left: 6px;
+}
+
+.project-role-list li::before {
+  content: "•";
+  position: absolute;
+  left: -14px;
+  color: var(--primary);
+  font-size: 1.1em;
+  font-weight: 700;
 }
 
 .project-timeline-item .project-desc {
