@@ -388,7 +388,32 @@
   <section class="section section-alt" id="projects">
     <div class="container">
       <h2 class="section-title">Side Projects</h2>
+
+      <!-- FEATURED -->
+      <div class="projects-subtitle">Featured</div>
       <div class="projects-grid">
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <h3>AI Stock Analyzer</h3>
+            <span class="badge badge-full">Full-Stack</span>
+          </div>
+          <p class="project-motive">
+            멀티에이전트 AI 아키텍처를 실험하기 위해 개발한 미국 주식 분석 시스템입니다.
+            5개 AI 에이전트가 뉴스·재무·거시경제를 병렬 분석하고 교차 검증하여
+            매수/보유/매도 의견을 제시합니다.
+          </p>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Claude API</span>
+            <span class="tag">Multi-Agent</span>
+            <span class="tag">TypeScript</span>
+          </div>
+          <div class="project-links">
+            <a href="projects.html#stock-analyzer" class="btn btn-small btn-primary">View Details</a>
+            <a href="https://github.com/SoyeonAhn3/stock-analyzer" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+          </div>
+        </div>
         <div class="project-card fade-in">
           <div class="project-header">
             <h3>Workflow Generator</h3>
@@ -411,58 +436,87 @@
         </div>
         <div class="project-card fade-in">
           <div class="project-header">
-            <h3>Code Review Pipeline</h3>
+            <h3>AI Production Monitor</h3>
+            <span class="badge badge-progress">🚧 개발 중</span>
           </div>
           <p class="project-motive">
-            AI 자동화 개발 중 코드 품질에서 놓치는 부분이 반복 발생하여,
-            보안·성능·품질을 4개 AI 에이전트가 자동 리뷰하는 시스템을
-            개발하게 되었습니다.
+            제조 현장의 생산 KPI(산출량·효율·불량률)를 자동 모니터링하고,
+            이상 징후 발생 시 AI가 원인을 분석하여 알림을 보내는 시스템입니다.
           </p>
           <div class="project-tags">
-            <span class="tag">Python</span>
+            <span class="tag">n8n</span>
             <span class="tag">Claude API</span>
-            <span class="tag">Multi-Agent</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">Google Sheets</span>
           </div>
           <div class="project-links">
-            <a href="projects.html#code-review-pipeline" class="btn btn-small btn-primary">View Details</a>
-            <a href="https://github.com/SoyeonAhn3/code-review-pipeline" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+            <a href="projects.html#production-monitor" class="btn btn-small btn-primary">View Details</a>
+            <a href="https://github.com/SoyeonAhn3/ai_production_monitor" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
           </div>
         </div>
-        <div class="project-card fade-in">
-          <div class="project-header">
-            <h3>AI Consulting Agent</h3>
+      </div>
+
+      <!-- OTHER PROJECTS -->
+      <div class="projects-subtitle other">Other Projects</div>
+      <div class="projects-compact-list">
+        <div class="project-compact fade-in">
+          <div class="project-compact-info" onclick="this.parentElement.querySelector('.project-compact-detail').classList.toggle('open')">
+            <span class="project-compact-name">AI Consulting Agent</span>
+            <span class="project-compact-desc">3종 AI 동시 비교 검증 컨설팅 도구</span>
           </div>
-          <p class="project-motive">
-            MS 자동화 방안 검토 시 여러 AI에 개별 문의하는 것이 비효율적이라 느꼈고,
-            3종 AI를 동시에 활용하여 비교 검증할 수 있는 컨설팅 도구를
-            개발하게 되었습니다.
-          </p>
-          <div class="project-tags">
-            <span class="tag">Claude Code Skills</span>
-            <span class="tag">Multi-AI</span>
-            <span class="tag">CLI</span>
+          <div class="project-compact-right">
+            <a href="https://github.com/SoyeonAhn3/AI_Consulting" target="_blank" rel="noopener" class="btn btn-small btn-outline" onclick="event.stopPropagation()">GitHub</a>
+            <button class="project-compact-toggle-btn" onclick="this.closest('.project-compact').querySelector('.project-compact-detail').classList.toggle('open'); this.classList.toggle('open')">
+              <span class="toggle-arrow">▼</span>
+            </button>
           </div>
-          <div class="project-links">
-            <a href="projects.html#ai-consulting" class="btn btn-small btn-primary">View Details</a>
-            <a href="https://github.com/SoyeonAhn3/AI_Consulting" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+          <div class="project-compact-detail">
+            <p>MS 자동화 방안 검토 시 여러 AI에 개별 문의하는 것이 비효율적이라 느끼고, 3종 AI를 동시에 활용하여 비교 검증할 수 있는 CLI 컨설팅 도구를 개발했습니다.</p>
+            <div class="project-compact-tags">
+              <span class="tag">Claude Code Skills</span>
+              <span class="tag">Multi-AI</span>
+              <span class="tag">CLI</span>
+            </div>
           </div>
         </div>
-        <div class="project-card fade-in">
-          <div class="project-header">
-            <h3>Notion Notes</h3>
+        <div class="project-compact fade-in">
+          <div class="project-compact-info" onclick="this.parentElement.querySelector('.project-compact-detail').classList.toggle('open')">
+            <span class="project-compact-name">Code Review Pipeline</span>
+            <span class="project-compact-desc">4개 AI 에이전트가 보안·성능·품질을 자동 리뷰</span>
           </div>
-          <p class="project-motive">
-            학습한 내용을 AI와의 대화를 통해 정리하고, 유용한 답변만 골라
-            Notion에 바로 저장하는 흐름을 구현하고 싶어 개발하게 되었습니다.
-          </p>
-          <div class="project-tags">
-            <span class="tag">FastAPI</span>
-            <span class="tag">Gemini</span>
-            <span class="tag">Notion API</span>
+          <div class="project-compact-right">
+            <a href="https://github.com/SoyeonAhn3/code-review-pipeline" target="_blank" rel="noopener" class="btn btn-small btn-outline" onclick="event.stopPropagation()">GitHub</a>
+            <button class="project-compact-toggle-btn" onclick="this.closest('.project-compact').querySelector('.project-compact-detail').classList.toggle('open'); this.classList.toggle('open')">
+              <span class="toggle-arrow">▼</span>
+            </button>
           </div>
-          <div class="project-links">
-            <a href="projects.html#notion-notes" class="btn btn-small btn-primary">View Details</a>
-            <a href="https://github.com/SoyeonAhn3/Notion_Notes" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+          <div class="project-compact-detail">
+            <p>AI 자동화 개발 중 코드 품질에서 놓치는 부분이 반복 발생하여, 보안·성능·품질을 4개 AI 에이전트가 순차적으로 리뷰하고 교차 반론까지 수행하는 멀티에이전트 시스템을 개발했습니다.</p>
+            <div class="project-compact-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Claude API</span>
+              <span class="tag">Multi-Agent</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-compact fade-in">
+          <div class="project-compact-info" onclick="this.parentElement.querySelector('.project-compact-detail').classList.toggle('open')">
+            <span class="project-compact-name">Notion Notes</span>
+            <span class="project-compact-desc">AI 대화에서 유용한 답변만 Notion에 자동 저장</span>
+          </div>
+          <div class="project-compact-right">
+            <a href="https://github.com/SoyeonAhn3/Notion_Notes" target="_blank" rel="noopener" class="btn btn-small btn-outline" onclick="event.stopPropagation()">GitHub</a>
+            <button class="project-compact-toggle-btn" onclick="this.closest('.project-compact').querySelector('.project-compact-detail').classList.toggle('open'); this.classList.toggle('open')">
+              <span class="toggle-arrow">▼</span>
+            </button>
+          </div>
+          <div class="project-compact-detail">
+            <p>학습한 내용을 AI와의 대화를 통해 정리하고, 유용한 답변만 골라 Notion에 바로 저장하는 흐름을 구현했습니다.</p>
+            <div class="project-compact-tags">
+              <span class="tag">FastAPI</span>
+              <span class="tag">Gemini</span>
+              <span class="tag">Notion API</span>
+            </div>
           </div>
         </div>
       </div>

@@ -930,7 +930,7 @@ details[open].project-role-section .ai-step-desc {
 /* ===== Projects ===== */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
@@ -954,6 +954,7 @@ details[open].project-role-section .ai-step-desc {
   align-items: center;
   gap: 10px;
   margin-bottom: 14px;
+  flex-wrap: wrap;
 }
 
 .project-header h3 {
@@ -971,6 +972,17 @@ details[open].project-role-section .ai-step-desc {
 .badge-live {
   background: #dcfce7;
   color: #16a34a;
+}
+
+.badge-full {
+  background: #e8eaf6;
+  color: #3949ab;
+}
+
+.badge-progress {
+  background: #fff3e0;
+  color: #e65100;
+  white-space: nowrap;
 }
 
 .project-motive {
@@ -992,6 +1004,147 @@ details[open].project-role-section .ai-step-desc {
 .project-links {
   display: flex;
   gap: 8px;
+}
+
+/* ===== Project Section Subtitles ===== */
+.projects-subtitle {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid rgba(79, 70, 229, 0.15);
+}
+
+.projects-subtitle.other {
+  margin-top: 36px;
+}
+
+/* ===== Compact Project Cards (OTHER) ===== */
+.projects-compact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-compact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 20px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: box-shadow 0.2s;
+}
+
+.project-compact:hover {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.project-compact-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+  min-width: 0;
+}
+
+.project-compact-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.project-compact-desc {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.project-compact-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.project-compact-tags {
+  display: flex;
+  gap: 6px;
+}
+
+.project-compact-tags .tag {
+  font-size: 0.7rem;
+  padding: 2px 8px;
+}
+
+.project-compact {
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.project-compact-toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-alt);
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  flex-shrink: 0;
+}
+
+.project-compact-toggle-btn:hover {
+  background: rgba(79, 70, 229, 0.08);
+  border-color: var(--primary);
+}
+
+.project-compact-toggle-btn .toggle-arrow {
+  font-size: 0.55em;
+  color: var(--text-secondary);
+  transition: transform 0.2s;
+  display: block;
+}
+
+.project-compact-toggle-btn.open .toggle-arrow {
+  transform: rotate(180deg);
+}
+
+.project-compact-detail {
+  display: none;
+  width: 100%;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  margin-top: 12px;
+}
+
+.project-compact-detail.open {
+  display: block;
+}
+
+.project-compact-detail p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.project-compact-detail .project-compact-tags {
+  margin-bottom: 10px;
+}
+
+.project-compact-detail .btn {
+  margin-top: 4px;
 }
 
 /* ===== Contact ===== */
@@ -1130,6 +1283,16 @@ details[open].project-role-section .ai-step-desc {
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-compact {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .project-compact-right {
+    width: 100%;
   }
 
   .contact-grid {
