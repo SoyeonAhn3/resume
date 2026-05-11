@@ -565,6 +565,67 @@
   font-weight: 600 !important;
 }
 
+/* ===== Also Built (minimal links) ===== */
+.also-built-section {
+  padding: 48px 0;
+  background: var(--bg-alt);
+  border-top: 1px solid var(--border);
+}
+
+.also-built-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 20px;
+}
+
+.also-built-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.also-built-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 24px;
+  transition: background 0.2s;
+}
+
+.also-built-item:hover {
+  background: #f8fafc;
+}
+
+.also-built-item + .also-built-item {
+  border-top: 1px solid var(--border);
+}
+
+.also-built-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text);
+  flex-shrink: 0;
+  min-width: 180px;
+}
+
+.also-built-desc {
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  flex: 1;
+  line-height: 1.5;
+}
+
+.also-built-item .btn {
+  flex-shrink: 0;
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
   .proj-hero {
@@ -654,6 +715,21 @@
 
   .proj-video {
     max-width: 100%;
+  }
+
+  .also-built-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 16px 18px;
+  }
+
+  .also-built-name {
+    min-width: auto;
+  }
+
+  .also-built-item .btn {
+    align-self: flex-end;
   }
 
 }

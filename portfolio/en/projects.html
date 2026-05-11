@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects — Soyeon Ahn</title>
   <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../projects.css">
+  <link rel="stylesheet" href="../projects.css?v=3">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="#stock-analyzer">Stock Analyzer</a></li>
         <li><a href="#workflow-generator">Workflow</a></li>
-        <li><a href="#production-monitor">Production Monitor</a></li>
+        <li><a href="#kickoff-harness">Kickoff Harness</a></li>
         <li><a href="#other-projects">Others</a></li>
         <li><a href="index.html" class="nav-back">&larr; Portfolio</a></li>
         <li>
@@ -44,12 +44,11 @@
           <span class="proj-quickjump-label">Featured</span>
           <a href="#stock-analyzer" class="proj-quickjump-link">AI Stock Analyzer</a>
           <a href="#workflow-generator" class="proj-quickjump-link">Workflow Generator</a>
-          <a href="#production-monitor" class="proj-quickjump-link">AI Production Monitor</a>
+          <a href="#kickoff-harness" class="proj-quickjump-link">Project Kickoff Harness</a>
         </div>
         <div class="proj-quickjump-group">
           <span class="proj-quickjump-label">Other</span>
-          <a href="#ai-consulting" class="proj-quickjump-link">AI Consulting Agent</a>
-          <a href="#code-review-pipeline" class="proj-quickjump-link">Code Review Pipeline</a>
+          <a href="#production-monitor" class="proj-quickjump-link">AI Production Monitor</a>
           <a href="#notion-notes" class="proj-quickjump-link">Notion Notes</a>
         </div>
       </div>
@@ -64,7 +63,9 @@
 
       <div class="proj-title-row fade-in">
         <h2 class="proj-name">AI Stock Analyzer</h2>
-        <span class="badge badge-full">Full-Stack</span>
+        <a href="https://stock-analyzer-ai.netlify.app/" target="_blank" rel="noopener" class="btn-live-demo">
+          <span class="btn-live-dot"></span>Live Demo
+        </a>
         <a href="https://github.com/SoyeonAhn3/stock-analyzer" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
       </div>
       <p class="proj-summary fade-in">
@@ -79,6 +80,18 @@
           Rather than querying a single AI, I wanted to design and implement a multi-agent architecture where 5 specialized agents
           analyze from different perspectives and cross-validate each other's findings.
         </p>
+      </div>
+
+      <!-- Demo Video -->
+      <div class="proj-demo fade-in">
+        <video
+          src="https://github.com/user-attachments/assets/42a6e030-33c8-4f04-b49e-dd72c07ae4ab"
+          controls
+          muted
+          playsinline
+          preload="metadata"
+          class="proj-video"
+        ></video>
       </div>
 
       <!-- Key Features -->
@@ -316,27 +329,27 @@
   </section>
 
   <!-- ============================== -->
-  <!-- 3. AI Production Monitor (FEATURED) -->
+  <!-- 3. AI Project Kickoff Harness (FEATURED) -->
   <!-- ============================== -->
-  <section class="proj-section" id="production-monitor">
+  <section class="proj-section" id="kickoff-harness">
     <div class="container">
 
       <div class="proj-title-row fade-in">
-        <h2 class="proj-name">AI Production Monitor</h2>
-        <span class="badge badge-progress">🚧 In Progress</span>
-        <a href="https://github.com/SoyeonAhn3/ai_production_monitor" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+        <h2 class="proj-name">AI Project Kickoff Harness</h2>
+        <a href="https://github.com/SoyeonAhn3/AI-Project-Kickoff-Harness" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
       </div>
       <p class="proj-summary fade-in">
-        A fully automated system that monitors production data hourly, detects anomalies, and uses AI to analyze root causes and send alerts.
+        A CLI automation harness that transforms vague project ideas into development-ready plans through AI-driven interviews and validation.
       </p>
 
       <!-- Motivation -->
       <div class="proj-block fade-in">
         <h3 class="proj-block-title">Motivation</h3>
         <p class="proj-block-text">
-          Working in manufacturing IT operations, I realized the need for a system that quickly detects production anomalies
-          and enables immediate response. I designed an End-to-End automation system where AI interprets the root cause of anomalies
-          and detailed analysis can be reviewed through Power BI dashboards.
+          Every time I started a new project, unclear requirements led to repeated redesigns mid-development.
+          I wanted to build a tool where AI conducts structured interviews to turn vague ideas into well-organized
+          planning documents before writing a single line of code.
+          This harness was used to validate the planning of my other side projects, proving its practical value.
         </p>
       </div>
 
@@ -346,31 +359,31 @@
         <div class="feat-grid">
           <div class="feat-card">
             <div class="feat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h4>Multi-Skill Chaining Pipeline</h4>
+            <p>Skills auto-chain in sequence: context → start → interview → suggest → profile → evaluate → gap → checklist → done → skills.</p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+            </div>
+            <h4>Dogfooding Self-Validation</h4>
+            <p>The harness was used to plan itself across 3 iterations, discovering and fixing 10+ design improvements in the process.</p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
-            <h4>Config-driven Detection</h4>
-            <p>Detection rules defined in rules.json, executed by engine.js. 8 rules x 3 severity levels. Only modify rules to apply to new data.</p>
+            <h4>4+2 Dimension Honest Evaluation</h4>
+            <p>Evaluates project feasibility across 4 base dimensions (technical, market, learning, completion) + 2 conditional dimensions (learning cost, security).</p>
           </div>
           <div class="feat-card">
             <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.57-3.25 3.92L12 22l-.75-12.08A4.001 4.001 0 0 1 12 2z"/><circle cx="12" cy="6" r="1"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
             </div>
-            <h4>AI Agent Daily Report (Tool Use)</h4>
-            <p>AI autonomously queries and analyzes data with 4 tools. Auto-adjusts report depth: brief summary on quiet days, detailed analysis + weekly comparison on critical days.</p>
-          </div>
-          <div class="feat-card">
-            <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-            </div>
-            <h4>4-Level Security Strategy</h4>
-            <p>Provides basic/masking/template/local LLM options so organizations can adjust external data transmission levels to match their security policies.</p>
-          </div>
-          <div class="feat-card">
-            <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-            </div>
-            <h4>Power BI Dashboard</h4>
-            <p>3-page layout: real-time status, AI insights, long-term trends. Utilizes Key Influencers, Smart Narrative, and other AI visuals.</p>
+            <h4>Gap & Contradiction Detection</h4>
+            <p>AI automatically identifies missing requirements and contradictory designs in planning documents before development begins, reducing redesign costs.</p>
           </div>
         </div>
       </div>
@@ -380,42 +393,54 @@
         <h3 class="proj-block-title">Architecture</h3>
         <div class="arch-flow">
           <div class="arch-node">
-            <div class="arch-node-label">Google Sheets</div>
-            <div class="arch-node-desc">Production Data</div>
+            <div class="arch-node-label">User Idea</div>
+            <div class="arch-node-desc">Free Text Input</div>
           </div>
           <div class="arch-arrow"></div>
           <div class="arch-node arch-node-ai">
-            <div class="arch-node-label">n8n</div>
-            <div class="arch-node-desc">Workflow Orchestration</div>
+            <div class="arch-node-label">Skill Chain</div>
+            <div class="arch-node-desc">Interview · Evaluate · Validate</div>
           </div>
           <div class="arch-arrow"></div>
           <div class="arch-node">
-            <div class="arch-node-label">JS + Claude API</div>
-            <div class="arch-node-desc">Detection + AI Analysis</div>
+            <div class="arch-node-label">Gap Check</div>
+            <div class="arch-node-desc">Contradiction · Missing Detection</div>
           </div>
           <div class="arch-arrow"></div>
           <div class="arch-node arch-node-output">
             <div class="arch-node-label">Output</div>
-            <div class="arch-node-desc">Gmail Alert + Power BI</div>
+            <div class="arch-node-desc">Kickoff .md + Checklist</div>
           </div>
         </div>
         <div class="arch-storage">
-          <span class="arch-storage-tag">n8n Self-hosted</span>
-          <span class="arch-storage-tag">Claude API</span>
-          <span class="arch-storage-tag">Gmail</span>
-          <span class="arch-storage-tag">Power BI</span>
+          <span class="arch-storage-tag">Claude Code Skills</span>
+          <span class="arch-storage-tag">Markdown</span>
+          <span class="arch-storage-tag">gh CLI</span>
+        </div>
+      </div>
+
+      <!-- Challenge -->
+      <div class="proj-block fade-in">
+        <h3 class="proj-block-title">Problem Solving</h3>
+        <div class="challenge-card">
+          <div class="challenge-row">
+            <span class="challenge-label">Problem</span>
+            <p>Missing requirements and contradictions in planning documents were only discovered during development, causing costly redesigns</p>
+          </div>
+          <div class="challenge-row">
+            <span class="challenge-label challenge-label-solve">Solution</span>
+            <p>Built a kickoff-gap skill that automatically detects contradictions (e.g., feature-tech stack mismatches) and gaps (e.g., undefined non-functional requirements) before development. Validated the harness itself through 3 rounds of dogfooding</p>
+          </div>
         </div>
       </div>
 
       <!-- Tech Stack -->
       <div class="proj-footer fade-in">
         <div class="proj-tags">
-          <span class="tag">n8n</span>
-          <span class="tag">JavaScript</span>
-          <span class="tag">Claude API</span>
-          <span class="tag">Google Sheets</span>
-          <span class="tag">Power BI</span>
-          <span class="tag">Gmail</span>
+          <span class="tag">Claude Code Skills</span>
+          <span class="tag">Markdown</span>
+          <span class="tag">Git</span>
+          <span class="tag">gh CLI</span>
         </div>
       </div>
 
@@ -430,40 +455,21 @@
       <h2 class="proj-name fade-in" style="margin-bottom: 24px;">Other Projects</h2>
 
       <div class="other-projects-grid">
-        <!-- AI Consulting Agent -->
-        <div class="other-project-card fade-in" id="ai-consulting">
-          <h3 class="other-project-title">AI Consulting Agent</h3>
+        <!-- AI Production Monitor -->
+        <div class="other-project-card fade-in" id="production-monitor">
+          <h3 class="other-project-title">AI Production Monitor <span class="badge badge-progress">🚧 In Progress</span></h3>
           <p class="other-project-desc">
-            A CLI consulting tool where Claude, Codex, and Gemini simultaneously analyze and cross-validate MS automation solutions.
-            Normalizes different LLM responses with a common output schema, calculates ROI across 3 scenarios,
-            and auto-generates consulting reports, Excel reports, and Power Automate Flow designs.
+            A fully automated system that monitors production data hourly, detects anomalies, and uses AI to analyze root causes and send alerts.
+            Includes config-driven detection (8 rules x 3 severity levels), AI Agent daily reports (Tool Use), 4-level security strategy, and Power BI dashboards.
           </p>
           <div class="other-project-footer">
             <div class="proj-tags">
-              <span class="tag">Claude Code Skills</span>
-              <span class="tag">Multi-AI</span>
-              <span class="tag">CLI</span>
-            </div>
-            <a href="https://github.com/SoyeonAhn3/AI_Consulting" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
-          </div>
-        </div>
-
-        <!-- Code Review Pipeline -->
-        <div class="other-project-card fade-in" id="code-review-pipeline">
-          <h3 class="other-project-title">Code Review Pipeline</h3>
-          <p class="other-project-desc">
-            A multi-agent system where 4 AI agents sequentially review code and assign scores.
-            Runs in Security → Performance → Quality → Summary order,
-            with subsequent agents performing cross-review (agree/caution/disagree) on prior analysis.
-            100-point scoring with Critical(-15), Warning(-5), Info(-1) and auto-suggested Top 3 fix priorities.
-          </p>
-          <div class="other-project-footer">
-            <div class="proj-tags">
-              <span class="tag">Python</span>
+              <span class="tag">n8n</span>
               <span class="tag">Claude API</span>
-              <span class="tag">Multi-Agent</span>
+              <span class="tag">Power BI</span>
+              <span class="tag">Google Sheets</span>
             </div>
-            <a href="https://github.com/SoyeonAhn3/code-review-pipeline" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+            <a href="https://github.com/SoyeonAhn3/ai_production_monitor" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
           </div>
         </div>
 
@@ -486,6 +492,27 @@
         </div>
       </div>
 
+    </div>
+  </section>
+
+  <!-- ============================== -->
+  <!-- ALSO BUILT                      -->
+  <!-- ============================== -->
+  <section class="also-built-section" id="also-built">
+    <div class="container">
+      <h3 class="also-built-title fade-in">Also Built</h3>
+      <div class="also-built-list fade-in">
+        <div class="also-built-item">
+          <span class="also-built-name">Code Review Pipeline</span>
+          <span class="also-built-desc">Multi-agent code review system where 4 AI agents sequentially review and score code on a 100-point scale</span>
+          <a href="https://github.com/SoyeonAhn3/code-review-pipeline" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+        </div>
+        <div class="also-built-item">
+          <span class="also-built-name">AI Consulting Agent</span>
+          <span class="also-built-desc">CLI consulting tool where Claude, Codex, and Gemini compare and analyze MS automation solutions</span>
+          <a href="https://github.com/SoyeonAhn3/AI_Consulting" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+        </div>
+      </div>
     </div>
   </section>
 

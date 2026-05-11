@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects — Soyeon Ahn</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="projects.css">
+  <link rel="stylesheet" href="projects.css?v=3">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="#stock-analyzer">Stock Analyzer</a></li>
         <li><a href="#workflow-generator">Workflow</a></li>
-        <li><a href="#production-monitor">Production Monitor</a></li>
+        <li><a href="#kickoff-harness">Kickoff Harness</a></li>
         <li><a href="#other-projects">Others</a></li>
         <li><a href="index.html" class="nav-back">&larr; Portfolio</a></li>
         <li>
@@ -44,12 +44,11 @@
           <span class="proj-quickjump-label">Featured</span>
           <a href="#stock-analyzer" class="proj-quickjump-link">AI Stock Analyzer</a>
           <a href="#workflow-generator" class="proj-quickjump-link">Workflow Generator</a>
-          <a href="#production-monitor" class="proj-quickjump-link">AI Production Monitor</a>
+          <a href="#kickoff-harness" class="proj-quickjump-link">Project Kickoff Harness</a>
         </div>
         <div class="proj-quickjump-group">
           <span class="proj-quickjump-label">Other</span>
-          <a href="#ai-consulting" class="proj-quickjump-link">AI Consulting Agent</a>
-          <a href="#code-review-pipeline" class="proj-quickjump-link">Code Review Pipeline</a>
+          <a href="#production-monitor" class="proj-quickjump-link">AI Production Monitor</a>
           <a href="#notion-notes" class="proj-quickjump-link">Notion Notes</a>
         </div>
       </div>
@@ -64,7 +63,9 @@
 
       <div class="proj-title-row fade-in">
         <h2 class="proj-name">AI Stock Analyzer</h2>
-        <span class="badge badge-full">Full-Stack</span>
+        <a href="https://stock-analyzer-ai.netlify.app/" target="_blank" rel="noopener" class="btn-live-demo">
+          <span class="btn-live-dot"></span>Live Demo
+        </a>
         <a href="https://github.com/SoyeonAhn3/stock-analyzer" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
       </div>
       <p class="proj-summary fade-in">
@@ -80,6 +81,18 @@
           각자의 관점에서 병렬 분석하고 서로를 교차 검증하는 멀티에이전트 아키텍처를
           직접 설계하고 구현해보기 위해 개발을 시작했습니다.
         </p>
+      </div>
+
+      <!-- Demo Video -->
+      <div class="proj-demo fade-in">
+        <video
+          src="https://github.com/user-attachments/assets/42a6e030-33c8-4f04-b49e-dd72c07ae4ab"
+          controls
+          muted
+          playsinline
+          preload="metadata"
+          class="proj-video"
+        ></video>
       </div>
 
       <!-- Key Features -->
@@ -321,28 +334,27 @@
   </section>
 
   <!-- ============================== -->
-  <!-- 3. AI Production Monitor (FEATURED) -->
+  <!-- 3. AI Project Kickoff Harness (FEATURED) -->
   <!-- ============================== -->
-  <section class="proj-section" id="production-monitor">
+  <section class="proj-section" id="kickoff-harness">
     <div class="container">
 
       <div class="proj-title-row fade-in">
-        <h2 class="proj-name">AI Production Monitor</h2>
-        <span class="badge badge-progress">🚧 개발 중</span>
-        <a href="https://github.com/SoyeonAhn3/ai_production_monitor" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+        <h2 class="proj-name">AI Project Kickoff Harness</h2>
+        <a href="https://github.com/SoyeonAhn3/AI-Project-Kickoff-Harness" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
       </div>
       <p class="proj-summary fade-in">
-        생산 실적 데이터를 1시간 간격으로 자동 모니터링하고, 이상 감지 시 AI가 원인을 분석하여 알림을 보내는 완전 자동화 시스템
+        막연한 프로젝트 아이디어를 AI 인터뷰·검증을 통해 개발 가능한 기획 문서로 전환하는 CLI 자동화 하네스
       </p>
 
       <!-- Motivation -->
       <div class="proj-block fade-in">
         <h3 class="proj-block-title">개발 동기</h3>
         <p class="proj-block-text">
-          제조업 IT 운영 업무를 하며, 생산 현장의 이상을 빠르게 감지하고 담당자가
-          즉시 대응할 수 있는 시스템이 필요하다는 것을 체감했습니다.
-          단순 알림이 아니라 AI가 이상의 원인을 해석해주고, Power BI 대시보드에서
-          상세 분석까지 확인할 수 있는 End-to-End 자동화 시스템을 설계하게 되었습니다.
+          프로젝트를 시작할 때마다 요구사항이 불명확하여 개발 중 재설계가 반복되는 경험을 했습니다.
+          코드 한 줄 작성하기 전에, AI가 체계적인 인터뷰로 모호한 아이디어를 구조화된 기획 문서로
+          전환해주는 도구를 만들고자 했습니다.
+          이 하네스로 실제 다른 사이드 프로젝트들의 기획을 검증하며 실용성을 입증했습니다.
         </p>
       </div>
 
@@ -352,31 +364,31 @@
         <div class="feat-grid">
           <div class="feat-card">
             <div class="feat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h4>멀티 스킬 체이닝 파이프라인</h4>
+            <p>context → start → interview → suggest → profile → evaluate → gap → checklist → done → skills 순서로 스킬이 자동 연결됩니다.</p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+            </div>
+            <h4>Dogfooding 자체 검증</h4>
+            <p>하네스 자신의 기획에 하네스를 적용하여 3회 반복. 10건 이상의 설계 개선을 발견하고 즉시 반영했습니다.</p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
-            <h4>Config-driven 이상 탐지</h4>
-            <p>rules.json에 탐지 룰을 정의하고 engine.js가 범용으로 실행합니다. 8가지 탐지 × 3단계 심각도 분류. 새 데이터 적용 시 룰만 수정하면 됩니다.</p>
+            <h4>4+2 차원 정직한 평가</h4>
+            <p>기술 타당성, 시장 가치, 학습 가치, 완성 가능성 4개 기본 차원 + 학습 비용, 보안 2개 조건부 차원으로 프로젝트 실현 가능성을 평가합니다.</p>
           </div>
           <div class="feat-card">
             <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.57-3.25 3.92L12 22l-.75-12.08A4.001 4.001 0 0 1 12 2z"/><circle cx="12" cy="6" r="1"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
             </div>
-            <h4>AI Agent 일일 리포트 (Tool Use)</h4>
-            <p>AI에게 4개 도구를 제공하여 상황에 맞게 자율적으로 데이터를 조회·분석합니다. 조용한 날은 간단 요약, 심각 건이 있는 날은 상세 분석 + 지난주 비교까지 리포트 깊이를 자동 조절합니다.</p>
-          </div>
-          <div class="feat-card">
-            <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-            </div>
-            <h4>4단계 보안 전략</h4>
-            <p>기본/마스킹/템플릿/로컬 LLM 단계별 선택지를 제공하여 조직의 보안 정책에 맞게 외부 데이터 전송 수준을 조정 가능합니다.</p>
-          </div>
-          <div class="feat-card">
-            <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-            </div>
-            <h4>Power BI 대시보드</h4>
-            <p>실시간 현황, AI 인사이트, 장기 트렌드 3페이지 구성. Key Influencers, Smart Narrative 등 AI 시각화 활용.</p>
+            <h4>Gap · 모순 자동 탐지</h4>
+            <p>기획 문서 내 누락된 요구사항이나 모순되는 설계를 AI가 개발 전에 자동 식별하여 재설계 비용을 줄입니다.</p>
           </div>
         </div>
       </div>
@@ -386,42 +398,54 @@
         <h3 class="proj-block-title">아키텍처</h3>
         <div class="arch-flow">
           <div class="arch-node">
-            <div class="arch-node-label">Google Sheets</div>
-            <div class="arch-node-desc">생산 데이터</div>
+            <div class="arch-node-label">User Idea</div>
+            <div class="arch-node-desc">자유 텍스트 입력</div>
           </div>
           <div class="arch-arrow"></div>
           <div class="arch-node arch-node-ai">
-            <div class="arch-node-label">n8n</div>
-            <div class="arch-node-desc">워크플로 오케스트레이션</div>
+            <div class="arch-node-label">10 Skills</div>
+            <div class="arch-node-desc">인터뷰 · 평가 · 검증</div>
           </div>
           <div class="arch-arrow"></div>
           <div class="arch-node">
-            <div class="arch-node-label">JS + Claude API</div>
-            <div class="arch-node-desc">이상 탐지 + AI 분석</div>
+            <div class="arch-node-label">Gap Check</div>
+            <div class="arch-node-desc">모순 · 누락 탐지</div>
           </div>
           <div class="arch-arrow"></div>
           <div class="arch-node arch-node-output">
             <div class="arch-node-label">Output</div>
-            <div class="arch-node-desc">Gmail 알림 + Power BI</div>
+            <div class="arch-node-desc">Kickoff .md + Checklist</div>
           </div>
         </div>
         <div class="arch-storage">
-          <span class="arch-storage-tag">n8n Self-hosted</span>
-          <span class="arch-storage-tag">Claude API</span>
-          <span class="arch-storage-tag">Gmail</span>
-          <span class="arch-storage-tag">Power BI</span>
+          <span class="arch-storage-tag">Claude Code Skills</span>
+          <span class="arch-storage-tag">Markdown</span>
+          <span class="arch-storage-tag">gh CLI</span>
+        </div>
+      </div>
+
+      <!-- Challenge -->
+      <div class="proj-block fade-in">
+        <h3 class="proj-block-title">Problem Solving</h3>
+        <div class="challenge-card">
+          <div class="challenge-row">
+            <span class="challenge-label">문제</span>
+            <p>기획 단계에서 요구사항 누락이나 모순이 있어도 개발 중에야 발견되어 재설계 비용이 발생</p>
+          </div>
+          <div class="challenge-row">
+            <span class="challenge-label challenge-label-solve">해결</span>
+            <p>kickoff-gap 스킬로 기획 문서 내 모순(기능과 기술 스택 불일치 등)과 누락(비기능 요구사항 미정의 등)을 AI가 개발 전에 자동 탐지. Dogfooding 3회로 하네스 자체의 설계 결함도 사전 제거</p>
+          </div>
         </div>
       </div>
 
       <!-- Tech Stack -->
       <div class="proj-footer fade-in">
         <div class="proj-tags">
-          <span class="tag">n8n</span>
-          <span class="tag">JavaScript</span>
-          <span class="tag">Claude API</span>
-          <span class="tag">Google Sheets</span>
-          <span class="tag">Power BI</span>
-          <span class="tag">Gmail</span>
+          <span class="tag">Claude Code Skills</span>
+          <span class="tag">Markdown</span>
+          <span class="tag">Git</span>
+          <span class="tag">gh CLI</span>
         </div>
       </div>
 
@@ -436,21 +460,21 @@
       <h2 class="proj-name fade-in" style="margin-bottom: 24px;">Other Projects</h2>
 
       <div class="other-projects-grid">
-        <!-- AI Consulting Agent -->
-        <div class="other-project-card fade-in" id="ai-consulting">
-          <h3 class="other-project-title">AI Consulting Agent</h3>
+        <!-- AI Production Monitor -->
+        <div class="other-project-card fade-in" id="production-monitor">
+          <h3 class="other-project-title">AI Production Monitor <span class="badge badge-progress">🚧 개발 중</span></h3>
           <p class="other-project-desc">
-            MS 업무자동화 방안을 Claude · Codex · Gemini 3개 AI가 동시에 분석하고 비교 검증하는 CLI 컨설팅 도구.
-            공통 출력 스키마로 서로 다른 LLM 응답을 정규화하고, ROI 3가지 시나리오를 산출하며,
-            컨설팅 보고서 · Excel 리포트 · Power Automate Flow 설계서를 자동 생성합니다.
+            생산 실적 데이터를 1시간 간격으로 자동 모니터링하고, 이상 감지 시 AI가 원인을 분석하여 알림을 보내는 완전 자동화 시스템.
+            Config-driven 이상 탐지(8가지 룰 × 3단계 심각도), AI Agent 일일 리포트(Tool Use), 4단계 보안 전략, Power BI 대시보드를 포함합니다.
           </p>
           <div class="other-project-footer">
             <div class="proj-tags">
-              <span class="tag">Claude Code Skills</span>
-              <span class="tag">Multi-AI</span>
-              <span class="tag">CLI</span>
+              <span class="tag">n8n</span>
+              <span class="tag">Claude API</span>
+              <span class="tag">Power BI</span>
+              <span class="tag">Google Sheets</span>
             </div>
-            <a href="https://github.com/SoyeonAhn3/AI_Consulting" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+            <a href="https://github.com/SoyeonAhn3/ai_production_monitor" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
           </div>
         </div>
 
@@ -471,27 +495,29 @@
             <a href="https://github.com/SoyeonAhn3/Notion_Notes" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
           </div>
         </div>
-
-        <!-- Code Review Pipeline -->
-        <div class="other-project-card fade-in" id="code-review-pipeline">
-          <h3 class="other-project-title">Code Review Pipeline</h3>
-          <p class="other-project-desc">
-            4개 AI 에이전트가 순차적으로 코드를 리뷰하고 점수를 매기는 멀티에이전트 시스템.
-            Security → Performance → Quality → Summary 순서로 실행되며,
-            후속 에이전트가 이전 분석에 교차 반론(agree/caution/disagree)을 수행합니다.
-            Critical(-15), Warning(-5), Info(-1) 기준의 100점 스코어링과 Top 3 수정 우선순위를 자동 제안합니다.
-          </p>
-          <div class="other-project-footer">
-            <div class="proj-tags">
-              <span class="tag">Python</span>
-              <span class="tag">Claude API</span>
-              <span class="tag">Multi-Agent</span>
-            </div>
-            <a href="https://github.com/SoyeonAhn3/code-review-pipeline" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
-          </div>
-        </div>
       </div>
 
+    </div>
+  </section>
+
+  <!-- ============================== -->
+  <!-- ALSO BUILT                      -->
+  <!-- ============================== -->
+  <section class="also-built-section" id="also-built">
+    <div class="container">
+      <h3 class="also-built-title fade-in">Also Built</h3>
+      <div class="also-built-list fade-in">
+        <div class="also-built-item">
+          <span class="also-built-name">Code Review Pipeline</span>
+          <span class="also-built-desc">4개 AI 에이전트가 순차 리뷰하고 100점 스코어링하는 멀티에이전트 코드 리뷰 시스템</span>
+          <a href="https://github.com/SoyeonAhn3/code-review-pipeline" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+        </div>
+        <div class="also-built-item">
+          <span class="also-built-name">AI Consulting Agent</span>
+          <span class="also-built-desc">Claude · Codex · Gemini 3개 AI가 MS 업무자동화 방안을 비교 분석하는 CLI 컨설팅 도구</span>
+          <a href="https://github.com/SoyeonAhn3/AI_Consulting" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+        </div>
+      </div>
     </div>
   </section>
 
