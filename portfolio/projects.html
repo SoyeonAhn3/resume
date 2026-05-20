@@ -20,10 +20,10 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#stock-analyzer">Stock Analyzer</a></li>
         <li><a href="#workflow-generator">Workflow</a></li>
         <li><a href="#kickoff-harness">Kickoff Harness</a></li>
-        <li><a href="#other-projects">Others</a></li>
+        <li><a href="#stock-analyzer">Stock Analyzer</a></li>
+        <li><a href="#current-builds">Others</a></li>
         <li><a href="index.html" class="nav-back">&larr; Portfolio</a></li>
         <li>
           <a href="en/projects.html" class="nav-lang" title="View in English">EN</a>
@@ -37,18 +37,25 @@
     <div class="container">
       <h1 class="proj-hero-title fade-in">Side Projects</h1>
       <p class="proj-hero-desc fade-in">
-        반복되는 업무를 자동화하기 위해 직접 설계하고 개발한 프로젝트들입니다.
+        반복되는 업무를 줄이고, 흩어진 정보를 정리하고,<br>프로젝트를 시작하기 쉽게 만들기 위해 만든 사이드 프로젝트들입니다.
       </p>
       <div class="proj-quickjump fade-in">
         <div class="proj-quickjump-group">
           <span class="proj-quickjump-label">Featured</span>
-          <a href="#stock-analyzer" class="proj-quickjump-link">AI Stock Analyzer</a>
           <a href="#workflow-generator" class="proj-quickjump-link">Workflow Generator</a>
           <a href="#kickoff-harness" class="proj-quickjump-link">Project Kickoff Harness</a>
+          <a href="#stock-analyzer" class="proj-quickjump-link">AI Stock Analyzer</a>
         </div>
         <div class="proj-quickjump-group">
-          <span class="proj-quickjump-label">Other</span>
+          <span class="proj-quickjump-label">Current Builds</span>
+          <a href="#prequel" class="proj-quickjump-link">Prequel</a>
           <a href="#production-monitor" class="proj-quickjump-link">AI Production Monitor</a>
+        </div>
+        <div class="proj-quickjump-group">
+          <span class="proj-quickjump-label">Additional</span>
+          <a href="#excel-generator" class="proj-quickjump-link">Excel Generator</a>
+          <a href="#consulting-agent" class="proj-quickjump-link">AI Consulting Agent</a>
+          <a href="#code-review" class="proj-quickjump-link">Code Review Pipeline</a>
           <a href="#notion-notes" class="proj-quickjump-link">Notion Notes</a>
         </div>
       </div>
@@ -56,7 +63,291 @@
   </header>
 
   <!-- ============================== -->
-  <!-- 1. AI Stock Analyzer (FEATURED) -->
+  <!-- 1. Workflow Generator (FEATURED) -->
+  <!-- ============================== -->
+  <section class="proj-section" id="workflow-generator">
+    <div class="container">
+
+      <div class="proj-title-row fade-in">
+        <h2 class="proj-name">Workflow Generator</h2>
+        <a href="https://processflow-generator.netlify.app" target="_blank" rel="noopener" class="btn-live-demo">
+          <span class="btn-live-dot"></span>Live Demo
+        </a>
+        <a href="https://github.com/SoyeonAhn3/Workflow_Generator" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+      </div>
+      <p class="proj-summary fade-in">
+        텍스트 기반 업무 설명을 구조화하여 SwimLane 다이어그램과 Word 매뉴얼로 자동 변환하는 업무 문서화 자동화 도구
+      </p>
+
+      <!-- Motivation -->
+      <div class="proj-block fade-in">
+        <h3 class="proj-block-title">개발 동기</h3>
+        <p class="proj-block-text">
+          회사에서 업무 프로세스를 시각화하고 문서로 관리하는 과정이 번거롭고
+          시간이 많이 소요되는 것을 보며, 이를 효율적으로 개선할 방법이 없을까 고민하게 되었습니다.
+          <br>
+          샘플 업무 프로세스 <strong>5건</strong>을 기준으로, 수작업 매뉴얼 초안 작성에 약 <strong>30~40분</strong>이 걸리는 과정을 <strong>5분</strong> 이내의 자동 생성 플로우로 줄이는 것을 목표로 설계하고, 입력 → 구조화 → 다이어그램 → Word 출력까지 end-to-end 흐름을 검증했습니다.
+        </p>
+      </div>
+
+      <!-- Demo Video -->
+      <div class="proj-demo fade-in">
+        <video
+          src="https://github.com/user-attachments/assets/cef4d085-daaa-4fec-a5e3-e2a630244b45"
+          controls
+          muted
+          playsinline
+          preload="metadata"
+          class="proj-video"
+        ></video>
+      </div>
+
+      <details class="proj-details fade-in">
+        <summary class="proj-details-toggle"><span class="toggle-icon">▶</span>핵심 기능 · 아키텍처 · Problem Solving</summary>
+
+      <!-- Key Features -->
+      <div class="proj-block">
+        <h3 class="proj-block-title">핵심 기능</h3>
+        <div class="feat-grid">
+          <div class="feat-card">
+            <div class="feat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h4>AI 자동 구조화</h4>
+            <p>텍스트로 작성한 업무 설명을 Claude API가 분석하여 부서, 그룹, 프로세스, 단계 구조로 자동 변환합니다.</p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 3v18"/></svg>
+            </div>
+            <h4>SwimLane + LinearFlow</h4>
+            <p>부서별 역할을 한눈에 보여주는 SwimLane 다이어그램과 단계별 흐름을 보여주는 LinearFlow를 SVG로 렌더링합니다.</p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <h4>Word 매뉴얼 자동 생성</h4>
+            <p>표지, 요약 테이블, 단계별 상세 설명, 이미지가 포함된 .docx 문서를 브라우저에서 바로 생성합니다.</p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 9 2 12 5 15"/><polyline points="9 5 12 2 15 5"/><polyline points="15 19 12 22 9 19"/><polyline points="19 9 22 12 19 15"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/></svg>
+            </div>
+            <h4>드래그앤드롭 편집</h4>
+            <p>@dnd-kit으로 구현된 단계 순서 변경, 병렬 분기(colIndex) 지원으로 복잡한 프로세스도 직관적으로 편집합니다.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Architecture -->
+      <div class="proj-block fade-in">
+        <h3 class="proj-block-title">아키텍처</h3>
+        <div class="arch-flow">
+          <div class="arch-node">
+            <div class="arch-node-label">User Input</div>
+            <div class="arch-node-desc">텍스트 / 직접 입력</div>
+          </div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node arch-node-ai">
+            <div class="arch-node-label">Netlify Functions</div>
+            <div class="arch-node-desc">Claude API Proxy</div>
+          </div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node">
+            <div class="arch-node-label">React SPA</div>
+            <div class="arch-node-desc">SVG Diagrams + Editor</div>
+          </div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node arch-node-output">
+            <div class="arch-node-label">Output</div>
+            <div class="arch-node-desc">Diagram + Word .docx</div>
+          </div>
+        </div>
+        <div class="arch-storage">
+          <span class="arch-storage-tag">LocalStorage (text)</span>
+          <span class="arch-storage-tag">IndexedDB (images)</span>
+        </div>
+      </div>
+
+      <!-- Challenge -->
+      <div class="proj-block fade-in">
+        <h3 class="proj-block-title">Problem Solving</h3>
+        <div class="challenge-card">
+          <div class="challenge-row">
+            <span class="challenge-label">문제</span>
+            <p>사용자가 프로세스를 텍스트로 입력하면 AI가 구조화해주지만, 실제 업무는 "A와 B가 동시에 진행" 같은 병렬 흐름이 많아 단순 순차 목록으로는 현실을 표현할 수 없었음</p>
+          </div>
+          <div class="challenge-row">
+            <span class="challenge-label challenge-label-solve">해결</span>
+            <p>각 단계에 colIndex(열 번호)를 부여하여 같은 열의 스텝을 자동 병렬 그룹으로 처리하고, @dnd-kit 드래그앤드롭으로 순서·분기를 직관적으로 편집할 수 있도록 설계</p>
+          </div>
+        </div>
+      </div>
+
+      </details>
+
+      <!-- Tech Stack -->
+      <div class="proj-footer fade-in">
+        <div class="proj-tags">
+          <span class="tag">React 18</span>
+          <span class="tag">Vite</span>
+          <span class="tag">SVG</span>
+          <span class="tag">Claude API</span>
+          <span class="tag">Netlify Functions</span>
+          <span class="tag">docx</span>
+          <span class="tag">@dnd-kit</span>
+          <span class="tag">IndexedDB</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================== -->
+  <!-- 2. AI Project Kickoff Harness (FEATURED) -->
+  <!-- ============================== -->
+  <section class="proj-section proj-section-alt" id="kickoff-harness">
+    <div class="container">
+
+      <div class="proj-title-row fade-in">
+        <h2 class="proj-name">AI Project Kickoff Harness</h2>
+        <a href="https://github.com/SoyeonAhn3/AI-Project-Kickoff-Harness" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+      </div>
+      <p class="proj-summary fade-in">
+        막연한 프로젝트 아이디어를 AI 인터뷰·검증을 통해 개발 가능한 기획 문서로 전환하는 CLI 자동화 하네스.
+        고정된 인터뷰 플로우, Gap Check, 체크리스트 생성을 통해 아이디어를 개발 가능한 요구사항 문서로 전환합니다.
+      </p>
+
+      <!-- Motivation -->
+      <div class="proj-block fade-in">
+        <h3 class="proj-block-title">개발 동기</h3>
+        <p class="proj-block-text">
+          프로젝트를 시작할 때마다 요구사항이 불명확하여 개발 중 재설계가 반복되는 경험을 했습니다.
+          코드 한 줄 작성하기 전에, AI가 체계적인 인터뷰로 모호한 아이디어를 구조화된 기획 문서로
+          전환해주는 도구를 만들고자 했습니다.
+          이 하네스로 실제 다른 사이드 프로젝트들의 기획을 검증하며 실용성을 입증했습니다.
+        </p>
+      </div>
+
+      <!-- Showcase -->
+      <div class="proj-block fade-in">
+        <h3 class="proj-block-title">실제 적용 사례</h3>
+        <div class="showcase-list">
+          <div class="showcase-item">
+            <span class="showcase-name">finance_data_platform</span>
+            <span class="showcase-desc">Snowflake + Power BI + Text-to-SQL AI 금융 데이터 분석 플랫폼</span>
+            <a href="https://github.com/SoyeonAhn3/finance_data_platform/blob/main/pre-requirement/finance_data_platform_kickoff.md" target="_blank" rel="noopener" class="btn btn-small btn-outline">Kickoff 문서</a>
+          </div>
+          <div class="showcase-item">
+            <span class="showcase-name">Prequel</span>
+            <span class="showcase-desc">이 하네스의 웹 SaaS 버전 — AI 구조화 인터뷰를 브라우저에서</span>
+            <a href="https://github.com/SoyeonAhn3/Prequel/blob/main/pre-requirement/prequel_kickoff.md" target="_blank" rel="noopener" class="btn btn-small btn-outline">Kickoff 문서</a>
+          </div>
+        </div>
+      </div>
+
+      <details class="proj-details fade-in">
+        <summary class="proj-details-toggle"><span class="toggle-icon">▶</span>핵심 기능 · 아키텍처 · Problem Solving</summary>
+
+      <!-- Key Features -->
+      <div class="proj-block">
+        <h3 class="proj-block-title">핵심 기능</h3>
+        <div class="feat-grid">
+          <div class="feat-card">
+            <div class="feat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h4>멀티 스킬 체이닝 파이프라인</h4>
+            <p>context → start → interview → suggest → profile → evaluate → gap → checklist → done → skills 순서로 스킬이 자동 연결됩니다.</p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+            </div>
+            <h4>Dogfooding 자체 검증</h4>
+            <p>Dogfooding 3회 동안 입력 흐름, 평가 기준, 누락 질문, 체크리스트 구조 등 10건 이상의 설계 결함을 발견해 개선했습니다.</p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h4>4+2 차원 정직한 평가</h4>
+            <p>기술 타당성, 시장 가치, 학습 가치, 완성 가능성 4개 기본 차원 + 학습 비용, 보안 2개 조건부 차원으로 프로젝트 실현 가능성을 평가합니다.</p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h4>Gap · 모순 자동 탐지</h4>
+            <p>기획 문서 내 누락된 요구사항이나 모순되는 설계를 AI가 개발 전에 자동 식별하여 재설계 비용을 줄입니다.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Architecture -->
+      <div class="proj-block fade-in">
+        <h3 class="proj-block-title">아키텍처</h3>
+        <div class="arch-flow">
+          <div class="arch-node">
+            <div class="arch-node-label">User Idea</div>
+            <div class="arch-node-desc">자유 텍스트 입력</div>
+          </div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node arch-node-ai">
+            <div class="arch-node-label">10 Skills</div>
+            <div class="arch-node-desc">인터뷰 · 평가 · 검증</div>
+          </div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node">
+            <div class="arch-node-label">Gap Check</div>
+            <div class="arch-node-desc">모순 · 누락 탐지</div>
+          </div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node arch-node-output">
+            <div class="arch-node-label">Output</div>
+            <div class="arch-node-desc">Kickoff .md + Checklist</div>
+          </div>
+        </div>
+        <div class="arch-storage">
+          <span class="arch-storage-tag">Claude Code Skills</span>
+          <span class="arch-storage-tag">Markdown</span>
+          <span class="arch-storage-tag">gh CLI</span>
+        </div>
+      </div>
+
+      <!-- Challenge -->
+      <div class="proj-block fade-in">
+        <h3 class="proj-block-title">Problem Solving</h3>
+        <div class="challenge-card">
+          <div class="challenge-row">
+            <span class="challenge-label">문제</span>
+            <p>기획 단계에서 요구사항 누락이나 모순이 있어도 개발 중에야 발견되어 재설계 비용이 발생</p>
+          </div>
+          <div class="challenge-row">
+            <span class="challenge-label challenge-label-solve">해결</span>
+            <p>kickoff-gap 스킬로 기획 문서 내 모순(기능과 기술 스택 불일치 등)과 누락(비기능 요구사항 미정의 등)을 AI가 개발 전에 자동 탐지. Dogfooding 3회로 하네스 자체의 설계 결함도 사전 제거</p>
+          </div>
+        </div>
+      </div>
+
+      </details>
+
+      <!-- Tech Stack -->
+      <div class="proj-footer fade-in">
+        <div class="proj-tags">
+          <span class="tag">Claude Code Skills</span>
+          <span class="tag">Markdown</span>
+          <span class="tag">Git</span>
+          <span class="tag">gh CLI</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================== -->
+  <!-- 3. AI Stock Analyzer (FEATURED) -->
   <!-- ============================== -->
   <section class="proj-section" id="stock-analyzer">
     <div class="container">
@@ -69,7 +360,7 @@
         <a href="https://github.com/SoyeonAhn3/stock-analyzer" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
       </div>
       <p class="proj-summary fade-in">
-        5개 AI 에이전트가 뉴스·재무·거시경제를 병렬 분석하고 교차 검증하여 투자 의견을 제시하는 멀티에이전트 주식 분석 시스템
+        실시간 금융 데이터와 뉴스 요약을 분리 수집하고, 다중 AI 에이전트가 근거 기반 리포트를 생성하도록 설계한 주식 분석 실험 프로젝트
       </p>
 
       <!-- Motivation -->
@@ -95,8 +386,11 @@
         ></video>
       </div>
 
+      <details class="proj-details fade-in">
+        <summary class="proj-details-toggle"><span class="toggle-icon">▶</span>핵심 기능 · 아키텍처 · Problem Solving</summary>
+
       <!-- Key Features -->
-      <div class="proj-block fade-in">
+      <div class="proj-block">
         <h3 class="proj-block-title">핵심 기능</h3>
         <div class="feat-grid">
           <div class="feat-card">
@@ -178,6 +472,8 @@
         </div>
       </div>
 
+      </details>
+
       <!-- Tech Stack -->
       <div class="proj-footer fade-in">
         <div class="proj-tags">
@@ -196,275 +492,39 @@
   </section>
 
   <!-- ============================== -->
-  <!-- 2. Workflow Generator (FEATURED) -->
+  <!-- CURRENT BUILDS                  -->
   <!-- ============================== -->
-  <section class="proj-section proj-section-alt" id="workflow-generator">
+  <section class="proj-section proj-section-alt" id="current-builds">
     <div class="container">
-
-      <div class="proj-title-row fade-in">
-        <h2 class="proj-name">Workflow Generator</h2>
-        <a href="https://processflow-generator.netlify.app" target="_blank" rel="noopener" class="btn-live-demo">
-          <span class="btn-live-dot"></span>Live Demo
-        </a>
-        <a href="https://github.com/SoyeonAhn3/Workflow_Generator" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
-      </div>
-      <p class="proj-summary fade-in">
-        업무 프로세스를 입력하면 다이어그램과 Word 매뉴얼을 자동으로 생성하는 웹 앱
-      </p>
-
-      <!-- Motivation -->
-      <div class="proj-block fade-in">
-        <h3 class="proj-block-title">개발 동기</h3>
-        <p class="proj-block-text">
-          회사에서 업무 프로세스를 시각화하고 문서로 관리하는 과정이 번거롭고
-          시간이 많이 소요되는 것을 보며, 이를 효율적으로 개선할 방법이 없을까 고민하게 되었습니다.
-          <br>
-          텍스트로 프로세스를 입력하면 자동으로 다이어그램과 매뉴얼이 만들어지는 도구가 있다면
-          문서화 부담을 크게 줄일 수 있겠다는 생각에서 개발을 시작했습니다.
-        </p>
-      </div>
-
-      <!-- Demo Video -->
-      <div class="proj-demo fade-in">
-        <video
-          src="https://github.com/user-attachments/assets/cef4d085-daaa-4fec-a5e3-e2a630244b45"
-          controls
-          muted
-          playsinline
-          preload="metadata"
-          class="proj-video"
-        ></video>
-      </div>
-
-      <!-- Key Features -->
-      <div class="proj-block fade-in">
-        <h3 class="proj-block-title">핵심 기능</h3>
-        <div class="feat-grid">
-          <div class="feat-card">
-            <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-            </div>
-            <h4>AI 자동 구조화</h4>
-            <p>텍스트로 작성한 업무 설명을 Claude API가 분석하여 부서, 그룹, 프로세스, 단계 구조로 자동 변환합니다.</p>
-          </div>
-          <div class="feat-card">
-            <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 3v18"/></svg>
-            </div>
-            <h4>SwimLane + LinearFlow</h4>
-            <p>부서별 역할을 한눈에 보여주는 SwimLane 다이어그램과 단계별 흐름을 보여주는 LinearFlow를 SVG로 렌더링합니다.</p>
-          </div>
-          <div class="feat-card">
-            <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-            </div>
-            <h4>Word 매뉴얼 자동 생성</h4>
-            <p>표지, 요약 테이블, 단계별 상세 설명, 이미지가 포함된 .docx 문서를 브라우저에서 바로 생성합니다.</p>
-          </div>
-          <div class="feat-card">
-            <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 9 2 12 5 15"/><polyline points="9 5 12 2 15 5"/><polyline points="15 19 12 22 9 19"/><polyline points="19 9 22 12 19 15"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/></svg>
-            </div>
-            <h4>드래그앤드롭 편집</h4>
-            <p>@dnd-kit으로 구현된 단계 순서 변경, 병렬 분기(colIndex) 지원으로 복잡한 프로세스도 직관적으로 편집합니다.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Architecture -->
-      <div class="proj-block fade-in">
-        <h3 class="proj-block-title">아키텍처</h3>
-        <div class="arch-flow">
-          <div class="arch-node">
-            <div class="arch-node-label">User Input</div>
-            <div class="arch-node-desc">텍스트 / 직접 입력</div>
-          </div>
-          <div class="arch-arrow"></div>
-          <div class="arch-node arch-node-ai">
-            <div class="arch-node-label">Netlify Functions</div>
-            <div class="arch-node-desc">Claude API Proxy</div>
-          </div>
-          <div class="arch-arrow"></div>
-          <div class="arch-node">
-            <div class="arch-node-label">React SPA</div>
-            <div class="arch-node-desc">SVG Diagrams + Editor</div>
-          </div>
-          <div class="arch-arrow"></div>
-          <div class="arch-node arch-node-output">
-            <div class="arch-node-label">Output</div>
-            <div class="arch-node-desc">Diagram + Word .docx</div>
-          </div>
-        </div>
-        <div class="arch-storage">
-          <span class="arch-storage-tag">LocalStorage (text)</span>
-          <span class="arch-storage-tag">IndexedDB (images)</span>
-        </div>
-      </div>
-
-      <!-- Challenge -->
-      <div class="proj-block fade-in">
-        <h3 class="proj-block-title">Problem Solving</h3>
-        <div class="challenge-card">
-          <div class="challenge-row">
-            <span class="challenge-label">문제</span>
-            <p>사용자가 프로세스를 텍스트로 입력하면 AI가 구조화해주지만, 실제 업무는 "A와 B가 동시에 진행" 같은 병렬 흐름이 많아 단순 순차 목록으로는 현실을 표현할 수 없었음</p>
-          </div>
-          <div class="challenge-row">
-            <span class="challenge-label challenge-label-solve">해결</span>
-            <p>각 단계에 colIndex(열 번호)를 부여하여 같은 열의 스텝을 자동 병렬 그룹으로 처리하고, @dnd-kit 드래그앤드롭으로 순서·분기를 직관적으로 편집할 수 있도록 설계</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tech Stack -->
-      <div class="proj-footer fade-in">
-        <div class="proj-tags">
-          <span class="tag">React 18</span>
-          <span class="tag">Vite</span>
-          <span class="tag">SVG</span>
-          <span class="tag">Claude API</span>
-          <span class="tag">Netlify Functions</span>
-          <span class="tag">docx</span>
-          <span class="tag">@dnd-kit</span>
-          <span class="tag">IndexedDB</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ============================== -->
-  <!-- 3. AI Project Kickoff Harness (FEATURED) -->
-  <!-- ============================== -->
-  <section class="proj-section" id="kickoff-harness">
-    <div class="container">
-
-      <div class="proj-title-row fade-in">
-        <h2 class="proj-name">AI Project Kickoff Harness</h2>
-        <a href="https://github.com/SoyeonAhn3/AI-Project-Kickoff-Harness" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
-      </div>
-      <p class="proj-summary fade-in">
-        막연한 프로젝트 아이디어를 AI 인터뷰·검증을 통해 개발 가능한 기획 문서로 전환하는 CLI 자동화 하네스
-      </p>
-
-      <!-- Motivation -->
-      <div class="proj-block fade-in">
-        <h3 class="proj-block-title">개발 동기</h3>
-        <p class="proj-block-text">
-          프로젝트를 시작할 때마다 요구사항이 불명확하여 개발 중 재설계가 반복되는 경험을 했습니다.
-          코드 한 줄 작성하기 전에, AI가 체계적인 인터뷰로 모호한 아이디어를 구조화된 기획 문서로
-          전환해주는 도구를 만들고자 했습니다.
-          이 하네스로 실제 다른 사이드 프로젝트들의 기획을 검증하며 실용성을 입증했습니다.
-        </p>
-      </div>
-
-      <!-- Key Features -->
-      <div class="proj-block fade-in">
-        <h3 class="proj-block-title">핵심 기능</h3>
-        <div class="feat-grid">
-          <div class="feat-card">
-            <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-            </div>
-            <h4>멀티 스킬 체이닝 파이프라인</h4>
-            <p>context → start → interview → suggest → profile → evaluate → gap → checklist → done → skills 순서로 스킬이 자동 연결됩니다.</p>
-          </div>
-          <div class="feat-card">
-            <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
-            </div>
-            <h4>Dogfooding 자체 검증</h4>
-            <p>하네스 자신의 기획에 하네스를 적용하여 3회 반복. 10건 이상의 설계 개선을 발견하고 즉시 반영했습니다.</p>
-          </div>
-          <div class="feat-card">
-            <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <h4>4+2 차원 정직한 평가</h4>
-            <p>기술 타당성, 시장 가치, 학습 가치, 완성 가능성 4개 기본 차원 + 학습 비용, 보안 2개 조건부 차원으로 프로젝트 실현 가능성을 평가합니다.</p>
-          </div>
-          <div class="feat-card">
-            <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-            </div>
-            <h4>Gap · 모순 자동 탐지</h4>
-            <p>기획 문서 내 누락된 요구사항이나 모순되는 설계를 AI가 개발 전에 자동 식별하여 재설계 비용을 줄입니다.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Architecture -->
-      <div class="proj-block fade-in">
-        <h3 class="proj-block-title">아키텍처</h3>
-        <div class="arch-flow">
-          <div class="arch-node">
-            <div class="arch-node-label">User Idea</div>
-            <div class="arch-node-desc">자유 텍스트 입력</div>
-          </div>
-          <div class="arch-arrow"></div>
-          <div class="arch-node arch-node-ai">
-            <div class="arch-node-label">10 Skills</div>
-            <div class="arch-node-desc">인터뷰 · 평가 · 검증</div>
-          </div>
-          <div class="arch-arrow"></div>
-          <div class="arch-node">
-            <div class="arch-node-label">Gap Check</div>
-            <div class="arch-node-desc">모순 · 누락 탐지</div>
-          </div>
-          <div class="arch-arrow"></div>
-          <div class="arch-node arch-node-output">
-            <div class="arch-node-label">Output</div>
-            <div class="arch-node-desc">Kickoff .md + Checklist</div>
-          </div>
-        </div>
-        <div class="arch-storage">
-          <span class="arch-storage-tag">Claude Code Skills</span>
-          <span class="arch-storage-tag">Markdown</span>
-          <span class="arch-storage-tag">gh CLI</span>
-        </div>
-      </div>
-
-      <!-- Challenge -->
-      <div class="proj-block fade-in">
-        <h3 class="proj-block-title">Problem Solving</h3>
-        <div class="challenge-card">
-          <div class="challenge-row">
-            <span class="challenge-label">문제</span>
-            <p>기획 단계에서 요구사항 누락이나 모순이 있어도 개발 중에야 발견되어 재설계 비용이 발생</p>
-          </div>
-          <div class="challenge-row">
-            <span class="challenge-label challenge-label-solve">해결</span>
-            <p>kickoff-gap 스킬로 기획 문서 내 모순(기능과 기술 스택 불일치 등)과 누락(비기능 요구사항 미정의 등)을 AI가 개발 전에 자동 탐지. Dogfooding 3회로 하네스 자체의 설계 결함도 사전 제거</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tech Stack -->
-      <div class="proj-footer fade-in">
-        <div class="proj-tags">
-          <span class="tag">Claude Code Skills</span>
-          <span class="tag">Markdown</span>
-          <span class="tag">Git</span>
-          <span class="tag">gh CLI</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ============================== -->
-  <!-- OTHER PROJECTS                  -->
-  <!-- ============================== -->
-  <section class="proj-section proj-section-alt" id="other-projects">
-    <div class="container">
-      <h2 class="proj-name fade-in" style="margin-bottom: 24px;">Other Projects</h2>
+      <h2 class="proj-name fade-in" style="margin-bottom: 24px;">Current Builds</h2>
 
       <div class="other-projects-grid">
+        <!-- Prequel -->
+        <div class="other-project-card fade-in" id="prequel">
+          <h3 class="other-project-title">Prequel <span class="badge badge-progress">🚧 개발 중</span></h3>
+          <p class="other-project-desc">
+            AI 구조화 인터뷰를 통해 프로젝트 기획의 빈틈을 찾아주는 SaaS 웹 앱.
+            CLI 도구였던 Kickoff Harness를 웹으로 제품화한 프로젝트로,
+            7가지 프로젝트 유형 자동 감지, Kickoff 문서 + Mermaid 아키텍처 다이어그램 자동 생성,
+            세션 일시중지/재개를 지원합니다.
+          </p>
+          <div class="other-project-footer">
+            <div class="proj-tags">
+              <span class="tag">React 19</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Supabase</span>
+              <span class="tag">Claude API</span>
+              <span class="tag">Mermaid.js</span>
+            </div>
+            <a href="https://github.com/SoyeonAhn3/Prequel" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+          </div>
+        </div>
+
         <!-- AI Production Monitor -->
         <div class="other-project-card fade-in" id="production-monitor">
           <h3 class="other-project-title">AI Production Monitor <span class="badge badge-progress">🚧 개발 중</span></h3>
           <p class="other-project-desc">
-            생산 실적 데이터를 1시간 간격으로 자동 모니터링하고, 이상 감지 시 AI가 원인을 분석하여 알림을 보내는 완전 자동화 시스템.
+            제조 현장의 생산 실적 데이터를 정기적으로 수집하고, 기준 대비 이상 징후를 탐지해 Power BI 대시보드와 AI 리포트로 연결하는 운영 모니터링 자동화 프로젝트입니다.
             Config-driven 이상 탐지(8가지 룰 × 3단계 심각도), AI Agent 일일 리포트(Tool Use), 4단계 보안 전략, Power BI 대시보드를 포함합니다.
           </p>
           <div class="other-project-footer">
@@ -477,47 +537,52 @@
             <a href="https://github.com/SoyeonAhn3/ai_production_monitor" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
           </div>
         </div>
-
-        <!-- Notion Notes -->
-        <div class="other-project-card fade-in" id="notion-notes">
-          <h3 class="other-project-title">Notion Notes</h3>
-          <p class="other-project-desc">
-            학습 자료를 AI로 분석하고, 유용한 답변만 골라 Notion에 자동 저장하는 웹 앱.
-            PDF·이미지·Word 파일을 업로드하면 Gemini/OpenAI가 분석하고,
-            대화 중 체크박스로 선택한 답변만 Notion의 Page → Database → Item 계층에 저장합니다.
-          </p>
-          <div class="other-project-footer">
-            <div class="proj-tags">
-              <span class="tag">FastAPI</span>
-              <span class="tag">Gemini</span>
-              <span class="tag">Notion API</span>
-            </div>
-            <a href="https://github.com/SoyeonAhn3/Notion_Notes" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
-          </div>
-        </div>
       </div>
 
     </div>
   </section>
 
   <!-- ============================== -->
-  <!-- ALSO BUILT                      -->
+  <!-- ADDITIONAL PROJECTS             -->
   <!-- ============================== -->
-  <section class="also-built-section" id="also-built">
+  <section class="also-built-section" id="additional-projects">
     <div class="container">
-      <h3 class="also-built-title fade-in">Also Built</h3>
+      <h3 class="also-built-title fade-in">Additional Projects</h3>
       <div class="also-built-list fade-in">
-        <div class="also-built-item">
-          <span class="also-built-name">Code Review Pipeline</span>
-          <span class="also-built-desc">4개 AI 에이전트가 순차 리뷰하고 100점 스코어링하는 멀티에이전트 코드 리뷰 시스템</span>
-          <a href="https://github.com/SoyeonAhn3/code-review-pipeline" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+        <div class="also-built-item" id="excel-generator">
+          <span class="also-built-name">Excel Generator</span>
+          <span class="also-built-desc">엑셀 업로드 + 자연어 설명 → AI가 코드 생성·보안 검증·실행하여 결과 엑셀을 자동 생성하는 플랫폼</span>
+          <a href="https://github.com/SoyeonAhn3/Excel_generator" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
         </div>
-        <div class="also-built-item">
+        <div class="also-built-item" id="consulting-agent">
           <span class="also-built-name">AI Consulting Agent</span>
           <span class="also-built-desc">Claude · Codex · Gemini 3개 AI가 MS 업무자동화 방안을 비교 분석하는 CLI 컨설팅 도구</span>
           <a href="https://github.com/SoyeonAhn3/AI_Consulting" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
         </div>
+        <div class="also-built-item" id="code-review">
+          <span class="also-built-name">Code Review Pipeline</span>
+          <span class="also-built-desc">4개 AI 에이전트가 순차 리뷰하고 100점 스코어링하는 멀티에이전트 코드 리뷰 시스템</span>
+          <a href="https://github.com/SoyeonAhn3/code-review-pipeline" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+        </div>
+        <div class="also-built-item" id="notion-notes">
+          <span class="also-built-name">Notion Notes</span>
+          <span class="also-built-desc">AI 대화에서 유용한 답변만 골라 Notion에 자동 저장하는 학습 도구</span>
+          <a href="https://github.com/SoyeonAhn3/Notion_Notes" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Development Approach -->
+  <section class="dev-approach-section">
+    <div class="container">
+      <h3 class="dev-approach-title fade-in">개발 접근 방식</h3>
+      <p class="dev-approach-text fade-in">
+        각 프로젝트는 AI 도구를 활용해 개발 속도를 높이되, 문제 정의, 요구사항 구조화, 아키텍처 설계, 데이터 흐름 검증, 예외 처리, 테스트 및 개선은 직접 수행했습니다.
+      </p>
+      <p class="dev-approach-text fade-in">
+        특히 AI가 생성한 결과를 그대로 사용하지 않고, 실제 사용 시나리오에 맞게 수정하며 기능 안정성과 업무 적합성을 검증했습니다.
+      </p>
     </div>
   </section>
 

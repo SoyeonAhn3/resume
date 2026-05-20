@@ -404,35 +404,13 @@
       <div class="projects-grid">
         <div class="project-card fade-in">
           <div class="project-header">
-            <h3>AI Stock Analyzer</h3>
-            <span class="badge badge-full">Full-Stack</span>
-          </div>
-          <p class="project-motive">
-            A multi-agent stock analysis system built to experiment with parallel AI architecture.
-            5 AI agents analyze news, financials, and macro indicators simultaneously,
-            cross-validate each other, and deliver BUY/HOLD/SELL recommendations.
-          </p>
-          <div class="project-tags">
-            <span class="tag">React</span>
-            <span class="tag">FastAPI</span>
-            <span class="tag">Claude API</span>
-            <span class="tag">Multi-Agent</span>
-            <span class="tag">TypeScript</span>
-          </div>
-          <div class="project-links">
-            <a href="projects.html#stock-analyzer" class="btn btn-small btn-primary">View Details</a>
-            <a href="https://github.com/SoyeonAhn3/stock-analyzer" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
-          </div>
-        </div>
-        <div class="project-card fade-in">
-          <div class="project-header">
             <h3>Workflow Generator</h3>
             <a href="https://processflow-generator.netlify.app" target="_blank" rel="noopener" class="btn-live-demo btn-live-demo-sm"><span class="btn-live-dot"></span>Live Demo</a>
           </div>
           <p class="project-motive">
-            I built this to reduce the repetitive time spent documenting business processes.
-            Enter a process description and it automatically generates
-            diagrams and Word manuals.
+            A documentation automation tool that structures text-based process descriptions
+            and converts them into SwimLane diagrams and Word manuals.
+            Designed to reduce manual work from <strong>30-40 minutes</strong> to under <strong>5 minutes</strong>.
           </p>
           <div class="project-tags">
             <span class="tag">React 18</span>
@@ -446,87 +424,83 @@
         </div>
         <div class="project-card fade-in">
           <div class="project-header">
-            <h3>AI Production Monitor</h3>
-            <span class="badge badge-progress">🚧 In Progress</span>
+            <h3>AI Project Kickoff Harness</h3>
           </div>
           <p class="project-motive">
-            An automated system that monitors production KPIs (output, efficiency, defect rates)
-            and uses AI to analyze root causes when anomalies are detected.
+            A CLI automation harness that transforms vague project ideas into development-ready planning documents
+            through AI interviews and validation.
+            Converts ideas into requirements documents via structured interview flows, Gap Checks, and checklist generation.
           </p>
           <div class="project-tags">
-            <span class="tag">n8n</span>
-            <span class="tag">Claude API</span>
-            <span class="tag">Power BI</span>
-            <span class="tag">Google Sheets</span>
+            <span class="tag">Claude Code Skills</span>
+            <span class="tag">Markdown</span>
+            <span class="tag">gh CLI</span>
           </div>
           <div class="project-links">
-            <a href="projects.html#production-monitor" class="btn btn-small btn-primary">View Details</a>
-            <a href="https://github.com/SoyeonAhn3/ai_production_monitor" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+            <a href="projects.html#kickoff-harness" class="btn btn-small btn-primary">View Details</a>
+            <a href="https://github.com/SoyeonAhn3/AI-Project-Kickoff-Harness" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+          </div>
+        </div>
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <h3>AI Stock Analyzer</h3>
+            <a href="https://stock-analyzer-ai.netlify.app/" target="_blank" rel="noopener" class="btn-live-demo btn-live-demo-sm"><span class="btn-live-dot"></span>Live Demo</a>
+          </div>
+          <p class="project-motive">
+            An experimental stock analysis project that separately collects real-time financial data and news summaries,
+            then uses multiple AI agents to generate evidence-based reports.
+          </p>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Claude API</span>
+            <span class="tag">Multi-Agent</span>
+            <span class="tag">TypeScript</span>
+          </div>
+          <div class="project-links">
+            <a href="projects.html#stock-analyzer" class="btn btn-small btn-primary">View Details</a>
+            <a href="https://github.com/SoyeonAhn3/stock-analyzer" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
           </div>
         </div>
       </div>
 
-      <!-- OTHER PROJECTS -->
-      <div class="projects-subtitle other">Other Projects</div>
+      <!-- MORE PROJECTS -->
+      <div class="projects-subtitle other">More Projects</div>
       <div class="projects-compact-list">
         <div class="project-compact fade-in">
-          <div class="project-compact-info" onclick="this.parentElement.querySelector('.project-compact-detail').classList.toggle('open')">
-            <span class="project-compact-name">AI Consulting Agent</span>
-            <span class="project-compact-desc">3-AI simultaneous comparative consulting tool</span>
+          <div class="project-compact-info">
+            <span class="project-compact-name">Prequel</span>
+            <span class="project-compact-desc">Web SaaS version of Kickoff Harness · AI structured interviews</span>
           </div>
           <div class="project-compact-right">
-            <a href="https://github.com/SoyeonAhn3/AI_Consulting" target="_blank" rel="noopener" class="btn btn-small btn-outline" onclick="event.stopPropagation()">GitHub</a>
-            <button class="project-compact-toggle-btn" onclick="this.closest('.project-compact').querySelector('.project-compact-detail').classList.toggle('open'); this.classList.toggle('open')">
-              <span class="toggle-arrow">▼</span>
-            </button>
-          </div>
-          <div class="project-compact-detail">
-            <p>When evaluating MS automation solutions, querying multiple AIs individually felt inefficient. I built a CLI consulting tool that leverages 3 AIs simultaneously for comparative analysis.</p>
-            <div class="project-compact-tags">
-              <span class="tag">Claude Code Skills</span>
-              <span class="tag">Multi-AI</span>
-              <span class="tag">CLI</span>
-            </div>
+            <a href="projects.html#current-builds" class="btn btn-small btn-primary" onclick="event.stopPropagation()">Details</a>
           </div>
         </div>
         <div class="project-compact fade-in">
-          <div class="project-compact-info" onclick="this.parentElement.querySelector('.project-compact-detail').classList.toggle('open')">
-            <span class="project-compact-name">Code Review Pipeline</span>
-            <span class="project-compact-desc">4 AI agents auto-review security, performance & quality</span>
+          <div class="project-compact-info">
+            <span class="project-compact-name">AI Production Monitor</span>
+            <span class="project-compact-desc">Auto data collection · anomaly detection · AI reports · Power BI dashboard</span>
           </div>
           <div class="project-compact-right">
-            <a href="https://github.com/SoyeonAhn3/code-review-pipeline" target="_blank" rel="noopener" class="btn btn-small btn-outline" onclick="event.stopPropagation()">GitHub</a>
-            <button class="project-compact-toggle-btn" onclick="this.closest('.project-compact').querySelector('.project-compact-detail').classList.toggle('open'); this.classList.toggle('open')">
-              <span class="toggle-arrow">▼</span>
-            </button>
-          </div>
-          <div class="project-compact-detail">
-            <p>Recurring quality gaps during AI automation development led me to build a multi-agent system where 4 AI agents sequentially review code with cross-validation.</p>
-            <div class="project-compact-tags">
-              <span class="tag">Python</span>
-              <span class="tag">Claude API</span>
-              <span class="tag">Multi-Agent</span>
-            </div>
+            <a href="projects.html#current-builds" class="btn btn-small btn-primary" onclick="event.stopPropagation()">Details</a>
           </div>
         </div>
         <div class="project-compact fade-in">
-          <div class="project-compact-info" onclick="this.parentElement.querySelector('.project-compact-detail').classList.toggle('open')">
-            <span class="project-compact-name">Notion Notes</span>
-            <span class="project-compact-desc">Auto-save useful AI responses to Notion</span>
+          <div class="project-compact-info">
+            <span class="project-compact-name">Excel Generator</span>
+            <span class="project-compact-desc">Natural language → AI code generation · security validation · auto Excel creation</span>
           </div>
           <div class="project-compact-right">
-            <a href="https://github.com/SoyeonAhn3/Notion_Notes" target="_blank" rel="noopener" class="btn btn-small btn-outline" onclick="event.stopPropagation()">GitHub</a>
-            <button class="project-compact-toggle-btn" onclick="this.closest('.project-compact').querySelector('.project-compact-detail').classList.toggle('open'); this.classList.toggle('open')">
-              <span class="toggle-arrow">▼</span>
-            </button>
+            <a href="projects.html#excel-generator" class="btn btn-small btn-primary" onclick="event.stopPropagation()">Details</a>
           </div>
-          <div class="project-compact-detail">
-            <p>I wanted to organize what I learned through AI conversations and save only the useful responses directly to Notion.</p>
-            <div class="project-compact-tags">
-              <span class="tag">FastAPI</span>
-              <span class="tag">Gemini</span>
-              <span class="tag">Notion API</span>
-            </div>
+        </div>
+        <div class="project-compact fade-in">
+          <div class="project-compact-info">
+            <span class="project-compact-name">+3 more</span>
+            <span class="project-compact-desc">AI Consulting Agent, Code Review Pipeline, Notion Notes</span>
+          </div>
+          <div class="project-compact-right">
+            <a href="projects.html#additional-projects" class="btn btn-small btn-primary" onclick="event.stopPropagation()">View All</a>
           </div>
         </div>
       </div>

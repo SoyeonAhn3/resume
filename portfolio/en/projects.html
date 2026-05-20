@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects — Soyeon Ahn</title>
   <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../projects.css?v=3">
+  <link rel="stylesheet" href="../projects.css?v=4">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -20,10 +20,10 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#stock-analyzer">Stock Analyzer</a></li>
         <li><a href="#workflow-generator">Workflow</a></li>
         <li><a href="#kickoff-harness">Kickoff Harness</a></li>
-        <li><a href="#other-projects">Others</a></li>
+        <li><a href="#stock-analyzer">Stock Analyzer</a></li>
+        <li><a href="#current-builds">Others</a></li>
         <li><a href="index.html" class="nav-back">&larr; Portfolio</a></li>
         <li>
           <a href="../projects.html" class="nav-lang" title="한국어로 보기">KO</a>
@@ -37,18 +37,25 @@
     <div class="container">
       <h1 class="proj-hero-title fade-in">Side Projects</h1>
       <p class="proj-hero-desc fade-in">
-        Projects I designed and built to automate repetitive tasks.
+        Projects that turn ambiguous business problems into automated workflows,<br>AI-driven analysis, and structured project plans.
       </p>
       <div class="proj-quickjump fade-in">
         <div class="proj-quickjump-group">
           <span class="proj-quickjump-label">Featured</span>
-          <a href="#stock-analyzer" class="proj-quickjump-link">AI Stock Analyzer</a>
           <a href="#workflow-generator" class="proj-quickjump-link">Workflow Generator</a>
           <a href="#kickoff-harness" class="proj-quickjump-link">Project Kickoff Harness</a>
+          <a href="#stock-analyzer" class="proj-quickjump-link">AI Stock Analyzer</a>
         </div>
         <div class="proj-quickjump-group">
-          <span class="proj-quickjump-label">Other</span>
+          <span class="proj-quickjump-label">Current Builds</span>
+          <a href="#prequel" class="proj-quickjump-link">Prequel</a>
           <a href="#production-monitor" class="proj-quickjump-link">AI Production Monitor</a>
+        </div>
+        <div class="proj-quickjump-group">
+          <span class="proj-quickjump-label">Additional</span>
+          <a href="#excel-generator" class="proj-quickjump-link">Excel Generator</a>
+          <a href="#consulting-agent" class="proj-quickjump-link">AI Consulting Agent</a>
+          <a href="#code-review" class="proj-quickjump-link">Code Review Pipeline</a>
           <a href="#notion-notes" class="proj-quickjump-link">Notion Notes</a>
         </div>
       </div>
@@ -56,148 +63,9 @@
   </header>
 
   <!-- ============================== -->
-  <!-- 1. AI Stock Analyzer (FEATURED) -->
+  <!-- 1. Workflow Generator (FEATURED) -->
   <!-- ============================== -->
-  <section class="proj-section" id="stock-analyzer">
-    <div class="container">
-
-      <div class="proj-title-row fade-in">
-        <h2 class="proj-name">AI Stock Analyzer</h2>
-        <a href="https://stock-analyzer-ai.netlify.app/" target="_blank" rel="noopener" class="btn-live-demo">
-          <span class="btn-live-dot"></span>Live Demo
-        </a>
-        <a href="https://github.com/SoyeonAhn3/stock-analyzer" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
-      </div>
-      <p class="proj-summary fade-in">
-        A multi-agent stock analysis system where 5 AI agents analyze news, financials, and macro indicators in parallel, cross-validate each other, and deliver investment recommendations.
-      </p>
-
-      <!-- Motivation -->
-      <div class="proj-block fade-in">
-        <h3 class="proj-block-title">Motivation</h3>
-        <p class="proj-block-text">
-          When analyzing stocks, having to check prices, financials, news, and macro data across multiple platforms felt inefficient.
-          Rather than querying a single AI, I wanted to design and implement a multi-agent architecture where 5 specialized agents
-          analyze from different perspectives and cross-validate each other's findings.
-        </p>
-      </div>
-
-      <!-- Demo Video -->
-      <div class="proj-demo fade-in">
-        <video
-          src="https://github.com/user-attachments/assets/42a6e030-33c8-4f04-b49e-dd72c07ae4ab"
-          controls
-          muted
-          playsinline
-          preload="metadata"
-          class="proj-video"
-        ></video>
-      </div>
-
-      <!-- Key Features -->
-      <div class="proj-block fade-in">
-        <h3 class="proj-block-title">Key Features</h3>
-        <div class="feat-grid">
-          <div class="feat-card">
-            <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-            </div>
-            <h4>Quick Look</h4>
-            <p>Instantly retrieve real-time prices, candle charts, financial metrics, and technical indicators (MACD, Bollinger Bands) within 1 second.</p>
-          </div>
-          <div class="feat-card">
-            <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-            </div>
-            <h4>5-Agent Deep Analysis</h4>
-            <p>News, Data, Macro, Cross-Validator, and Analyst agents run in parallel, cross-validate findings, and deliver BUY/HOLD/SELL recommendations.</p>
-          </div>
-          <div class="feat-card">
-            <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-            </div>
-            <h4>7 APIs + Fallback Chain</h4>
-            <p>Integrates yfinance, Finnhub, Twelve Data, Finviz, FMP, FRED, and Claude API. Automatically tries alternative sources when the primary API fails.</p>
-          </div>
-          <div class="feat-card">
-            <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <h4>Anti-Hallucination Design</h4>
-            <p>All numbers come from APIs only; AI handles interpretation only. Role separation ensures reliability in the financial domain.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Architecture -->
-      <div class="proj-block fade-in">
-        <h3 class="proj-block-title">Architecture</h3>
-        <div class="arch-flow">
-          <div class="arch-node">
-            <div class="arch-node-label">React + TS</div>
-            <div class="arch-node-desc">User Interface</div>
-          </div>
-          <div class="arch-arrow"></div>
-          <div class="arch-node arch-node-ai">
-            <div class="arch-node-label">FastAPI</div>
-            <div class="arch-node-desc">API Router + Cache</div>
-          </div>
-          <div class="arch-arrow"></div>
-          <div class="arch-node">
-            <div class="arch-node-label">5 AI Agents</div>
-            <div class="arch-node-desc">Parallel + Cross-Validation</div>
-          </div>
-          <div class="arch-arrow"></div>
-          <div class="arch-node arch-node-output">
-            <div class="arch-node-label">Output</div>
-            <div class="arch-node-desc">BUY / HOLD / SELL</div>
-          </div>
-        </div>
-        <div class="arch-storage">
-          <span class="arch-storage-tag">yfinance</span>
-          <span class="arch-storage-tag">Finnhub</span>
-          <span class="arch-storage-tag">Twelve Data</span>
-          <span class="arch-storage-tag">FRED</span>
-          <span class="arch-storage-tag">SQLite</span>
-        </div>
-      </div>
-
-      <!-- Challenge -->
-      <div class="proj-block fade-in">
-        <h3 class="proj-block-title">Problem Solving</h3>
-        <div class="challenge-card">
-          <div class="challenge-row">
-            <span class="challenge-label">Problem</span>
-            <p>Frequent 403 errors from external data APIs' free plan limits causing analysis to break</p>
-          </div>
-          <div class="challenge-row">
-            <span class="challenge-label challenge-label-solve">Solution</span>
-            <p>Built a multi-fallback chain (yfinance → Finviz → FMP) and applied Graceful Degradation per agent, so the remaining analysis continues even when one source fails</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tech Stack -->
-      <div class="proj-footer fade-in">
-        <div class="proj-tags">
-          <span class="tag">React</span>
-          <span class="tag">TypeScript</span>
-          <span class="tag">FastAPI</span>
-          <span class="tag">Claude API</span>
-          <span class="tag">SQLite</span>
-          <span class="tag">yfinance</span>
-          <span class="tag">Lightweight Charts</span>
-          <span class="tag">asyncio</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ============================== -->
-  <!-- 2. Workflow Generator (FEATURED) -->
-  <!-- ============================== -->
-  <section class="proj-section proj-section-alt" id="workflow-generator">
+  <section class="proj-section" id="workflow-generator">
     <div class="container">
 
       <div class="proj-title-row fade-in">
@@ -206,7 +74,7 @@
         <a href="https://github.com/SoyeonAhn3/Workflow_Generator" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
       </div>
       <p class="proj-summary fade-in">
-        A web app that automatically generates diagrams and Word manuals from business process descriptions.
+        A documentation automation tool that structures text-based workflow descriptions into SwimLane diagrams and Word manuals.
       </p>
 
       <!-- Motivation -->
@@ -214,8 +82,8 @@
         <h3 class="proj-block-title">Motivation</h3>
         <p class="proj-block-text">
           Visualizing business processes and managing them as documents was time-consuming and tedious.
-          I thought if there was a tool that could automatically create diagrams and manuals from text input,
-          it would significantly reduce the documentation burden.
+          <br>
+          Designed to reduce manual drafting from <strong>30–40 minutes</strong> to under <strong>5 minutes</strong> per process (benchmarked on <strong>5</strong> sample workflows), and validated the end-to-end flow from input → structuring → diagram → Word output.
         </p>
       </div>
 
@@ -231,8 +99,11 @@
         ></video>
       </div>
 
+      <details class="proj-details fade-in">
+        <summary class="proj-details-toggle"><span class="toggle-icon">▶</span>Key Features · Architecture · Problem Solving</summary>
+
       <!-- Key Features -->
-      <div class="proj-block fade-in">
+      <div class="proj-block">
         <h3 class="proj-block-title">Key Features</h3>
         <div class="feat-grid">
           <div class="feat-card">
@@ -267,7 +138,7 @@
       </div>
 
       <!-- Architecture -->
-      <div class="proj-block fade-in">
+      <div class="proj-block">
         <h3 class="proj-block-title">Architecture</h3>
         <div class="arch-flow">
           <div class="arch-node">
@@ -297,7 +168,7 @@
       </div>
 
       <!-- Challenge -->
-      <div class="proj-block fade-in">
+      <div class="proj-block">
         <h3 class="proj-block-title">Problem Solving</h3>
         <div class="challenge-card">
           <div class="challenge-row">
@@ -310,6 +181,8 @@
           </div>
         </div>
       </div>
+
+      </details>
 
       <!-- Tech Stack -->
       <div class="proj-footer fade-in">
@@ -329,9 +202,9 @@
   </section>
 
   <!-- ============================== -->
-  <!-- 3. AI Project Kickoff Harness (FEATURED) -->
+  <!-- 2. AI Project Kickoff Harness (FEATURED) -->
   <!-- ============================== -->
-  <section class="proj-section" id="kickoff-harness">
+  <section class="proj-section proj-section-alt" id="kickoff-harness">
     <div class="container">
 
       <div class="proj-title-row fade-in">
@@ -340,6 +213,7 @@
       </div>
       <p class="proj-summary fade-in">
         A CLI automation harness that transforms vague project ideas into development-ready plans through AI-driven interviews and validation.
+        Converts ideas into actionable requirement documents via structured interview flows, Gap Check, and checklist generation.
       </p>
 
       <!-- Motivation -->
@@ -353,8 +227,28 @@
         </p>
       </div>
 
-      <!-- Key Features -->
+      <!-- Showcase -->
       <div class="proj-block fade-in">
+        <h3 class="proj-block-title">Showcase</h3>
+        <div class="showcase-list">
+          <div class="showcase-item">
+            <span class="showcase-name">finance_data_platform</span>
+            <span class="showcase-desc">Snowflake + Power BI + Text-to-SQL AI finance data analytics platform</span>
+            <a href="https://github.com/SoyeonAhn3/finance_data_platform/blob/main/pre-requirement/finance_data_platform_kickoff.md" target="_blank" rel="noopener" class="btn btn-small btn-outline">Kickoff Doc</a>
+          </div>
+          <div class="showcase-item">
+            <span class="showcase-name">Prequel</span>
+            <span class="showcase-desc">Web SaaS version of this harness — AI structured interviews in the browser</span>
+            <a href="https://github.com/SoyeonAhn3/Prequel/blob/main/pre-requirement/prequel_kickoff.md" target="_blank" rel="noopener" class="btn btn-small btn-outline">Kickoff Doc</a>
+          </div>
+        </div>
+      </div>
+
+      <details class="proj-details fade-in">
+        <summary class="proj-details-toggle"><span class="toggle-icon">▶</span>Key Features · Architecture · Problem Solving</summary>
+
+      <!-- Key Features -->
+      <div class="proj-block">
         <h3 class="proj-block-title">Key Features</h3>
         <div class="feat-grid">
           <div class="feat-card">
@@ -369,7 +263,7 @@
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
             </div>
             <h4>Dogfooding Self-Validation</h4>
-            <p>The harness was used to plan itself across 3 iterations, discovering and fixing 10+ design improvements in the process.</p>
+            <p>Over 3 rounds of dogfooding, discovered and fixed 10+ design flaws in input flows, evaluation criteria, missing questions, and checklist structure.</p>
           </div>
           <div class="feat-card">
             <div class="feat-icon">
@@ -389,7 +283,7 @@
       </div>
 
       <!-- Architecture -->
-      <div class="proj-block fade-in">
+      <div class="proj-block">
         <h3 class="proj-block-title">Architecture</h3>
         <div class="arch-flow">
           <div class="arch-node">
@@ -398,7 +292,7 @@
           </div>
           <div class="arch-arrow"></div>
           <div class="arch-node arch-node-ai">
-            <div class="arch-node-label">Skill Chain</div>
+            <div class="arch-node-label">10 Skills</div>
             <div class="arch-node-desc">Interview · Evaluate · Validate</div>
           </div>
           <div class="arch-arrow"></div>
@@ -420,7 +314,7 @@
       </div>
 
       <!-- Challenge -->
-      <div class="proj-block fade-in">
+      <div class="proj-block">
         <h3 class="proj-block-title">Problem Solving</h3>
         <div class="challenge-card">
           <div class="challenge-row">
@@ -433,6 +327,8 @@
           </div>
         </div>
       </div>
+
+      </details>
 
       <!-- Tech Stack -->
       <div class="proj-footer fade-in">
@@ -448,19 +344,183 @@
   </section>
 
   <!-- ============================== -->
-  <!-- OTHER PROJECTS                  -->
+  <!-- 3. AI Stock Analyzer (FEATURED) -->
   <!-- ============================== -->
-  <section class="proj-section proj-section-alt" id="other-projects">
+  <section class="proj-section" id="stock-analyzer">
     <div class="container">
-      <h2 class="proj-name fade-in" style="margin-bottom: 24px;">Other Projects</h2>
+
+      <div class="proj-title-row fade-in">
+        <h2 class="proj-name">AI Stock Analyzer</h2>
+        <a href="https://stock-analyzer-ai.netlify.app/" target="_blank" rel="noopener" class="btn-live-demo">
+          <span class="btn-live-dot"></span>Live Demo
+        </a>
+        <a href="https://github.com/SoyeonAhn3/stock-analyzer" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+      </div>
+      <p class="proj-summary fade-in">
+        An experimental stock analysis project designed to separately collect real-time financial data and news summaries, with multiple AI agents generating evidence-based reports.
+      </p>
+
+      <!-- Motivation -->
+      <div class="proj-block fade-in">
+        <h3 class="proj-block-title">Motivation</h3>
+        <p class="proj-block-text">
+          When analyzing stocks, having to check prices, financials, news, and macro data across multiple platforms felt inefficient.
+          Rather than querying a single AI, I wanted to design and implement a multi-agent architecture where 5 specialized agents
+          analyze from different perspectives and cross-validate each other's findings.
+        </p>
+      </div>
+
+      <!-- Demo Video -->
+      <div class="proj-demo fade-in">
+        <video
+          src="https://github.com/user-attachments/assets/42a6e030-33c8-4f04-b49e-dd72c07ae4ab"
+          controls
+          muted
+          playsinline
+          preload="metadata"
+          class="proj-video"
+        ></video>
+      </div>
+
+      <details class="proj-details fade-in">
+        <summary class="proj-details-toggle"><span class="toggle-icon">▶</span>Key Features · Architecture · Problem Solving</summary>
+
+      <!-- Key Features -->
+      <div class="proj-block">
+        <h3 class="proj-block-title">Key Features</h3>
+        <div class="feat-grid">
+          <div class="feat-card">
+            <div class="feat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h4>Quick Look</h4>
+            <p>Instantly retrieve real-time prices, candle charts, financial metrics, and technical indicators (MACD, Bollinger Bands) within 1 second.</p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h4>5-Agent Deep Analysis</h4>
+            <p>News, Data, Macro, Cross-Validator, and Analyst agents run in parallel, cross-validate findings, and deliver BUY/HOLD/SELL recommendations.</p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            </div>
+            <h4>7 APIs + Fallback Chain</h4>
+            <p>Integrates yfinance, Finnhub, Twelve Data, Finviz, FMP, FRED, and Claude API. Automatically tries alternative sources when the primary API fails.</p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h4>Anti-Hallucination Design</h4>
+            <p>All numbers come from APIs only; AI handles interpretation only. Role separation ensures reliability in the financial domain.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Architecture -->
+      <div class="proj-block">
+        <h3 class="proj-block-title">Architecture</h3>
+        <div class="arch-flow">
+          <div class="arch-node">
+            <div class="arch-node-label">React + TS</div>
+            <div class="arch-node-desc">User Interface</div>
+          </div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node arch-node-ai">
+            <div class="arch-node-label">FastAPI</div>
+            <div class="arch-node-desc">API Router + Cache</div>
+          </div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node">
+            <div class="arch-node-label">5 AI Agents</div>
+            <div class="arch-node-desc">Parallel + Cross-Validation</div>
+          </div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node arch-node-output">
+            <div class="arch-node-label">Output</div>
+            <div class="arch-node-desc">BUY / HOLD / SELL</div>
+          </div>
+        </div>
+        <div class="arch-storage">
+          <span class="arch-storage-tag">yfinance</span>
+          <span class="arch-storage-tag">Finnhub</span>
+          <span class="arch-storage-tag">Twelve Data</span>
+          <span class="arch-storage-tag">FRED</span>
+          <span class="arch-storage-tag">SQLite</span>
+        </div>
+      </div>
+
+      <!-- Challenge -->
+      <div class="proj-block">
+        <h3 class="proj-block-title">Problem Solving</h3>
+        <div class="challenge-card">
+          <div class="challenge-row">
+            <span class="challenge-label">Problem</span>
+            <p>Frequent 403 errors from external data APIs' free plan limits causing analysis to break</p>
+          </div>
+          <div class="challenge-row">
+            <span class="challenge-label challenge-label-solve">Solution</span>
+            <p>Built a multi-fallback chain (yfinance → Finviz → FMP) and applied Graceful Degradation per agent, so the remaining analysis continues even when one source fails</p>
+          </div>
+        </div>
+      </div>
+
+      </details>
+
+      <!-- Tech Stack -->
+      <div class="proj-footer fade-in">
+        <div class="proj-tags">
+          <span class="tag">React</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">Claude API</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">yfinance</span>
+          <span class="tag">Lightweight Charts</span>
+          <span class="tag">asyncio</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================== -->
+  <!-- CURRENT BUILDS                  -->
+  <!-- ============================== -->
+  <section class="proj-section proj-section-alt" id="current-builds">
+    <div class="container">
+      <h2 class="proj-name fade-in" style="margin-bottom: 24px;">Current Builds</h2>
 
       <div class="other-projects-grid">
+        <!-- Prequel -->
+        <div class="other-project-card fade-in" id="prequel">
+          <h3 class="other-project-title">Prequel <span class="badge badge-progress">🚧 In Progress</span></h3>
+          <p class="other-project-desc">
+            A SaaS web app that finds gaps in project planning through AI-powered structured interviews.
+            The web productization of the CLI Kickoff Harness — supports 7 project type auto-detection,
+            auto-generated kickoff documents + Mermaid architecture diagrams, and session pause/resume.
+          </p>
+          <div class="other-project-footer">
+            <div class="proj-tags">
+              <span class="tag">React 19</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Supabase</span>
+              <span class="tag">Claude API</span>
+              <span class="tag">Mermaid.js</span>
+            </div>
+            <a href="https://github.com/SoyeonAhn3/Prequel" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+          </div>
+        </div>
+
         <!-- AI Production Monitor -->
         <div class="other-project-card fade-in" id="production-monitor">
           <h3 class="other-project-title">AI Production Monitor <span class="badge badge-progress">🚧 In Progress</span></h3>
           <p class="other-project-desc">
-            A fully automated system that monitors production data hourly, detects anomalies, and uses AI to analyze root causes and send alerts.
-            Includes config-driven detection (8 rules x 3 severity levels), AI Agent daily reports (Tool Use), 4-level security strategy, and Power BI dashboards.
+            An operational monitoring automation project that periodically collects production data, detects anomalies against thresholds, and connects to Power BI dashboards and AI reports.
+            Includes config-driven detection (8 rules × 3 severity levels), AI Agent daily reports (Tool Use), 4-level security strategy, and Power BI dashboards.
           </p>
           <div class="other-project-footer">
             <div class="proj-tags">
@@ -472,47 +532,52 @@
             <a href="https://github.com/SoyeonAhn3/ai_production_monitor" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
           </div>
         </div>
-
-        <!-- Notion Notes -->
-        <div class="other-project-card fade-in" id="notion-notes">
-          <h3 class="other-project-title">Notion Notes</h3>
-          <p class="other-project-desc">
-            A web app that analyzes study materials with AI and auto-saves only the useful responses to Notion.
-            Upload PDF, images, or Word files and Gemini/OpenAI analyzes them.
-            Select useful responses via checkboxes during conversation and save to Notion's Page → Database → Item hierarchy.
-          </p>
-          <div class="other-project-footer">
-            <div class="proj-tags">
-              <span class="tag">FastAPI</span>
-              <span class="tag">Gemini</span>
-              <span class="tag">Notion API</span>
-            </div>
-            <a href="https://github.com/SoyeonAhn3/Notion_Notes" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
-          </div>
-        </div>
       </div>
 
     </div>
   </section>
 
   <!-- ============================== -->
-  <!-- ALSO BUILT                      -->
+  <!-- ADDITIONAL PROJECTS             -->
   <!-- ============================== -->
-  <section class="also-built-section" id="also-built">
+  <section class="also-built-section" id="additional-projects">
     <div class="container">
-      <h3 class="also-built-title fade-in">Also Built</h3>
+      <h3 class="also-built-title fade-in">Additional Projects</h3>
       <div class="also-built-list fade-in">
-        <div class="also-built-item">
-          <span class="also-built-name">Code Review Pipeline</span>
-          <span class="also-built-desc">Multi-agent code review system where 4 AI agents sequentially review and score code on a 100-point scale</span>
-          <a href="https://github.com/SoyeonAhn3/code-review-pipeline" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+        <div class="also-built-item" id="excel-generator">
+          <span class="also-built-name">Excel Generator</span>
+          <span class="also-built-desc">Upload Excel + describe in natural language → AI generates code, validates security, executes, and produces the result file</span>
+          <a href="https://github.com/SoyeonAhn3/Excel_generator" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
         </div>
-        <div class="also-built-item">
+        <div class="also-built-item" id="consulting-agent">
           <span class="also-built-name">AI Consulting Agent</span>
           <span class="also-built-desc">CLI consulting tool where Claude, Codex, and Gemini compare and analyze MS automation solutions</span>
           <a href="https://github.com/SoyeonAhn3/AI_Consulting" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
         </div>
+        <div class="also-built-item" id="code-review">
+          <span class="also-built-name">Code Review Pipeline</span>
+          <span class="also-built-desc">Multi-agent code review system where 4 AI agents sequentially review and score code on a 100-point scale</span>
+          <a href="https://github.com/SoyeonAhn3/code-review-pipeline" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+        </div>
+        <div class="also-built-item" id="notion-notes">
+          <span class="also-built-name">Notion Notes</span>
+          <span class="also-built-desc">AI-powered study tool that auto-saves only useful responses to Notion</span>
+          <a href="https://github.com/SoyeonAhn3/Notion_Notes" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Development Approach -->
+  <section class="dev-approach-section">
+    <div class="container">
+      <h3 class="dev-approach-title fade-in">Development Approach</h3>
+      <p class="dev-approach-text fade-in">
+        Each project leveraged AI tools to accelerate development, while problem definition, requirements structuring, architecture design, data flow validation, exception handling, testing, and iteration were done hands-on.
+      </p>
+      <p class="dev-approach-text fade-in">
+        AI-generated outputs were never used as-is — they were refined to fit real usage scenarios, with functional stability and business fit validated throughout.
+      </p>
     </div>
   </section>
 

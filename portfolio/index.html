@@ -394,35 +394,13 @@
       <div class="projects-grid">
         <div class="project-card fade-in">
           <div class="project-header">
-            <h3>AI Stock Analyzer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
-            <a href="https://stock-analyzer-ai.netlify.app/" target="_blank" rel="noopener" class="btn-live-demo btn-live-demo-sm"><span class="btn-live-dot"></span>Live Demo</a>
-          </div>
-          <p class="project-motive">
-            멀티에이전트 AI 아키텍처를 실험하기 위해 개발한 미국 주식 분석 시스템입니다.
-            5개 AI 에이전트가 뉴스·재무·거시경제를 병렬 분석하고 교차 검증하여
-            매수/보유/매도 의견을 제시합니다.
-          </p>
-          <div class="project-tags">
-            <span class="tag">React</span>
-            <span class="tag">FastAPI</span>
-            <span class="tag">Claude API</span>
-            <span class="tag">Multi-Agent</span>
-            <span class="tag">TypeScript</span>
-          </div>
-          <div class="project-links">
-            <a href="projects.html#stock-analyzer" class="btn btn-small btn-primary">View Details</a>
-            <a href="https://github.com/SoyeonAhn3/stock-analyzer" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
-          </div>
-        </div>
-        <div class="project-card fade-in">
-          <div class="project-header">
             <h3>Workflow Generator</h3>
             <a href="https://processflow-generator.netlify.app" target="_blank" rel="noopener" class="btn-live-demo btn-live-demo-sm"><span class="btn-live-dot"></span>Live Demo</a>
           </div>
           <p class="project-motive">
-            업무 프로세스를 문서화하는 과정에서 반복적으로 소요되는 시간을 줄이고자
-            제작하게 되었습니다. 프로세스를 입력하면 다이어그램과 Word 매뉴얼이
-            자동으로 생성됩니다.
+            텍스트 기반 업무 설명을 구조화하여 SwimLane 다이어그램과 Word 매뉴얼로
+            자동 변환하는 업무 문서화 자동화 도구입니다.
+            수작업 <strong>30~40분</strong> → <strong>5분</strong> 이내 자동 생성을 목표로 설계했습니다.
           </p>
           <div class="project-tags">
             <span class="tag">React 18</span>
@@ -436,87 +414,82 @@
         </div>
         <div class="project-card fade-in">
           <div class="project-header">
-            <h3>AI Production Monitor</h3>
-            <span class="badge badge-progress">🚧 개발 중</span>
+            <h3>AI Project Kickoff Harness</h3>
           </div>
           <p class="project-motive">
-            제조 현장의 생산 KPI(산출량·효율·불량률)를 자동 모니터링하고,
-            이상 징후 발생 시 AI가 원인을 분석하여 알림을 보내는 시스템입니다.
+            막연한 프로젝트 아이디어를 AI 인터뷰·검증을 통해 개발 가능한 기획 문서로 전환하는 CLI 자동화 하네스.
+            고정된 인터뷰 플로우, Gap Check, 체크리스트 생성을 통해 요구사항 문서로 전환합니다.
           </p>
           <div class="project-tags">
-            <span class="tag">n8n</span>
-            <span class="tag">Claude API</span>
-            <span class="tag">Power BI</span>
-            <span class="tag">Google Sheets</span>
+            <span class="tag">Claude Code Skills</span>
+            <span class="tag">Markdown</span>
+            <span class="tag">gh CLI</span>
           </div>
           <div class="project-links">
-            <a href="projects.html#production-monitor" class="btn btn-small btn-primary">View Details</a>
-            <a href="https://github.com/SoyeonAhn3/ai_production_monitor" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+            <a href="projects.html#kickoff-harness" class="btn btn-small btn-primary">View Details</a>
+            <a href="https://github.com/SoyeonAhn3/AI-Project-Kickoff-Harness" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+          </div>
+        </div>
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <h3>AI Stock Analyzer</h3>
+            <a href="https://stock-analyzer-ai.netlify.app/" target="_blank" rel="noopener" class="btn-live-demo btn-live-demo-sm"><span class="btn-live-dot"></span>Live Demo</a>
+          </div>
+          <p class="project-motive">
+            실시간 금융 데이터와 뉴스 요약을 분리 수집하고, 다중 AI 에이전트가
+            근거 기반 리포트를 생성하도록 설계한 주식 분석 실험 프로젝트입니다.
+          </p>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Claude API</span>
+            <span class="tag">Multi-Agent</span>
+            <span class="tag">TypeScript</span>
+          </div>
+          <div class="project-links">
+            <a href="projects.html#stock-analyzer" class="btn btn-small btn-primary">View Details</a>
+            <a href="https://github.com/SoyeonAhn3/stock-analyzer" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
           </div>
         </div>
       </div>
 
       <!-- OTHER PROJECTS -->
-      <div class="projects-subtitle other">Other Projects</div>
+      <div class="projects-subtitle other">More Projects</div>
       <div class="projects-compact-list">
         <div class="project-compact fade-in">
-          <div class="project-compact-info" onclick="this.parentElement.querySelector('.project-compact-detail').classList.toggle('open')">
-            <span class="project-compact-name">AI Consulting Agent</span>
-            <span class="project-compact-desc">3종 AI 동시 비교 검증 컨설팅 도구</span>
+          <div class="project-compact-info">
+            <span class="project-compact-name">Prequel</span>
+            <span class="project-compact-desc">Kickoff Harness의 웹 SaaS 버전 · AI 구조화 인터뷰</span>
           </div>
           <div class="project-compact-right">
-            <a href="https://github.com/SoyeonAhn3/AI_Consulting" target="_blank" rel="noopener" class="btn btn-small btn-outline" onclick="event.stopPropagation()">GitHub</a>
-            <button class="project-compact-toggle-btn" onclick="this.closest('.project-compact').querySelector('.project-compact-detail').classList.toggle('open'); this.classList.toggle('open')">
-              <span class="toggle-arrow">▼</span>
-            </button>
-          </div>
-          <div class="project-compact-detail">
-            <p>MS 자동화 방안 검토 시 여러 AI에 개별 문의하는 것이 비효율적이라 느끼고, 3종 AI를 동시에 활용하여 비교 검증할 수 있는 CLI 컨설팅 도구를 개발했습니다.</p>
-            <div class="project-compact-tags">
-              <span class="tag">Claude Code Skills</span>
-              <span class="tag">Multi-AI</span>
-              <span class="tag">CLI</span>
-            </div>
+            <a href="projects.html#current-builds" class="btn btn-small btn-primary" onclick="event.stopPropagation()">Details</a>
           </div>
         </div>
         <div class="project-compact fade-in">
-          <div class="project-compact-info" onclick="this.parentElement.querySelector('.project-compact-detail').classList.toggle('open')">
-            <span class="project-compact-name">Code Review Pipeline</span>
-            <span class="project-compact-desc">4개 AI 에이전트가 보안·성능·품질을 자동 리뷰</span>
+          <div class="project-compact-info">
+            <span class="project-compact-name">AI Production Monitor</span>
+            <span class="project-compact-desc">생산 실적 자동 수집 · 이상 탐지 · AI 리포트 · Power BI 대시보드</span>
           </div>
           <div class="project-compact-right">
-            <a href="https://github.com/SoyeonAhn3/code-review-pipeline" target="_blank" rel="noopener" class="btn btn-small btn-outline" onclick="event.stopPropagation()">GitHub</a>
-            <button class="project-compact-toggle-btn" onclick="this.closest('.project-compact').querySelector('.project-compact-detail').classList.toggle('open'); this.classList.toggle('open')">
-              <span class="toggle-arrow">▼</span>
-            </button>
-          </div>
-          <div class="project-compact-detail">
-            <p>AI 자동화 개발 중 코드 품질에서 놓치는 부분이 반복 발생하여, 보안·성능·품질을 4개 AI 에이전트가 순차적으로 리뷰하고 교차 반론까지 수행하는 멀티에이전트 시스템을 개발했습니다.</p>
-            <div class="project-compact-tags">
-              <span class="tag">Python</span>
-              <span class="tag">Claude API</span>
-              <span class="tag">Multi-Agent</span>
-            </div>
+            <a href="projects.html#current-builds" class="btn btn-small btn-primary" onclick="event.stopPropagation()">Details</a>
           </div>
         </div>
         <div class="project-compact fade-in">
-          <div class="project-compact-info" onclick="this.parentElement.querySelector('.project-compact-detail').classList.toggle('open')">
-            <span class="project-compact-name">Notion Notes</span>
-            <span class="project-compact-desc">AI 대화에서 유용한 답변만 Notion에 자동 저장</span>
+          <div class="project-compact-info">
+            <span class="project-compact-name">Excel Generator</span>
+            <span class="project-compact-desc">자연어 → AI 코드 생성 · 보안 검증 · 엑셀 자동 생성</span>
           </div>
           <div class="project-compact-right">
-            <a href="https://github.com/SoyeonAhn3/Notion_Notes" target="_blank" rel="noopener" class="btn btn-small btn-outline" onclick="event.stopPropagation()">GitHub</a>
-            <button class="project-compact-toggle-btn" onclick="this.closest('.project-compact').querySelector('.project-compact-detail').classList.toggle('open'); this.classList.toggle('open')">
-              <span class="toggle-arrow">▼</span>
-            </button>
+            <a href="projects.html#excel-generator" class="btn btn-small btn-primary" onclick="event.stopPropagation()">Details</a>
           </div>
-          <div class="project-compact-detail">
-            <p>학습한 내용을 AI와의 대화를 통해 정리하고, 유용한 답변만 골라 Notion에 바로 저장하는 흐름을 구현했습니다.</p>
-            <div class="project-compact-tags">
-              <span class="tag">FastAPI</span>
-              <span class="tag">Gemini</span>
-              <span class="tag">Notion API</span>
-            </div>
+        </div>
+        <div class="project-compact fade-in">
+          <div class="project-compact-info">
+            <span class="project-compact-name">+3 more</span>
+            <span class="project-compact-desc">AI Consulting Agent, Code Review Pipeline, Notion Notes</span>
+          </div>
+          <div class="project-compact-right">
+            <a href="projects.html#additional-projects" class="btn btn-small btn-primary" onclick="event.stopPropagation()">View All</a>
           </div>
         </div>
       </div>
