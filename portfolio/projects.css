@@ -870,4 +870,110 @@
     align-self: flex-end;
   }
 
+  /* Featured quickjump: full-width menu rows (mobile only) */
+  .proj-quickjump-featured {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    counter-reset: featured;
+  }
+
+  .proj-quickjump-featured .proj-quickjump-label {
+    margin-bottom: 10px;
+  }
+
+  .proj-quickjump-featured .proj-quickjump-label::after {
+    display: none;
+  }
+
+  .proj-quickjump-featured .proj-quickjump-link {
+    counter-increment: featured;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 14px 16px;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--text);
+    transition: border-color 0.2s ease, background 0.2s ease;
+  }
+
+  .proj-quickjump-featured .proj-quickjump-link + .proj-quickjump-link {
+    margin-top: 8px;
+  }
+
+  .proj-quickjump-featured .proj-quickjump-link::before {
+    content: "0" counter(featured);
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: var(--primary);
+    opacity: 0.5;
+    flex-shrink: 0;
+  }
+
+  .proj-quickjump-featured .proj-quickjump-link::after {
+    content: "\2192";
+    margin-left: auto;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    flex-shrink: 0;
+  }
+
+  .proj-quickjump-featured .proj-quickjump-link:hover,
+  .proj-quickjump-featured .proj-quickjump-link:active {
+    background: var(--bg-alt);
+    color: var(--text);
+    border-color: var(--primary);
+  }
+
+  /* Current Builds / Additional: label on top, cleaner pill chips (mobile only) */
+  .proj-quickjump-group:not(.proj-quickjump-featured) {
+    gap: 8px;
+  }
+
+  .proj-quickjump-group:not(.proj-quickjump-featured) .proj-quickjump-label {
+    flex-basis: 100%;
+    margin-bottom: 2px;
+  }
+
+  .proj-quickjump-group:not(.proj-quickjump-featured) .proj-quickjump-label::after {
+    display: none;
+  }
+
+  .proj-quickjump-group:not(.proj-quickjump-featured) .proj-quickjump-link {
+    padding: 7px 15px;
+    background: #fff;
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: border-color 0.2s ease, color 0.2s ease;
+  }
+
+  .proj-quickjump-group:not(.proj-quickjump-featured) .proj-quickjump-link:hover,
+  .proj-quickjump-group:not(.proj-quickjump-featured) .proj-quickjump-link:active {
+    background: #fff;
+    border-color: var(--primary);
+    color: var(--primary);
+  }
+
+  /* Showcase rows: stack on mobile */
+  .showcase-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .showcase-name {
+    min-width: auto;
+  }
+
+  .showcase-item .btn {
+    align-self: flex-start;
+  }
+
 }
