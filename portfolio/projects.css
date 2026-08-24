@@ -109,12 +109,21 @@
 }
 
 .badge-complete {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   background: #dbeafe;
   color: #2563eb;
   padding: 3px 10px;
   border-radius: 20px;
   font-size: 0.75rem;
   font-weight: 600;
+}
+
+.badge-complete svg {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
 }
 
 /* Summary */
@@ -521,6 +530,61 @@
   flex-shrink: 0;
 }
 
+/* ===== Also Built (panel + compact card, mixed tier) ===== */
+.abuilt-header {
+  margin-bottom: 32px;
+}
+
+.abuilt-heading {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+
+.abuilt-sub {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  max-width: 560px;
+}
+
+.abuilt-panel {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px 36px;
+  margin-bottom: 24px;
+}
+
+.proj-section-alt .abuilt-panel {
+  background: #fff;
+}
+
+.abuilt-panel-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.abuilt-panel .proj-summary {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.abuilt-panel .proj-block-title {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.abuilt-panel .proj-block-text {
+  font-size: 0.85rem;
+}
+
+.abuilt-panel .proj-details-toggle {
+  font-size: 0.887rem;
+}
+
 /* Live Demo Button */
 .btn-live-demo {
   display: inline-flex;
@@ -868,6 +932,10 @@
 
   .also-built-item .btn {
     align-self: flex-end;
+  }
+
+  .abuilt-panel {
+    padding: 22px 18px;
   }
 
   /* Featured quickjump: full-width menu rows (mobile only) */

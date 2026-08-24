@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects — Soyeon Ahn</title>
   <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../projects.css?v=5">
+  <link rel="stylesheet" href="../projects.css?v=6">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -21,9 +21,9 @@
       </button>
       <ul class="nav-links" id="navLinks">
         <li><a href="#workflow-generator">Workflow</a></li>
-        <li><a href="#kickoff-harness">Kickoff Harness</a></li>
+        <li><a href="#prequel">Prequel</a></li>
         <li><a href="#stock-analyzer">Stock Analyzer</a></li>
-        <li><a href="#current-builds">Others</a></li>
+        <li><a href="#also-built">Others</a></li>
         <li>
           <a href="../projects.html" class="nav-lang" title="한국어로 보기">KO</a>
         </li>
@@ -42,13 +42,13 @@
         <div class="proj-quickjump-group proj-quickjump-featured">
           <span class="proj-quickjump-label">Featured</span>
           <a href="#workflow-generator" class="proj-quickjump-link">Workflow Generator</a>
-          <a href="#kickoff-harness" class="proj-quickjump-link">Project Kickoff Harness</a>
+          <a href="#prequel" class="proj-quickjump-link">Prequel</a>
           <a href="#stock-analyzer" class="proj-quickjump-link">AI Stock Analyzer</a>
         </div>
         <div class="proj-quickjump-group">
-          <span class="proj-quickjump-label">Current Builds</span>
-          <a href="#prequel" class="proj-quickjump-link">Prequel</a>
-          <a href="#production-monitor" class="proj-quickjump-link">AI Production Monitor</a>
+          <span class="proj-quickjump-label">Also Built</span>
+          <a href="#kickoff-harness" class="proj-quickjump-link">Project Kickoff Harness · ✅ Complete</a>
+          <a href="#production-monitor" class="proj-quickjump-link">AI Production Monitor · 🚧 In Progress</a>
         </div>
         <div class="proj-quickjump-group">
           <span class="proj-quickjump-label">Additional</span>
@@ -201,52 +201,38 @@
   </section>
 
   <!-- ============================== -->
-  <!-- 2. AI Project Kickoff Harness (FEATURED) -->
+  <!-- 2. Prequel (FEATURED) -->
   <!-- ============================== -->
-  <section class="proj-section proj-section-alt" id="kickoff-harness">
+  <section class="proj-section proj-section-alt" id="prequel">
     <div class="container">
 
       <div class="proj-title-row fade-in">
-        <h2 class="proj-name">AI Project Kickoff Harness</h2>
-        <a href="https://github.com/SoyeonAhn3/AI-Project-Kickoff-Harness" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+        <h2 class="proj-name">Prequel</h2>
+        <a href="https://prequel-production.netlify.app" target="_blank" rel="noopener" class="btn-live-demo">
+          <span class="btn-live-dot"></span>Live Demo
+        </a>
+        <a href="https://github.com/SoyeonAhn3/Prequel" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
       </div>
       <p class="proj-summary fade-in">
-        A CLI automation harness that transforms vague project ideas into development-ready plans through AI-driven interviews and validation.
-        Converts ideas into actionable requirement documents via structured interview flows, Gap Check, and checklist generation.
+        A web service where AI finds the gaps in your project plan through structured interviews.
+        This project turns the AI Project Kickoff Harness (CLI) into a SaaS that real users can actually use.
       </p>
 
       <!-- Motivation -->
       <div class="proj-block fade-in">
         <h3 class="proj-block-title">Motivation</h3>
         <p class="proj-block-text">
-          Every time I started a new project, unclear requirements led to repeated redesigns mid-development.
-          I wanted to build a tool where AI conducts structured interviews to turn vague ideas into well-organized
-          planning documents before writing a single line of code.
-          This harness was used to validate the planning of my other side projects, proving its practical value.
+          The CLI harness proved that AI-structured interviews were practical, but making them usable
+          directly in a browser meant solving problems the CLI never had — authentication, billing,
+          concurrency, and security. I built this on a React · FastAPI · Supabase stack to implement
+          and validate those problems at a genuinely production-ready level.
         </p>
       </div>
 
-      <!-- Showcase -->
-      <div class="proj-block fade-in">
-        <h3 class="proj-block-title">Showcase</h3>
-        <div class="showcase-list">
-          <div class="showcase-item">
-            <span class="showcase-name">finance_data_platform</span>
-            <span class="showcase-desc">Snowflake + Power BI + Text-to-SQL AI finance data analytics platform</span>
-            <a href="https://github.com/SoyeonAhn3/finance_data_platform/blob/main/pre-requirement/finance_data_platform_kickoff.md" target="_blank" rel="noopener" class="btn btn-small btn-outline">Kickoff Doc</a>
-          </div>
-          <div class="showcase-item">
-            <span class="showcase-name">Prequel</span>
-            <span class="showcase-desc">Web SaaS version of this harness — AI structured interviews in the browser</span>
-            <a href="https://github.com/SoyeonAhn3/Prequel/blob/main/pre-requirement/prequel_kickoff.md" target="_blank" rel="noopener" class="btn btn-small btn-outline">Kickoff Doc</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Introduction Video -->
+      <!-- Demo Video -->
       <div class="proj-demo fade-in">
         <video
-          src="https://github.com/user-attachments/assets/f5fd9ec6-79c9-4cbc-bb49-27b3a0774616"
+          src="https://github.com/user-attachments/assets/6367e41e-51da-454c-b6fc-8bf98d76649f"
           controls
           muted
           playsinline
@@ -264,31 +250,31 @@
         <div class="feat-grid">
           <div class="feat-card">
             <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
             </div>
-            <h4>Multi-Skill Chaining Pipeline</h4>
-            <p>Skills auto-chain in sequence: context → start → interview → suggest → profile → evaluate → gap → checklist → done → skills.</p>
+            <h4>AI Structured Interview</h4>
+            <p>Automatically detects 1 of 7 project types from free-text input and runs a structured Q&A with type-specific questions.</p>
           </div>
           <div class="feat-card">
             <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.05 13A9 9 0 1 0 6 5.3L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></svg>
             </div>
-            <h4>Dogfooding Self-Validation</h4>
-            <p>Over 3 rounds of dogfooding, discovered and fixed 10+ design flaws in input flows, evaluation criteria, missing questions, and checklist structure.</p>
+            <h4>Pause & Resume</h4>
+            <p>The session auto-saves after every answer, so you can close the browser and pick up right where you left off later.</p>
           </div>
           <div class="feat-card">
             <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
             </div>
-            <h4>4+2 Dimension Honest Evaluation</h4>
-            <p>Evaluates project feasibility across 4 base dimensions (technical, market, learning, completion) + 2 conditional dimensions (learning cost, security).</p>
+            <h4>Atomic Credit Billing</h4>
+            <p>Designed a row-locking (SELECT FOR UPDATE) Postgres RPC so concurrent requests deduct credits exactly once, and verified it with real Supabase concurrency tests.</p>
           </div>
           <div class="feat-card">
             <div class="feat-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
             </div>
-            <h4>Gap & Contradiction Detection</h4>
-            <p>AI automatically identifies missing requirements and contradictory designs in planning documents before development begins, reducing redesign costs.</p>
+            <h4>Prompt Caching Optimization</h4>
+            <p>Restructured the interview system prompt to be cache-friendly, achieving an 83% cache-read ratio and an 88% drop in full-price input tokens in real A/B measurements.</p>
           </div>
         </div>
       </div>
@@ -303,24 +289,24 @@
           </div>
           <div class="arch-arrow"></div>
           <div class="arch-node arch-node-ai">
-            <div class="arch-node-label">10 Skills</div>
-            <div class="arch-node-desc">Interview · Evaluate · Validate</div>
+            <div class="arch-node-label">FastAPI + Claude API</div>
+            <div class="arch-node-desc">Prompt Caching</div>
           </div>
           <div class="arch-arrow"></div>
           <div class="arch-node">
-            <div class="arch-node-label">Gap Check</div>
-            <div class="arch-node-desc">Contradiction · Missing Detection</div>
+            <div class="arch-node-label">Supabase</div>
+            <div class="arch-node-desc">Postgres + Auth + RLS</div>
           </div>
           <div class="arch-arrow"></div>
           <div class="arch-node arch-node-output">
             <div class="arch-node-label">Output</div>
-            <div class="arch-node-desc">Kickoff .md + Checklist</div>
+            <div class="arch-node-desc">Kickoff Doc Dashboard</div>
           </div>
         </div>
         <div class="arch-storage">
-          <span class="arch-storage-tag">Claude Code Skills</span>
-          <span class="arch-storage-tag">Markdown</span>
-          <span class="arch-storage-tag">gh CLI</span>
+          <span class="arch-storage-tag">Netlify</span>
+          <span class="arch-storage-tag">Railway</span>
+          <span class="arch-storage-tag">Row-Level Security</span>
         </div>
       </div>
 
@@ -330,11 +316,11 @@
         <div class="challenge-card">
           <div class="challenge-row">
             <span class="challenge-label">Problem</span>
-            <p>Missing requirements and contradictions in planning documents were only discovered during development, causing costly redesigns</p>
+            <p>Simply changing the project number in the URL exposed an IDOR vulnerability — anyone could view another user's planning data using someone else's session ID, without even logging in</p>
           </div>
           <div class="challenge-row">
             <span class="challenge-label challenge-label-solve">Solution</span>
-            <p>Built a kickoff-gap skill that automatically detects contradictions (e.g., feature-tech stack mismatches) and gaps (e.g., undefined non-functional requirements) before development. Validated the harness itself through 3 rounds of dogfooding</p>
+            <p>Fixed 8 related API endpoints to verify on every request that the session → project chain belongs to the logged-in user. Verified with two real accounts: the owner's own requests succeeded (8/8) while every request from the other account was blocked (8/8)</p>
           </div>
         </div>
       </div>
@@ -344,10 +330,14 @@
       <!-- Tech Stack -->
       <div class="proj-footer fade-in">
         <div class="proj-tags">
-          <span class="tag">Claude Code Skills</span>
-          <span class="tag">Markdown</span>
-          <span class="tag">Git</span>
-          <span class="tag">gh CLI</span>
+          <span class="tag">React 19</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">TailwindCSS</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">Supabase</span>
+          <span class="tag">Claude API</span>
+          <span class="tag">Netlify</span>
+          <span class="tag">Railway</span>
         </div>
       </div>
 
@@ -499,33 +489,166 @@
   </section>
 
   <!-- ============================== -->
-  <!-- CURRENT BUILDS                  -->
+  <!-- ALSO BUILT                      -->
   <!-- ============================== -->
-  <section class="proj-section proj-section-alt" id="current-builds">
+  <section class="proj-section proj-section-alt" id="also-built">
     <div class="container">
-      <h2 class="proj-name fade-in" style="margin-bottom: 24px;">Current Builds</h2>
+      <div class="abuilt-header fade-in">
+        <h2 class="abuilt-heading">Also Built</h2>
+        <p class="abuilt-sub">Beyond the 3 featured projects, these are ones I've actually completed or am currently building.</p>
+      </div>
 
-      <div class="other-projects-grid">
-        <!-- Prequel -->
-        <div class="other-project-card fade-in" id="prequel">
-          <h3 class="other-project-title">Prequel <span class="badge badge-progress">🚧 In Progress</span></h3>
-          <p class="other-project-desc">
-            A SaaS web app that finds gaps in project planning through AI-powered structured interviews.
-            The web productization of the CLI Kickoff Harness — supports 7 project type auto-detection,
-            auto-generated kickoff documents + Mermaid architecture diagrams, and session pause/resume.
-          </p>
-          <div class="other-project-footer">
-            <div class="proj-tags">
-              <span class="tag">React 19</span>
-              <span class="tag">FastAPI</span>
-              <span class="tag">Supabase</span>
-              <span class="tag">Claude API</span>
-              <span class="tag">Mermaid.js</span>
-            </div>
-            <a href="https://github.com/SoyeonAhn3/Prequel" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+      <div id="kickoff-harness" class="abuilt-panel fade-in">
+
+      <div class="proj-title-row">
+        <h3 class="abuilt-panel-title">AI Project Kickoff Harness <span class="badge-complete"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Complete</span></h3>
+      </div>
+      <p class="proj-summary">
+        A CLI automation harness that transforms vague project ideas into development-ready plans through AI interviews and validation.
+        It's built as a 10-skill pipeline spanning interviews, 4+2 dimension honest evaluation, automatic Gap/contradiction detection, and
+        checklist generation — validated for practicality and completeness through 3 rounds of dogfooding and real use on 2 other side projects.
+      </p>
+
+      <details class="proj-details fade-in">
+        <summary class="proj-details-toggle"><span class="toggle-icon">▶</span>Demo Video · Showcase · Motivation · Key Features · Architecture · Problem Solving</summary>
+
+      <!-- Introduction Video -->
+      <div class="proj-demo fade-in">
+        <video
+          src="https://github.com/user-attachments/assets/f5fd9ec6-79c9-4cbc-bb49-27b3a0774616"
+          controls
+          muted
+          playsinline
+          preload="metadata"
+          class="proj-video"
+        ></video>
+      </div>
+
+      <!-- Showcase -->
+      <div class="proj-block fade-in">
+        <h3 class="proj-block-title">Showcase</h3>
+        <div class="showcase-list">
+          <div class="showcase-item">
+            <span class="showcase-name">finance_data_platform</span>
+            <span class="showcase-desc">Snowflake + Power BI + Text-to-SQL AI finance data analytics platform</span>
+            <a href="https://github.com/SoyeonAhn3/finance_data_platform/blob/main/pre-requirement/finance_data_platform_kickoff.md" target="_blank" rel="noopener" class="btn btn-small btn-outline">Kickoff Doc</a>
+          </div>
+          <div class="showcase-item">
+            <span class="showcase-name">Prequel</span>
+            <span class="showcase-desc">Web SaaS version of this harness — AI structured interviews in the browser</span>
+            <a href="https://github.com/SoyeonAhn3/Prequel/blob/main/pre-requirement/prequel_kickoff.md" target="_blank" rel="noopener" class="btn btn-small btn-outline">Kickoff Doc</a>
           </div>
         </div>
+      </div>
 
+      <!-- Motivation -->
+      <div class="proj-block fade-in">
+        <h3 class="proj-block-title">Motivation</h3>
+        <p class="proj-block-text">
+          Every time I started a new project, unclear requirements led to repeated redesigns mid-development.
+          I built a tool where AI runs structured interviews to turn ideas into organized planning documents
+          before writing a single line of code, and validated its practical value by applying it to the
+          planning of 2 other side projects.
+        </p>
+      </div>
+
+      <!-- Key Features -->
+      <div class="proj-block">
+        <h3 class="proj-block-title">Key Features</h3>
+        <div class="feat-grid">
+          <div class="feat-card">
+            <div class="feat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h4>Multi-Skill Chaining Pipeline</h4>
+            <p>Skills auto-chain in sequence: context → start → interview → suggest → profile → evaluate → gap → checklist → done → skills.</p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+            </div>
+            <h4>Dogfooding Self-Validation</h4>
+            <p>Over 3 rounds of dogfooding, discovered and fixed 10+ design flaws in input flows, evaluation criteria, missing questions, and checklist structure.</p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h4>4+2 Dimension Honest Evaluation</h4>
+            <p>Evaluates project feasibility across 4 base dimensions (technical, market, learning, completion) + 2 conditional dimensions (learning cost, security).</p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h4>Gap & Contradiction Detection</h4>
+            <p>AI automatically identifies missing requirements and contradictory designs in planning documents before development begins, reducing redesign costs.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Architecture -->
+      <div class="proj-block fade-in">
+        <h3 class="proj-block-title">Architecture</h3>
+        <div class="arch-flow">
+          <div class="arch-node">
+            <div class="arch-node-label">User Idea</div>
+            <div class="arch-node-desc">Free Text Input</div>
+          </div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node arch-node-ai">
+            <div class="arch-node-label">10 Skills</div>
+            <div class="arch-node-desc">Interview · Evaluate · Validate</div>
+          </div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node">
+            <div class="arch-node-label">Gap Check</div>
+            <div class="arch-node-desc">Contradiction · Missing Detection</div>
+          </div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node arch-node-output">
+            <div class="arch-node-label">Output</div>
+            <div class="arch-node-desc">Kickoff .md + Checklist</div>
+          </div>
+        </div>
+        <div class="arch-storage">
+          <span class="arch-storage-tag">Claude Code Skills</span>
+          <span class="arch-storage-tag">Markdown</span>
+          <span class="arch-storage-tag">gh CLI</span>
+        </div>
+      </div>
+
+      <!-- Challenge -->
+      <div class="proj-block fade-in">
+        <h3 class="proj-block-title">Problem Solving</h3>
+        <div class="challenge-card">
+          <div class="challenge-row">
+            <span class="challenge-label">Problem</span>
+            <p>Missing requirements and contradictions in planning documents were only discovered during development, causing costly redesigns</p>
+          </div>
+          <div class="challenge-row">
+            <span class="challenge-label challenge-label-solve">Solution</span>
+            <p>Built a kickoff-gap skill that automatically detects contradictions (e.g., feature-tech stack mismatches) and gaps (e.g., undefined non-functional requirements) before development. Validated the harness itself through 3 rounds of dogfooding</p>
+          </div>
+        </div>
+      </div>
+
+      </details>
+
+      <!-- Tech Stack -->
+      <div class="proj-footer fade-in">
+        <div class="proj-tags">
+          <span class="tag">Claude Code Skills</span>
+          <span class="tag">Markdown</span>
+          <span class="tag">Git</span>
+          <span class="tag">gh CLI</span>
+        </div>
+        <a href="https://github.com/SoyeonAhn3/AI-Project-Kickoff-Harness" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+      </div>
+
+      </div>
+
+      <div class="other-projects-grid">
         <!-- AI Production Monitor -->
         <div class="other-project-card fade-in" id="production-monitor">
           <h3 class="other-project-title">AI Production Monitor <span class="badge badge-progress">🚧 In Progress</span></h3>

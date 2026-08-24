@@ -32,3 +32,45 @@ navLinks.querySelectorAll('a').forEach((link) => {
     navLinks.classList.remove('open');
   });
 });
+
+// DX Project Modal
+const dxModal = document.getElementById('dxModal');
+if (dxModal) {
+  const openBtn = document.getElementById('openDxModal');
+  const closeBtn = dxModal.querySelector('.dx-close');
+  const tabs = dxModal.querySelectorAll('.dx-tab');
+  const panels = dxModal.querySelectorAll('.dx-panel');
+
+  function openDxModal() {
+    dxModal.classList.add('open');
+    document.body.classList.add('dx-modal-open');
+  }
+
+  function closeDxModal() {
+    dxModal.classList.remove('open');
+    document.body.classList.remove('dx-modal-open');
+  }
+
+  if (openBtn) openBtn.addEventListener('click', openDxModal);
+  closeBtn.addEventListener('click', closeDxModal);
+
+  dxModal.addEventListener('click', (e) => {
+    if (e.target === dxModal) closeDxModal();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && dxModal.classList.contains('open')) closeDxModal();
+  });
+
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      tabs.forEach((t) => t.classList.remove('active'));
+      tab.classList.add('active');
+      const target = tab.getAttribute('data-tab');
+      const panel = document.getElementById('dx-' + target);
+      if (panel) {
+        panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+}
